@@ -61,13 +61,13 @@ function App() {
           </div>
           <h1 className="heading-primary--sub date">March 29th 2023</h1>
 
-          {/* <a href="#about" className="btn btn--white btn--animated bold"
-            >Get Started</a
-          > */}
+          <a href="#about" className="btn btn--white btn--animated bold">
+            Get Started
+          </a>
         </div>
       </div>
 
-      <Main/>
+      <Main />
 
     </div>
   );
