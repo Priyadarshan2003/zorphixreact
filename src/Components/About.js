@@ -1,4 +1,7 @@
 import React from 'react';
+import i1 from '../img/logo3-01-min.jpeg';
+import i2 from '../img/main-img1-01-min.jpeg';
+import i3 from '../img/team-01-min.jpeg';
 
 const About = () => {
     return (
@@ -33,34 +36,28 @@ const About = () => {
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
-                        <image
-                            srcset="
-                        img/logo3-01-min.jpeg  300w,
-                        img/logo3-01-min.jpeg 1000w
-                      "
+                        <img
+                            srcset={`${i1} 300w, ${i1} 1000w`}
                             sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
                             alt="Photo 1"
                             class="composition__photo composition__photo--p1"
-                            src="img/logo3-01-min.jpeg"
+                            src={i1}
                         />
 
-                        <image
-                            srcset="
-                    img/main-img1-01-min.jpeg  300w,
-                    img/main-img1-01-min.jpeg 1000w
-                  "
+                        <img
+                            srcset={`${i2} 300w, ${i2} 1000w`}
                             sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
                             alt="Photo 2"
                             class="composition__photo composition__photo--p2"
-                            src="img/main-img1-01-min.jpeg"
+                            src={i2}
                         />
 
-                        <image
-                            srcset="img/team-01-min.jpeg 300w, img/team-01-min.jpeg 1000w"
+                        <img
+                            srcset={`${i3} 300w, ${i3} 1000w`}
                             sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
                             alt="Photo 3"
                             class="composition__photo composition__photo--p3"
-                            src="img/team-01-min.jpeg"
+                            src={i3}
                         />
                     </div>
                 </div>
