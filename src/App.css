@@ -562,7 +562,7 @@ body {
   color: #fff;
 }
 body {
-  font-family: "Signika", sans-serif;
+  font-family: 'Signika', serif;
   font-weight: 400;
   line-height: 1.7;
   color: #777;
@@ -597,7 +597,7 @@ body {
   display: block;
   font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 1.75rem;
+  letter-spacing: 1.1rem;
   -webkit-animation: moveInRight 1s ease-out;
   animation: moveInRight 1s ease-out;
 }
@@ -647,6 +647,7 @@ body {
 }
 .paragraph {
   font-size: 1.6rem;
+  word-spacing: 0.3rem;
 }
 .paragraph:not(:last-child) {
   margin-bottom: 3rem;
@@ -1294,7 +1295,7 @@ body {
 .team {
   text-align: center;
   margin-bottom: 40px;
-  color: blueviolet;
+  color: white;
 }
 
 .main-section {
@@ -1586,9 +1587,6 @@ html {
 .row .col-3-of-4 {
   width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
 }
-/* .body {
-  background-color: #10002b;
-} */
 .header {
   height: 85vh;
   /* background-image: -webkit-gradient(
@@ -1926,7 +1924,7 @@ html {
 
 .section-about {
   background-color: #10002b;
-  padding: 25rem 0;
+  padding: 21rem 0;
   margin-top: -20vh;
   margin-bottom: 100px;
   color: #fff;

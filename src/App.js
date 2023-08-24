@@ -59,7 +59,7 @@ function App() {
               src={zorphixlanding} alt='zorphix-logo'
             />
           </div>
-          <h1 className="heading-primary--sub date">March 29th 2023</h1>
+          <h1 className="heading-primary--sub date">September 20th 2023</h1>
 
           <a href="#about" className="btn btn--white btn--animated bold">
             Get Started
