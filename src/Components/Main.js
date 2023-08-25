@@ -14,7 +14,6 @@ const Main = () => {
             <TechEvents />
             <Team />
             <Footer />
-
         </div>
     )
 }

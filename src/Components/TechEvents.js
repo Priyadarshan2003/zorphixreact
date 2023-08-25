@@ -1,51 +1,10 @@
-import React , { useState } from "react";
-import Modal from "./Modal";
+import React, { useState } from "react";
 
 
 const TechEvents = () => {
-    // function toggle(title, content, name1, name2, phone1, phone2, register) {
-    //     const blur = document.querySelector("#blur");
-    //     blur.classList.toggle("active");
-    //     const popup = document.getElementById("#pop");
-    //     const h2 = document.getElementsByClassName(".event_heading");
-    //     const cont = document.getElementsByClassName(".event_content");
-    //     h2.innerHTML = title;
-    //     cont.innerText = content;
-    //     popup.classList.toggle("new_active");
-
-    //     const aboutBtn = document.getElementsByClassName(".about-button");
-    //     const organiserBtn = document.getElementsByClassName(".organiser-button");
-    //     const eventContent = document.getElementsByClassName(".event_content");
-    //     const organiserPage = document.getElementsByClassName(".org");
-
-    //     const organiser1name = document.getElementsByClassName(".org1-name");
-    //     const organiser2name = document.querySelector(".org2-name");
-
-    //     const organiser1phone = document.getElementsByClassName(".org1-phone");
-    //     const organiser2phone = document.getElementsByClassName(".org2-phone");
-
-    //     const registerLink = document.getElementsByClassName(".regi");
-    //     registerLink.href = `https://${register}`;
-
-    //     organiser1name.innerHTML = name1;
-    //     organiser2name.innerHTML = name2;
-    //     organiser1phone.innerHTML = phone1;
-    //     organiser2phone.innerHTML = phone2;
-
-    //     organiserBtn.addEventListener("click", () => {
-    //         eventContent.classList.add("hide");
-    //         organiserPage.classList.remove("hide");
-    //     });
-
-    //     aboutBtn.addEventListener("click", () => {
-    //         eventContent.classList.remove("hide");
-    //         organiserPage.classList.add("hide");
-    //     });
-    // }
     const [openModal, setOpenModal] = useState(false);
-
     const toggle = () => {
-        setOpenModal(true);
+        setOpenModal(!openModal);
     }
     return (
 
@@ -245,8 +204,33 @@ const TechEvents = () => {
                 </div>
             </div>
 
-            <Modal open={openModal} onClose={() => setOpenModal(false)}/>
+            {openModal && (
+                <div id="pop">
+                    <h2 class="event_heading"></h2>
 
+                    <div class="event_section">
+                        <button class="about-button">About</button>
+                        <button class="organiser-button">Organiser</button>
+                    </div>
+                    <p class="event_content"></p>
+                    <div class="org hide">
+                        <div class="org1">
+                            <h2 class="org1-name"></h2>
+                            <p>ORGANISER</p>
+                            <p class="org1-phone"></p>
+                        </div>
+                        <div class="org2">
+                            <h2 class="org2-name"></h2>
+                            <p>ORGANISER</p>
+                            <p class="org2-phone"></p>
+                        </div>
+                    </div>
+                    <div class="modal-button">
+                        <button class="btn btn--green" onclick={() => toggle()}>Close</button>
+                        <button class="btn btn--green regi" target="_blank">Register</button>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };
