@@ -1,5 +1,6 @@
 import React from 'react'
 import fulllogo from '../img/footer.png'
+import instalogo from '../img/insta footer.png';
 
 const Footer = () => {
     return (
@@ -25,16 +26,17 @@ const Footer = () => {
                             <a
                                 href="https://www.instagram.com/zorphix.cit/"
                                 target="_blank"
+                                rel='noreferrer'
                             >
-                                <img class="footer__img" src="./img/insta footer.png" alt=""
+                                <img class="footer__img" src={instalogo} alt=""
                                 /></a>
                         </div>
                     </div>
                 </div>
             </div>
-            {/* <div style={"text-align: center"}>
+            <div className='text-center'>
                 <span class="copyright">@Zorphix 2023 All rights reserved</span>
-            </div> */}
+            </div>
         </div>
     )
 }

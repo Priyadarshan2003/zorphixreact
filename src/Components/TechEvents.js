@@ -1,11 +1,35 @@
 import React, { useState } from "react";
+import PopupModal from "./PopupModal";
 
 
 const TechEvents = () => {
-    const [openModal, setOpenModal] = useState(false);
-    const toggle = () => {
-        setOpenModal(!openModal);
-    }
+
+    const [isPopupVisible, setPopupVisible] = useState(false);
+
+    // State variables to store event information
+    const [eventInfo, setEventInfo] = useState({
+        heading: '',
+        content: '',
+        org1Name: '',
+        org2Name: '',
+        org1Phone: '',
+        org2Phone: '',
+        registrationLink: '',
+    });
+
+    // Function to toggle the popup visibility
+    const toggle = (title, content, org1Name, org2Name, org1Phone, org2Phone, registrationLink) => {
+        setEventInfo({
+            heading: title,
+            content,
+            org1Name,
+            org2Name,
+            org1Phone,
+            org2Phone,
+            registrationLink,
+        });
+        setPopupVisible(!isPopupVisible);
+    };
     return (
 
         <div className="section-tours" id="events">
@@ -203,34 +227,18 @@ const TechEvents = () => {
                     </div>
                 </div>
             </div>
+            <PopupModal
+                title={eventInfo.heading}
+                content={eventInfo.content}
+                name1={eventInfo.org1Name}
+                name2={eventInfo.org2Name}
+                phone1={eventInfo.org1Phone}
+                phone2={eventInfo.org2Phone}
+                register={eventInfo.registrationLink}
+                isVisible={isPopupVisible}
+                toggle={() => toggle()}
+            />
 
-            {openModal && (
-                <div id="pop">
-                    <h2 class="event_heading"></h2>
-
-                    <div class="event_section">
-                        <button class="about-button">About</button>
-                        <button class="organiser-button">Organiser</button>
-                    </div>
-                    <p class="event_content"></p>
-                    <div class="org hide">
-                        <div class="org1">
-                            <h2 class="org1-name"></h2>
-                            <p>ORGANISER</p>
-                            <p class="org1-phone"></p>
-                        </div>
-                        <div class="org2">
-                            <h2 class="org2-name"></h2>
-                            <p>ORGANISER</p>
-                            <p class="org2-phone"></p>
-                        </div>
-                    </div>
-                    <div class="modal-button">
-                        <button class="btn btn--green" onclick={() => toggle()}>Close</button>
-                        <button class="btn btn--green regi" target="_blank">Register</button>
-                    </div>
-                </div>
-            )}
         </div>
     );
 };
