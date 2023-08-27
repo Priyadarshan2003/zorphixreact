@@ -8,7 +8,6 @@
     background: #18181b;
     display: flex;
     flex-direction: column;
-    /* Stack items vertically */
     justify-content: center;
     align-items: center;
 }
@@ -20,7 +19,6 @@
 }
 .loader img {
     max-width: 80%;
-    /* Adjust the image size as needed */
     height: auto;
 }
 
@@ -32,5 +30,4 @@
     transform: translate(0.4rem);
     margin-top: 1rem;
     text-align: center;
-    /* Center the text */
 }

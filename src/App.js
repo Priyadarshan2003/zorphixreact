@@ -6,6 +6,7 @@ import zorphixfinal from './img/Zorphix final without name.png';
 import zorphixlanding from './img/zorphix-landing-logo.png';
 import { motion, useScroll } from "framer-motion";
 import Loader from './Components/Loader/Loader';
+import bgvideo from './video/bgvideo.mp4';
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
     const fakeDataFetch = () => {
       setTimeout(() => {
         setIsLoading(false);
-      }, 3000);
+      }, 2000);
     };
 
     fakeDataFetch();
@@ -26,7 +27,7 @@ function App() {
     <Loader />
   ) : (
     <div>
-      <div id="blur violet">
+      <div id="blur">
         <div className="navigation">
           <input type="checkbox" className="navigation__checkbox" id="navi-toggle" />
 
@@ -62,6 +63,13 @@ function App() {
           </nav>
         </div>
 
+        <div className="bg-video">
+          <video className="bg-video__content" autoPlay muted loop>
+            <source src={bgvideo} type="video/mp4" />
+            Your browser is not supported!
+          </video>
+        </div>
+
         <div className="header" id="header">
           <div className="header__logo-box">
             <img className="citlogo" src={citlogo} alt="clg-logo" />
@@ -94,5 +102,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

@@ -6,7 +6,6 @@ const Loader = () => {
   return (
     <div className="loader">
       <div className="svg-wrapper">
-        {/* copy svg image and past it here */}
         <img src={zorphixlogo} alt=""/>
         <div className="loading-text">Loading...</div>
       </div>
