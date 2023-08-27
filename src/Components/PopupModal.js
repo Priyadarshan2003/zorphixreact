@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../component-css/Popup.css';
 
 const PopupModal = ({ title, content, name1, name2, phone1, phone2, register, isVisible, toggle }) => {
   const [showAbout, setShowAbout] = useState(true);
@@ -12,10 +13,14 @@ const PopupModal = ({ title, content, name1, name2, phone1, phone2, register, is
   const toggleOrganiser = () => {
     setShowAbout(false);
     setShowOrganiser(true);
-  };
+  }; 
 
   return (
+    <div className="popup-container">
+      <div className={`background-blur ${isVisible ? 'active' : ''}`}></div>
     <div id="pop" className={isVisible ? 'new_active' : ''}>
+      
+    <div>
       <h2 className="event_heading">{title}</h2>
       <div className="event_section">
         <button className="about-button" onClick={toggleAbout}>About</button>
@@ -42,6 +47,8 @@ const PopupModal = ({ title, content, name1, name2, phone1, phone2, register, is
         <a className="btn btn--green" onClick={() => toggle()}>Close</a>
         <a className="btn btn--green regi" href={`https://${register}`} target="_blank" rel="noopener noreferrer">Register</a>
       </div>
+    </div>
+    </div>
     </div>
   );
 }
