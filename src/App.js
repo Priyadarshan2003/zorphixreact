@@ -1,15 +1,31 @@
+import { useState, useEffect } from 'react';
 import './App.css';
 import Main from './Components/Main';
 import citlogo from './img/NEW LOGO CIT.png';
 import zorphixfinal from './img/Zorphix final without name.png';
 import zorphixlanding from './img/zorphix-landing-logo.png';
-import { motion, useScroll } from "framer-motion"
+import { motion, useScroll } from "framer-motion";
+import Loader from './Components/Loader/Loader';
 
 
 function App() {
   const { scrollYProgress } = useScroll();
-  return (
-    <div> 
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const fakeDataFetch = () => {
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 3000);
+    };
+
+    fakeDataFetch();
+  }, []);
+
+  return isLoading ? (
+    <Loader />
+  ) : (
+    <div>
       <div id="blur violet">
         <div className="navigation">
           <input type="checkbox" className="navigation__checkbox" id="navi-toggle" />
