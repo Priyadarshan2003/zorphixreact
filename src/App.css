@@ -866,7 +866,7 @@ body {
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: 0.20;
+  opacity: 0.15;
   overflow: hidden;
 }
 
@@ -1866,7 +1866,7 @@ html {
     height: 105vh;
   }
 } */
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+/* @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
 only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
 only screen and (min-width: 125em) {
   .header {
@@ -1880,12 +1880,12 @@ only screen and (min-width: 125em) {
         rgba(36, 0, 70, 0.2),
         rgba(60, 9, 108, 0.2)),
       url(./img/fast\ n\ folic.png);
-  }
-}
+  } */
+/* } */
 
 .header__logo-box img {
   height: 100px;
-  margin-top: 1rem;
+  margin-top: 3rem;
   margin-left: -2rem;
 }
 
@@ -1898,7 +1898,7 @@ only screen and (min-width: 125em) {
   .header__logo-box img {
     height: 80px;
     margin-left: -2rem;
-    margin-top: 0.5rem;
+    margin-top: 1.5rem;
   }
 }
 
@@ -2180,10 +2180,14 @@ only screen and (min-width: 125em) {
 
 .section-about {
   background-color: #10002b;
-  padding: 21rem 0;
-  /* margin-top: -20vh; */
-  margin-bottom: 100px;
+  padding: 10rem 0;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  margin-left: 5px;
+  margin-right: 5px;
   color: #fff;
+  border: 2px solid violet;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 728px) {
@@ -2198,7 +2202,8 @@ only screen and (min-width: 125em) {
 
 @media only screen and (max-width: 56.25em) {
   .section-about {
-    padding: 20rem 0;
+    padding: 10rem 0;
+    border-radius: 10px;
   }
 }
 
@@ -2217,8 +2222,8 @@ only screen and (min-width: 125em) {
       rgba(60, 9, 108, 0.5)),
     url(./img/sponser.png);
   background-size: cover;
-  -webkit-transform: skewY(-7deg);
-  transform: skewY(-7deg);
+  /* -webkit-transform: skewY(-7deg); */
+  /* transform: skewY(-7deg); */
   margin-top: -10rem;
 }
 
@@ -2359,10 +2364,10 @@ only screen and (min-width: 125em) {
   color: #fff;
 }
 
-.section-features>* {
+/* .section-features>* {
   -webkit-transform: skewY(7deg);
   transform: skewY(7deg);
-}
+} */
 
 @media only screen and (max-width: 56.25em) {
   .section-features {
@@ -2464,7 +2469,7 @@ only screen and (min-width: 125em) {
 /* Modal */
 
 .active {
-  filter: blur(20px);
+  /* filter: blur(20px); */
   pointer-events: none;
   user-select: none;
 }
@@ -2583,7 +2588,7 @@ only screen and (min-width: 125em) {
   top: 0;
   left: 0;
   right: 0;
-  height: 10px;
+  height: 8px;
   background: violet;
   transform-origin: 0%;
 }

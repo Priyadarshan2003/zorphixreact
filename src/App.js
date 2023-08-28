@@ -6,7 +6,7 @@ import zorphixfinal from './img/Zorphix final without name.png';
 import zorphixlanding from './img/zorphix-landing-logo.png';
 import { motion, useScroll } from "framer-motion";
 import Loader from './Components/Loader/Loader';
-import bgvideo from './video/bgvideo.mp4';
+import bgvideo from './video/zorphixbgnew.mp4';
 
 
 function App() {
@@ -57,6 +57,11 @@ function App() {
               <li className="navigation__item">
                 <div className="navigation__link">
                   <a href="#team" className="navigation__link four"> Team </a>
+                </div>
+              </li>
+              <li className="navigation__item">
+                <div className="navigation__link">
+                  <a href='' className="navigation__link four"> Login </a>
                 </div>
               </li>
             </ul>

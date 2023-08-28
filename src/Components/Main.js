@@ -12,6 +12,7 @@ const Main = () => {
             <About />
             <Sponsors />
             <TechEvents />
+            {/* <CarouselComponent/> */}
             <Team />
             <Footer />
         </div>
