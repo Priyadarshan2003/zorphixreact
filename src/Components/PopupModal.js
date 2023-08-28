@@ -56,7 +56,7 @@ const PopupModal = ({ title, content, name1, name2, phone1, phone2, register, ve
           {showVenue ? (
             <div className="venue">
               <div className='text-center'>
-                <h2>{venue}</h2>
+                <h1>{venue}</h1>
               </div>
             </div>
           ) : null}
