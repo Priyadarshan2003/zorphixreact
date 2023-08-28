@@ -6,6 +6,7 @@ import i3 from '../img/team-01-min.jpeg';
 const About = () => {
     return (
         <div id="about" class="section-about">
+
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary letter-spacing">About Us</h2>
             </div>
@@ -39,7 +40,7 @@ const About = () => {
                         <img
                             srcset={`${i1} 300w, ${i1} 1000w`}
                             sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                            alt="Photo 1"
+                            alt="Pic1"
                             class="composition__photo composition__photo--p1"
                             src={i1}
                         />
@@ -47,7 +48,7 @@ const About = () => {
                         <img
                             srcset={`${i2} 300w, ${i2} 1000w`}
                             sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                            alt="Photo 2"
+                            alt="Photo2"
                             class="composition__photo composition__photo--p2"
                             src={i2}
                         />
@@ -55,7 +56,7 @@ const About = () => {
                         <img
                             srcset={`${i3} 300w, ${i3} 1000w`}
                             sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                            alt="Photo 3"
+                            alt="Pic33"
                             class="composition__photo composition__photo--p3"
                             src={i3}
                         />

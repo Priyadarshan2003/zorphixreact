@@ -3,11 +3,13 @@ import git from '../img/git.png';
 import wolfr from '../img/wolfr.png';
 import do_logo from '../img/DO_Logo_Vertical_White.png';
 import people_logo from '../img/people_logo-removebg-preview.png';
-import cake_logo from '../img/cake_logo_white.png'
+import cake_logo from '../img/cake_logo_white.png';
+
 
 const Sponsors = () => {
     return (
         <div class="section-features">
+
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary white letter-spacing">Sponsored By</h2>
             </div>

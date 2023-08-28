@@ -802,11 +802,6 @@ body {
   }
 }
 
-.heading-secondary:hover {
-  -webkit-transform: skewY(2deg) skewX(15deg) scale(1.1);
-  transform: skewY(2deg) skewX(15deg) scale(1.1);
-  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
-}
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -1012,7 +1007,7 @@ body {
   width: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border-radius: 3px;
+  border-radius: 15px;
   overflow: hidden;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
@@ -2182,7 +2177,7 @@ only screen and (min-width: 125em) {
   background-color: #10002b;
   padding: 10rem 0;
   margin-top: 50px;
-  margin-bottom: 150px;
+  margin-bottom: 180px;
   margin-left: 5px;
   margin-right: 5px;
   color: #fff;
@@ -2204,6 +2199,7 @@ only screen and (min-width: 125em) {
   .section-about {
     padding: 10rem 0;
     border-radius: 10px;
+    margin-bottom: 130px;
   }
 }
 
@@ -2377,7 +2373,7 @@ only screen and (min-width: 125em) {
 
 .section-tours {
   background-color: #10002b;
-  padding: 25rem 0 15rem 0;
+  padding: 10rem 0 5rem 0;
   margin-top: -10rem;
 }
 
@@ -2392,7 +2388,7 @@ only screen and (min-width: 125em) {
 
 @media only screen and (max-width: 56.25em) {
   .section-tours {
-    padding: 20rem 0 10rem 0;
+    padding: 10rem 0 5rem 0;
   }
 }
 
