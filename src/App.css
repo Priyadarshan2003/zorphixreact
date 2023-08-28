@@ -2608,6 +2608,10 @@ only screen and (min-width: 125em) {
   height: 100%; */
 }
 
+.timer .info{
+  letter-spacing: 0.5rem;
+}
+
 .timer div:first-child {
   text-align: center;
 }
@@ -2636,7 +2640,7 @@ h2{
 }
 
 section p:first-child, .timer div:last-child span{
-  font-size: 4.5em;
+  font-size: 3.5em;
 }
 
 @media screen and (max-width: 480px){
