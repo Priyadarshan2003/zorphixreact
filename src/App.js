@@ -7,6 +7,7 @@ import zorphixlanding from './img/zorphix-landing-logo.png';
 import { motion, useScroll } from "framer-motion";
 import Loader from './Components/Loader/Loader';
 import bgvideo from './video/zorphixbgnew.mp4';
+import Counter from './Components/Counter';
 
 
 function App() {
@@ -92,6 +93,7 @@ function App() {
                 src={zorphixlanding} alt='zorphix-logo'
               />
             </div>
+            <Counter/>
             <h1 className="heading-primary--sub date">September 20th 2023</h1>
 
             <a href="#about" className="btn btn--white btn--animated bold">
