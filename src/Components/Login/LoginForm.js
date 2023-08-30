@@ -44,6 +44,7 @@ function LoginForm() {
             [field]: event.target.value,
         });
     };
+    console.log(inputValues,"**");
 
     return (
         <main>
