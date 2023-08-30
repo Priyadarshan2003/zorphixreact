@@ -2659,6 +2659,50 @@ section p:first-child,
     font-size: 0.8em;
     letter-spacing: 1.5em;
 
+<<<<<<< HEAD
   }
 
+=======
+.carousel{
+  z-index: 1;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.carousel img{
+  max-height: 500px;
+  background-size: cover;
+  z-index: 1;
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .carousel{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1440px) {
+  .carousel{
+    width: 80%;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 2000px) {
+  .carousel{
+    width: 70%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0px 0% 10% 15%;
+  }
+>>>>>>> b72b4c9ed1001b484391ccdfff8bd04463afcf64
 }

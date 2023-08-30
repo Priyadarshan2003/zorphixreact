@@ -5,6 +5,7 @@ import Sponsors from './Sponsors';
 import TechEvents from './TechEvents';
 import Team from './Team';
 import Footer from './Footer';
+import CarouselComponent from './Carousel';
 
 const Main = () => {
     return (
@@ -12,7 +13,7 @@ const Main = () => {
             <About />
             <Sponsors />
             <TechEvents />
-            {/* <CarouselComponent/> */}
+            <CarouselComponent/>
             <Team />
             <Footer />
         </div>
