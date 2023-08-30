@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../App.css';
 import Main from '../Components/Main';
 import citlogo from '../img/NEW LOGO CIT.png';
@@ -13,6 +14,7 @@ import Counter from '../Components/Counter';
 const Home = () => {
 
     const { scrollYProgress } = useScroll();
+    const navigate = useNavigate();
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
@@ -62,7 +64,7 @@ const Home = () => {
                             </li>
                             <li className="navigation__item">
                                 <div className="navigation__link">
-                                    <a href='' className="navigation__link four"> Login </a>
+                                    <a href='' onClick={() => {navigate('/login')}} className="navigation__link four"> Login </a>
                                 </div>
                             </li>
                         </ul>

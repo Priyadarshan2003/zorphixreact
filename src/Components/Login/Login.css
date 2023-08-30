@@ -174,7 +174,7 @@ form.sign-up-form {
 
 .text {
     color: #bbb;
-    font-size: 0.7rem;
+    font-size: 1rem;
 }
 
 .text a {
@@ -204,7 +204,7 @@ main.sign-up-mode .carousel {
     left: 0%;
 }
 
-.carousel {
+.login-carousel {
     position: absolute;
     height: 100%;
     width: 55%;
@@ -275,7 +275,7 @@ main.sign-up-mode .carousel {
 .text-group h2 {
     line-height: 2.2rem;
     font-weight: 600;
-    font-size: 1.6rem;
+    font-size: 2.2rem;
 }
 
 .bullets {
@@ -348,7 +348,7 @@ main.sign-up-mode .carousel {
         transform: translateX(0%);
     }
 
-    .carousel {
+    .login-carousel {
         position: revert;
         height: auto;
         width: 100%;
@@ -378,7 +378,7 @@ main.sign-up-mode .carousel {
         padding: 1rem;
     }
 
-    .carousel {
+    .login-carousel {
         padding: 1.5rem 1rem;
         border-radius: 1.6rem;
     }
@@ -394,4 +394,11 @@ main.sign-up-mode .carousel {
     form {
         padding: 1rem 2rem 1.5rem;
     }
+}
+
+.link-button {
+    background: none;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
 }

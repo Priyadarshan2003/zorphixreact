@@ -25,6 +25,7 @@ class LoginForm extends Component {
     };
 
     toggleMode = (event) => {
+        event.preventDefault();
         this.setState((prevState) => ({
             isSignUpMode: !prevState.isSignUpMode,
             activeImage: 1,
@@ -53,9 +54,9 @@ class LoginForm extends Component {
                                 <div className="heading">
                                     <h2>{isSignUpMode ? 'Welcome back' : 'Get registered'}</h2>
                                     <h6>{isSignUpMode ? 'Not registered yet ? ' : 'Already registered ? '}</h6>
-                                    <a href="#" className="toggle" onClick={this.toggleMode}>
+                                    <button className="toggle link-button" onClick={this.toggleMode}>
                                         {isSignUpMode ? 'Sign up' : 'Sign in'}
-                                    </a>
+                                    </button>
                                 </div>
 
                                 <div className="actual-form">
@@ -135,8 +136,8 @@ class LoginForm extends Component {
 
                                     {isSignUpMode ? (
                                         <p className="text">
-                                            Forgotten your password or your login details?
-                                            <a href="#">Get help</a> signing in
+                                            Forgotten your password or your login details? &nbsp;
+                                            <button className='link-button'>Get help</button> signing in
                                         </p>
                                     ) : (
                                         ""
@@ -146,7 +147,7 @@ class LoginForm extends Component {
                             </form>
                         </div>
 
-                        <div className="carousel">
+                        <div className="login-carousel">
                             <div className="images-wrapper">
                                 <img src={img1} className={`image img-1 ${activeImage === 1 ? 'show' : ''}`} alt="" />
                                 <img src={img2} className={`image img-2 ${activeImage === 2 ? 'show' : ''}`} alt="" />

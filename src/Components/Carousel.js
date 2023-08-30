@@ -5,7 +5,7 @@ import img1 from '../img/2fact.png'
 
 const CarouselComponent = () => {
   return (
-    <Carousel className='carousel'>
+    <Carousel className='carousel' interval={1500}>
       <Carousel.Item>
         <img
           className="d-block w-100"
