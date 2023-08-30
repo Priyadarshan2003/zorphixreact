@@ -702,6 +702,9 @@ html {
 body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.home{
   padding: 3rem;
 }
 
@@ -724,9 +727,12 @@ body {
 body {
   font-family: 'Signika', serif;
   font-weight: 400;
-  line-height: 1.7;
   color: #777;
   background-color: #10002b;
+}
+
+.home{
+  line-height: 1.7;
 }
 
 .heading-primary {
@@ -788,6 +794,7 @@ body {
   letter-spacing: 0.2rem;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -861,7 +868,7 @@ body {
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: 0.15;
+  opacity: 0.25;
   overflow: hidden;
 }
 
@@ -2591,12 +2598,12 @@ only screen and (min-width: 125em) {
   transform-origin: 0%;
 }
 
-.timer-container{
+.timer-container {
   color: white;
-
+  margin-top: 1.5rem;
 }
 
-.timer{
+.timer {
   /* background-color: rgba(0, 0, 0, 0.5); */
   display: flex;
   flex-direction: column;
@@ -2608,7 +2615,7 @@ only screen and (min-width: 125em) {
   height: 100%; */
 }
 
-.timer .info{
+.timer .info {
   letter-spacing: 0.5rem;
 }
 
@@ -2616,11 +2623,11 @@ only screen and (min-width: 125em) {
   text-align: center;
 }
 
-.timer-icon{
+.timer-icon {
   font-size: 8em;
 }
 
-h2{
+h2 {
   font-weight: 600;
   margin-bottom: 0.5em;
 }
@@ -2639,15 +2646,19 @@ h2{
   text-align: center;
 }
 
-section p:first-child, .timer div:last-child span{
+section p:first-child,
+.timer div:last-child span {
   font-size: 3.5em;
 }
 
-@media screen and (max-width: 480px){
-  .timer div:last-child{
+@media screen and (max-width: 480px) {
+  .timer div:last-child {
     margin-left: 2em;
-    margin-right: 2em; 
-    padding: 3em 1em;
-  }
-}
+    margin-right: 2em;
+    padding: 3em 3em;
+    font-size: 0.8em;
+    letter-spacing: 1.5em;
 
+  }
+
+}

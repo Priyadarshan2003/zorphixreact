@@ -62,7 +62,7 @@ const PopupModal = ({ title, content, name1, name2, phone1, phone2, register, ve
           ) : null}
           <div className="modal-button">
             <a className="btn btn--green" onClick={() => toggle()}>Close</a>
-            <a className="btn btn--green regi" href={`https://${register}`} target="_blank" rel="noopener noreferrer">Register</a>
+            <a className="btn btn--green regi" target="_blank" rel="noopener noreferrer">Register</a>
           </div>
         </div>
       </div>
