@@ -4,6 +4,7 @@ import logo from '../../img/loginlog.png';
 import img1 from '../../img/loginimg1.png';
 import img2 from '../../img/loginimg2.png';
 import img3 from '../../img/loginimg3.png';
+import axios from 'axios';
 
 function LoginForm() {
     const [isSignUpMode, setIsSignUpMode] = useState(false);
@@ -45,6 +46,14 @@ function LoginForm() {
         });
     };
     console.log(inputValues,"**");
+    
+    const handleClick = async() => {
+        try {
+            await axios.get('/');
+        } catch (error) {
+            console.log(error);
+        }
+    }
 
     return (
         <main>
@@ -144,9 +153,9 @@ function LoginForm() {
                                 </div>
 
                                 {isSignUpMode ? (
-                                    <input type="submit" value="Sign In" className="sign-btn" />
+                                    <input onClick={() => handleClick()} type="submit" value="Sign In" className="sign-btn" />
                                 ) : (
-                                    <input type="submit" value="Sign up" className="sign-btn" />
+                                    <input onClick={() => handleClick()} type="submit" value="Sign up" className="sign-btn" />
                                 )}
 
                                 {isSignUpMode ? (
