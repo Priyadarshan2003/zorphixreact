@@ -728,7 +728,7 @@ body {
   font-family: 'Signika', serif;
   font-weight: 400;
   color: #777;
-  background-color: #10002b;
+  background: linear-gradient(to right bottom, black, #1E6B7F, black );
 }
 
 .home {
@@ -2178,16 +2178,19 @@ only screen and (min-width: 125em) {
 .about__link:active {
   top: 0;
 }
+.new-c{
+  color: white;
+}
 
 .section-about {
-  background-color: #10002b;
+  background: linear-gradient(to right bottom, black, #1E6B7F, black );
   padding: 10rem 0;
   margin-top: 50px;
   margin-bottom: 180px;
   margin-left: 5px;
   margin-right: 5px;
   color: #fff;
-  border: 2px solid #9d4edd;
+  border: 2px solid white;
   border-radius: 20px;
 }
 
@@ -2213,7 +2216,11 @@ only screen and (min-width: 125em) {
   display: flex;
   flex-direction: column;
   padding: 20rem 0;
-  background-image: -webkit-gradient(linear,
+  background: linear-gradient(to right bottom, black, #1E6B7F, black );
+  border: 2px solid white;
+  border-radius: 20px;
+  
+  /* background-image: -webkit-gradient(linear,
       left top,
       right bottom,
       from(rgba(36, 0, 70, 0.5)),
@@ -2223,7 +2230,7 @@ only screen and (min-width: 125em) {
       rgba(36, 0, 70, 0.5),
       rgba(60, 9, 108, 0.5)),
     url(./img/sponser.png);
-  background-size: cover;
+  background-size: cover; */
   /* -webkit-transform: skewY(-7deg); */
   /* transform: skewY(-7deg); */
   margin-top: -10rem;
@@ -2378,9 +2385,12 @@ only screen and (min-width: 125em) {
 }
 
 .section-tours {
-  background-color: #10002b;
+  background: linear-gradient(to right bottom, black, #1E6B7F, black );
+  border: 2px solid white;
+  border-radius: 20px;
   padding: 10rem 0 5rem 0;
-  margin-top: -10rem;
+  margin-top: 10rem;
+  /* margin-top: -10rem; */
 }
 
 .letter-spacing {

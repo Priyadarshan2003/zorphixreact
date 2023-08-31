@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../component-css/Popup.css';
+import '../App.css'
 
 const PopupModal = ({ title, content, name1, name2, phone1, phone2, register, venue, isVisible, toggle }) => {
   const [showAbout, setShowAbout] = useState(true);

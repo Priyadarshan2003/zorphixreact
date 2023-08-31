@@ -5,17 +5,21 @@ import img1 from '../../img/loginimg1.png';
 import img2 from '../../img/loginimg2.png';
 import img3 from '../../img/loginimg3.png';
 import axios from 'axios';
+import { toast } from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom';
 
 function LoginForm() {
     const [isSignUpMode, setIsSignUpMode] = useState(false);
     const [activeImage, setActiveImage] = useState(1);
-    const [inputValues, setInputValues] = useState({
+    const navigate = useNavigate();
+    const [data, setData] = useState({
         fullName: '',
         college: '',
         contactNo: '',
         email: '',
         password: '',
     });
+
 
     const handleInputFocus = (event) => {
         event.target.classList.add('active');
@@ -39,21 +43,54 @@ function LoginForm() {
         textSlider.style.transform = `translateY(${-(index - 1) * 2.2}rem)`;
     };
 
-    const handleInputChange = (event, field) => {
-        setInputValues({
-            ...inputValues,
-            [field]: event.target.value,
-        });
-    };
-    console.log(inputValues,"**");
-    
-    const handleClick = async() => {
+    console.log(data, "**");
+
+    const loginUser = async (e) => {
+        e.preventDefault();
+        const { email, password } = data;
         try {
-            await axios.get('/');
+            const { data } = await axios.post('/login', {
+                email,
+                password
+            })
+            if (data.error) {
+                toast.error(data.error)
+            }
+            else {
+                setData({})
+                navigate('/');
+                toast.success("Login Successful")
+                setTimeout(() => {
+                    window.location.reload();
+                }, 400)
+            }
         } catch (error) {
             console.log(error);
         }
     }
+
+    const registerUser = async (e) => {
+        e.preventDefault();
+        const { fullName, college, contactNo, email, password } = data;
+        console.log(data);
+        try {
+            const { data } = await axios.post('/register', {
+                fullName, college, contactNo, email, password
+            })
+            if (data.error) {
+                toast.error(data.error)
+            }
+            else {
+                // setData({})
+                toast.success("Registered Successfully")
+                setIsSignUpMode(!isSignUpMode);
+                setActiveImage(1);
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
 
     return (
         <main>
@@ -81,28 +118,24 @@ function LoginForm() {
                                         <div className="input-wrap">
                                             <input
                                                 type="text"
-                                                minLength="4"
                                                 className="input-field"
                                                 autoComplete="off"
-                                                required
                                                 onFocus={handleInputFocus}
                                                 onBlur={handleInputBlur}
-                                                value={inputValues.fullName}
-                                                onChange={(e) => handleInputChange(e, 'fullName')}
+                                                value={data.fullName}
+                                                onChange={(e) => setData({ ...data, fullName: e.target.value })}
                                             />
                                             <label className='login-label'>Full name</label>
                                         </div>
                                         <div className="input-wrap">
                                             <input
                                                 type="text"
-                                                minLength="4"
                                                 className="input-field"
                                                 autoComplete="off"
-                                                required
                                                 onFocus={handleInputFocus}
                                                 onBlur={handleInputBlur}
-                                                value={inputValues.college}
-                                                onChange={(e) => handleInputChange(e, 'college')}
+                                                value={data.college}
+                                                onChange={(e) => setData({ ...data, college: e.target.value })}
                                             />
                                             <label className='login-label'>College</label>
                                         </div>
@@ -112,11 +145,10 @@ function LoginForm() {
                                                 minLength="4"
                                                 className="input-field"
                                                 autoComplete="off"
-                                                required
                                                 onFocus={handleInputFocus}
                                                 onBlur={handleInputBlur}
-                                                value={inputValues.contactNo}
-                                                onChange={(e) => handleInputChange(e, 'contactNo')}
+                                                value={data.contactNo}
+                                                onChange={(e) => setData({ ...data, contactNo: e.target.value })}
                                             />
                                             <label className='login-label'>Contact no</label>
                                         </div>
@@ -128,11 +160,10 @@ function LoginForm() {
                                         type="email"
                                         className="input-field"
                                         autoComplete="off"
-                                        required
                                         onFocus={handleInputFocus}
                                         onBlur={handleInputBlur}
-                                        value={inputValues.email}
-                                        onChange={(e) => handleInputChange(e, 'email')}
+                                        value={data.email}
+                                        onChange={(e) => setData({ ...data, email: e.target.value })}
                                     />
                                     <label className='login-label'>Email</label>
                                 </div>
@@ -140,22 +171,20 @@ function LoginForm() {
                                 <div className="input-wrap">
                                     <input
                                         type="password"
-                                        minLength="4"
                                         className="input-field"
                                         autoComplete="off"
-                                        required
                                         onFocus={handleInputFocus}
                                         onBlur={handleInputBlur}
-                                        value={inputValues.password}
-                                        onChange={(e) => handleInputChange(e, 'password')}
+                                        value={data.password}
+                                        onChange={(e) => setData({ ...data, password: e.target.value })}
                                     />
                                     <label className='login-label'>Password</label>
                                 </div>
 
                                 {isSignUpMode ? (
-                                    <input onClick={() => handleClick()} type="submit" value="Sign In" className="sign-btn" />
+                                    <button onClick={loginUser} type="submit" className="sign-btn">Sign in</button>
                                 ) : (
-                                    <input onClick={() => handleClick()} type="submit" value="Sign up" className="sign-btn" />
+                                    <button onClick={registerUser} type="submit" className="sign-btn">Sign up</button>
                                 )}
 
                                 {isSignUpMode ? (
