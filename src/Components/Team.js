@@ -19,26 +19,26 @@ const Team = () => {
         <div className="box">
           <h2 className="position">President</h2>
           <h3 className="heading-tertiary u-margin-bottom-small">
-            Induja Shankar
+            Raveen RV
           </h3>
-          <p>+91 94456 62222</p>
-        </div>
-        <div className="box">
-          <h2 className="position">Vice President</h2>
-          <h3 className="heading-tertiary u-margin-bottom-small">Raveen R V</h3>
           <p>+91 90921 25904</p>
         </div>
         <div className="box">
+          <h2 className="position">Vice President</h2>
+          <h3 className="heading-tertiary u-margin-bottom-small">Bharath</h3>
+          <p>+91 97515 83361</p>
+        </div>
+        {/* <div className="box">
           <h2 className="position">Core Organizer</h2>
           <h3 className="heading-tertiary u-margin-bottom-small">
             Alen Joseph Babu & Bhuvanesh
           </h3>
           <p>+91 8825994012</p>
-        </div>
+        </div> */}
         <div className="box">
           <h2 className="position">Treasurer</h2>
-          <h3 className="heading-tertiary u-margin-bottom-small">Manoj</h3>
-          <p>+91 93446 28787</p>
+          <h3 className="heading-tertiary u-margin-bottom-small">Karan & Sheryl</h3>
+          <p>+91 73976 59717</p>
         </div>
       </div>
     </div>
