@@ -728,7 +728,7 @@ body {
   font-family: 'Signika', serif;
   font-weight: 400;
   color: #777;
-  background: linear-gradient(to right bottom, black, #1E6B7F, black );
+  background-color: #10002b;
 }
 
 .home {
@@ -2178,20 +2178,21 @@ only screen and (min-width: 125em) {
 .about__link:active {
   top: 0;
 }
-.new-c{
-  color: white;
-}
 
 .section-about {
-  background: linear-gradient(to right bottom, black, #1E6B7F, black );
+  background-color: #10002b;
   padding: 10rem 0;
   margin-top: 50px;
   margin-bottom: 180px;
   margin-left: 5px;
   margin-right: 5px;
   color: #fff;
-  border: 2px solid white;
+  border: 2px solid #9d4edd;
   border-radius: 20px;
+  box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45),
+    25px 0px 20px -20px rgba(0, 0, 0, 0.45),
+    0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+    -25px 0px 20px -20px rgba(0, 0, 0, 0.45);
 }
 
 @media screen and (max-width: 728px) {
@@ -2216,11 +2217,7 @@ only screen and (min-width: 125em) {
   display: flex;
   flex-direction: column;
   padding: 20rem 0;
-  background: linear-gradient(to right bottom, black, #1E6B7F, black );
-  border: 2px solid white;
-  border-radius: 20px;
-  
-  /* background-image: -webkit-gradient(linear,
+  background-image: -webkit-gradient(linear,
       left top,
       right bottom,
       from(rgba(36, 0, 70, 0.5)),
@@ -2230,7 +2227,7 @@ only screen and (min-width: 125em) {
       rgba(36, 0, 70, 0.5),
       rgba(60, 9, 108, 0.5)),
     url(./img/sponser.png);
-  background-size: cover; */
+  background-size: cover;
   /* -webkit-transform: skewY(-7deg); */
   /* transform: skewY(-7deg); */
   margin-top: -10rem;
@@ -2385,12 +2382,9 @@ only screen and (min-width: 125em) {
 }
 
 .section-tours {
-  background: linear-gradient(to right bottom, black, #1E6B7F, black );
-  border: 2px solid white;
-  border-radius: 20px;
+  background-color: #10002b;
   padding: 10rem 0 5rem 0;
-  margin-top: 10rem;
-  /* margin-top: -10rem; */
+  margin-top: -10rem;
 }
 
 .letter-spacing {

@@ -8,7 +8,7 @@ const About = () => {
         <div id="about" class="section-about">
 
             <div class="u-center-text u-margin-bottom-big">
-                <h2 class="heading-secondary new-c letter-spacing">About Us</h2>
+                <h2 class="heading-secondary white letter-spacing">About Us</h2>
             </div>
 
             <div class="row">
