@@ -159,7 +159,7 @@ const TechEvents = () => {
                 </div>
             </div>
 
-            <div className="section-tours sm-padding" id="section-tours">
+            <div className="sm-padding" id="section-tours">
                 <div className="row">
                     <div className="col-1-of-3">
                         <div className="card">
