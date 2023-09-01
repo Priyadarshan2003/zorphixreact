@@ -5,7 +5,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: #18181b;
+    background: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,11 +17,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.loader img {
-    max-width: 50%;
-    height: auto;
 }
 
 .loading-text {
