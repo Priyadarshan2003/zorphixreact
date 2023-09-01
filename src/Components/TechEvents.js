@@ -36,7 +36,7 @@ const TechEvents = () => {
 
         <div className="section-tours" id="events">
             <div className="u-center-text u-margin-bottom-big">
-                <h2 className="heading-secondary letter-spacing">Technical Events</h2>
+                <h2 className="heading-secondary white letter-spacing">Technical Events</h2>
             </div>
 
             <div className="row">
