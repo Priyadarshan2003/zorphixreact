@@ -23,7 +23,7 @@ const Sponsors = () => {
                     <div class="section-sponsor-card">
                         <img
                             src={wolfr}
-                            class="i padding border wol"
+                            class="i padding wol"
                             alt="wolfram"
                         />
                     </div>
