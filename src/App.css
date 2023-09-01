@@ -1715,6 +1715,10 @@ only screen and (hover: none) {
     margin-bottom: 6rem;
   }
 
+  .citlogo{
+    margin-top: 100px;
+  }
+
   .footer__logo>img {
     width: 450px;
   }
@@ -1891,6 +1895,8 @@ only screen and (min-width: 125em) {
   margin-left: -2rem;
 }
 
+
+
 @media only screen and (max-width: 37.5em) {
   .header {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
@@ -1900,7 +1906,7 @@ only screen and (min-width: 125em) {
   .header__logo-box img {
     height: 80px;
     margin-left: -2rem;
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
   }
 }
 
@@ -1959,7 +1965,7 @@ only screen and (min-width: 125em) {
   height: 7rem;
   width: 7rem;
   position: fixed;
-  top: 6rem;
+  top: 5rem;
   right: 6rem;
   border-radius: 50%;
   z-index: 2000;
@@ -1978,6 +1984,7 @@ only screen and (min-width: 125em) {
   top: 5%;
 }
 
+
 @media only screen and (max-width: 56.25em) {
   .navigation__button {
     top: 4rem;
@@ -1991,6 +1998,13 @@ only screen and (min-width: 125em) {
   #header>div.header__text-box>div>img.heading-primary--main.zorphix {
     height: 125px !important;
   }
+
+  .navigation__list{
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+  }
+
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -2183,6 +2197,7 @@ only screen and (min-width: 125em) {
 .section-about {
   background: linear-gradient(to right top, black, #243763, black);
   padding: 10rem 0;
+  padding-bottom: 15rem;
   margin-top: 50px;
   margin-bottom: 180px;
   margin-left: 5px;
@@ -2726,6 +2741,6 @@ section p:first-child,
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0px 0% 10% 15%;
+    margin: 5% 0% 5% 15%;
   }
 }
