@@ -26,6 +26,17 @@ const Home = () => {
 
         fakeDataFetch();
     }, []);
+    const logout  = () => {
+        localStorage.removeItem('userData');
+        // navigate('/login');
+        setTimeout(() => {
+            window.location.reload();
+        }, 400)
+    }
+    const userData = JSON.parse(localStorage.getItem('userData'));
+    console.log(userData,"user");
+    const fullName = userData ? userData.fullName : ""
+
     return isLoading ? (
         <Loader />
     ) : (
@@ -62,11 +73,25 @@ const Home = () => {
                                     <a href="#team" className="navigation__link four"> Team </a>
                                 </div>
                             </li>
-                            <li className="navigation__item">
+
+                            {fullName != "" ? (
+                                <li className="navigation__item">
+                                    <div className="navigation__link">
+                                        <a href='' onClick={() => { logout() }} className="navigation__link four">Logout</a>
+                                    </div>
+                                </li>
+                            ) : (
+                                <li className="navigation__item">
+                                    <div className="navigation__link">
+                                        <a href='' onClick={() => { navigate('/login') }} className="navigation__link four">Login</a>
+                                    </div>
+                                </li>
+                            )}
+                            {/* <li className="navigation__item">
                                 <div className="navigation__link">
-                                    <a href='' onClick={() => {navigate('/login')}} className="navigation__link four"> Login </a>
+                                    <a href='' onClick={() => { navigate('/login') }} className="navigation__link four"> Login </a>
                                 </div>
-                            </li>
+                            </li> */}
                         </ul>
                     </nav>
                 </div>
