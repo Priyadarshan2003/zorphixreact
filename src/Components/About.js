@@ -24,16 +24,7 @@ const About = () => {
                         science but also develop an equal appreciation of humanities and
                         management sciences.
                     </p>
-                    {/* <p class="paragraph">
-                        CSE with specialization in <b>Cyber security</b> is a future
-                        focused specialized degree aiming at one of the most important
-                        yet most overlooked tech domains - Cyber security. The program
-                        equips students with Computer Science knowledge as well as the
-                        competence to secure the Internet that will power our world
-                        through the decades. This year, the maiden batch of CSE, with
-                        specialization in Cyber security has been launched successfully
-                        at Chennai Institute of Technology.
-                    </p> */}
+                
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
