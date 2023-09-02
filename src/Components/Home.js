@@ -46,7 +46,7 @@ const Home = () => {
         <Loader />
     ) : (
         <div className='home'>
-            <div id="blur" onClick={toggleCheckbox}>
+            <div id="blur">
                 <div className="navigation">
                     <input type="checkbox" className="navigation__checkbox" id="navi-toggle" ref={checkboxRef} />
 
@@ -59,22 +59,22 @@ const Home = () => {
                     <nav className="navigation__nav">
                         <ul className="navigation__list">
                             <li className="navigation__item">
-                                <div className="navigation__link" >
+                                <div className="navigation__link" onClick={toggleCheckbox}>
                                     <a href="#" className="navigation__link one"> Home </a>
                                 </div>
                             </li>
                             <li className="navigation__item">
-                                <div className="navigation__link" >
+                                <div className="navigation__link" onClick={toggleCheckbox}>
                                     <a href="#about" className="navigation__link two"> About </a>
                                 </div>
                             </li>
                             <li className="navigation__item">
-                                <div className="navigation__link" >
+                                <div className="navigation__link" onClick={toggleCheckbox}>
                                     <a href="#events" className="navigation__link three"> Events </a>
                                 </div>
                             </li>
                             <li className="navigation__item">
-                                <div className="navigation__link">
+                                <div className="navigation__link" onClick={toggleCheckbox}>
                                     <a href="#team" className="navigation__link four"> Team </a>
                                 </div>
                             </li>

@@ -20,6 +20,9 @@
 }
 
 .loading-text {
+    position : absolute;
+    display: flex;
+    top : 70%;
     font-weight: bold;
     font-size: 1.3rem;
     letter-spacing: 1.2rem;
@@ -36,9 +39,15 @@
     }
 }
 
-@media only screen and (max-width: 37.5em) {
-    .loader img {
-        max-width: 80%;
+@media only screen and (min-width : 200pz) {
+    .loader video {
+        max-width: 100%;
         height: auto;
     }
 } 
+
+@media only screen and (min-width : 1080px){
+    .loader video{
+        max-width: 80%;
+    }
+}
