@@ -14,6 +14,7 @@ import Counter from '../Components/Counter';
 const Home = () => {
 
     const { scrollYProgress } = useScroll();
+    const initialScrollProgress = 0;
     const navigate = useNavigate();
     const [isLoading, setIsLoading] = useState(true);
     const checkboxRef = useRef(null);
@@ -150,7 +151,7 @@ const Home = () => {
                 <Main />
 
             </div>
-            <motion.div className="progress-bar" style={{ scaleX: scrollYProgress }} />
+            <motion.div className="progress-bar" style={{ scaleX: scrollYProgress  }} initial={{scaleX : 0}} />
         </div>
     );
 }
