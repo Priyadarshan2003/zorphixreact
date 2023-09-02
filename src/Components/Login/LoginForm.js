@@ -43,7 +43,7 @@ function LoginForm() {
         textSlider.style.transform = `translateY(${-(index - 1) * 2.2}rem)`;
     };
 
-    console.log(data, "**");
+    // console.log(data, "**");
 
     const loginUser = async (e) => {
         e.preventDefault();
@@ -57,9 +57,11 @@ function LoginForm() {
                 toast.error(data.error)
             }
             else {
-                setData({})
+                setData({});
                 navigate('/');
-                toast.success("Login Successful")
+                localStorage.setItem('userData', JSON.stringify(data));
+                // console.log();
+                toast.success("Login Successful");
                 setTimeout(() => {
                     window.location.reload();
                 }, 400)
