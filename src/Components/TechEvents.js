@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PopupModal from "./PopupModal";
+import Swal from "sweetalert2";
 
 const TechEvents = () => {
   const [isPopupVisible, setPopupVisible] = useState(false);
@@ -16,6 +17,14 @@ const TechEvents = () => {
     venue: "",
   });
 
+  const handleRegistrationSuccess = () => {
+    Swal.fire({
+      title: "Success!",
+      text: "You have successfully registered for the event!",
+      icon: "success",
+      confirmButtonText: "OK",
+    });
+  };
   // Function to toggle the popup visibility
   const toggle = (
     title,
@@ -87,14 +96,15 @@ const TechEvents = () => {
                   </p>
                 </div>
                 <div className="card__price-box">
-                  <a
+                  <p
                     className="btn btn--white"
-                    target="_blank"
-                    href="https://forms.gle/RqExTs9gLNsFEPCHA"
-                    rel="noreferrer"
+                    // target="_blank"
+                    // href="https://forms.gle/RqExTs9gLNsFEPCHA"
+                    // rel="noreferrer"
+                    onClick={handleRegistrationSuccess}
                   >
                     Register Now
-                  </a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -141,14 +151,15 @@ const TechEvents = () => {
                   </p>
                 </div>
                 <div className="card__price-box">
-                  <a
-                    href="https://forms.gle/G9GTWJTvh4SZGvqJA"
-                    target="_blank"
+                  <p
+                    // href="https://forms.gle/G9GTWJTvh4SZGvqJA"
+                    // target="_blank"
                     className="btn btn--white"
-                    rel="noreferrer"
+                    // rel="noreferrer"
+                    onClick={handleRegistrationSuccess}
                   >
                     Register Now
-                  </a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -195,14 +206,15 @@ const TechEvents = () => {
                   </p>
                 </div>
                 <div className="card__price-box">
-                  <a
-                    href="https://forms.gle/P3QNm3woRoMd6bF66"
-                    target="_blank"
+                  <p
+                    // href="https://forms.gle/P3QNm3woRoMd6bF66"
+                    // target="_blank"
                     className="btn btn--white"
-                    rel="noreferrer"
+                    // rel="noreferrer"
+                    onClick={handleRegistrationSuccess}
                   >
                     Register Now
-                  </a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -254,14 +266,15 @@ const TechEvents = () => {
                     </p>
                   </div>
                   <div className="card__price-box">
-                    <a
-                      href="https://forms.gle/2r5S34Nfzvnivrzx6"
-                      target="_blank"
+                    <p
+                      // href="https://forms.gle/2r5S34Nfzvnivrzx6"
+                      // target="_blank"
                       className="btn btn--white"
-                      rel="noreferrer"
+                      // rel="noreferrer"
+                      onClick={handleRegistrationSuccess}
                     >
                       Register Now
-                    </a>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -310,14 +323,15 @@ const TechEvents = () => {
                     </p>
                   </div>
                   <div className="card__price-box">
-                    <a
-                      href="https://forms.gle/KQrFXKMjRHmNKVMC6"
-                      target="_blank"
+                    <p
+                      // href="https://forms.gle/KQrFXKMjRHmNKVMC6"
+                      // target="_blank"
                       className="btn btn--white"
-                      rel="noreferrer"
+                      // rel="noreferrer"
+                      onClick={handleRegistrationSuccess}
                     >
                       Register Now
-                    </a>
+                    </p>
                   </div>
                 </div>
               </div>
