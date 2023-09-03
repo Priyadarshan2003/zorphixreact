@@ -2744,3 +2744,7 @@ section p:first-child,
     margin: 5% 0% 5% 15%;
   }
 }
+.blur-background {
+  filter: blur(5px); /* Adjust the blur amount as needed */
+  pointer-events: none; /* Prevent interaction with the blurred background */
+}

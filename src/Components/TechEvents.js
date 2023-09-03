@@ -1,17 +1,21 @@
 import React, { useState } from "react";
 import PopupModal from "./PopupModal";
+import Swal from 'sweetalert2';
+import '../App.css';
+import 'sweetalert2/dist/sweetalert2.min.css';
 import axios from "axios";
 
 
 const TechEvents = () => {
 
     const [isPopupVisible, setPopupVisible] = useState(false);
+    const [isBlurBackground, setBlurBackground] = useState(false);
 
-    
-    const userData = JSON.parse(localStorage.getItem('userData'));
+    const loguser = JSON.parse(localStorage.getItem('userData'));
+    const userData = loguser ? JSON.parse(localStorage.getItem('userData')) : "no_user";
     // console.log(userData,"**********");
 
-    // console.log(userData,"user");
+    // console.log(userData, "user");
 
     // State variables to store event information
     const [eventInfo, setEventInfo] = useState({
@@ -40,24 +44,44 @@ const TechEvents = () => {
         setPopupVisible(!isPopupVisible);
     };
 
-    const eventRegister = async(eventName) => {
+    const loginToRegister = () => {
+        Swal.fire({
+            icon: "info",
+            title: "Login",
+            text: "Kindly login to register for the event.",
+        }).then((result) => {
+            setBlurBackground(false);
+        });
+    }
+
+    const eventRegister = async (eventName) => {
         try {
             const email = userData.email;
-            const {data} = await axios.post('/eventRegister',{
-                eventName,email 
+            const { data } = await axios.post('/eventRegister', {
+                eventName, email
             })
             // console.log(data);
-            localStorage.setItem('userData', JSON.stringify(data))
+            localStorage.setItem('userData', JSON.stringify(data));
+            Swal.fire({
+                icon: "success",
+                title: "Registered Successfully!",
+                text: "You have successfully registered for the event.",
+            }).then((result) => {
+                setBlurBackground(false);
+            });
+
+            // Apply the blur effect to the background
+            setBlurBackground(true);
         } catch (error) {
             console.log(error);
         }
     }
-    console.log(localStorage.userData);
+    // console.log(localStorage.userData);
 
 
     return (
 
-        <div className="section-tours" id="events">
+        <div className={`section-tours ${isBlurBackground ? "blur-background" : ""}`} id="events">
             <div className="u-center-text u-margin-bottom-big">
                 <h2 className="heading-secondary white letter-spacing">Technical Events</h2>
             </div>
@@ -90,7 +114,11 @@ const TechEvents = () => {
                                     </p>
                                 </div>
 
-                                {userData.event1 == "no" ? (
+                                {userData === "no_user" ? (
+                                    <a onClick={() => { loginToRegister() }} className="btn btn--white">
+                                        Register Now
+                                    </a>
+                                ) : userData.event1 == "no" ? (
                                     <a onClick={() => { eventRegister("event1") }} className="btn btn--white">
                                         Register Now
                                     </a>
@@ -131,8 +159,12 @@ const TechEvents = () => {
                                         Know More
                                     </p>
                                 </div>
-                                {userData.event2 == "no" ? (
-                                    <a className="btn btn--white" target="_blank" href="https://forms.gle/RqExTs9gLNsFEPCHA" rel="noreferrer">
+                                {userData === "no_user" ? (
+                                    <a onClick={() => { loginToRegister() }} className="btn btn--white">
+                                        Register Now
+                                    </a>
+                                ) : userData.event2 == "no" ? (
+                                    <a onClick={() => { eventRegister("event2") }} className="btn btn--white">
                                         Register Now
                                     </a>
                                 ) : (
@@ -172,8 +204,12 @@ const TechEvents = () => {
                                         Know More
                                     </p>
                                 </div>
-                                {userData.event3 == "no" ? (
-                                    <a className="btn btn--white" target="_blank" href="https://forms.gle/RqExTs9gLNsFEPCHA" rel="noreferrer">
+                                {userData === "no_user" ? (
+                                    <a onClick={() => { loginToRegister() }} className="btn btn--white">
+                                        Register Now
+                                    </a>
+                                ) : userData.event3 == "no" ? (
+                                    <a onClick={() => { eventRegister("event3") }} className="btn btn--white">
                                         Register Now
                                     </a>
                                 ) : (
@@ -212,8 +248,12 @@ const TechEvents = () => {
                                             Know More
                                         </p>
                                     </div>
-                                    {userData.event4 == "no" ? (
-                                        <a className="btn btn--white" target="_blank" href="https://forms.gle/RqExTs9gLNsFEPCHA" rel="noreferrer">
+                                    {userData === "no_user" ? (
+                                        <a onClick={() => { loginToRegister() }} className="btn btn--white">
+                                            Register Now
+                                        </a>
+                                    ) : userData.event4 == "no" ? (
+                                        <a onClick={() => { eventRegister("event4") }} className="btn btn--white">
                                             Register Now
                                         </a>
                                     ) : (
@@ -248,8 +288,12 @@ const TechEvents = () => {
                                             Know More
                                         </p>
                                     </div>
-                                    {userData.event5 == "no" ? (
-                                        <a className="btn btn--white" target="_blank" href="https://forms.gle/RqExTs9gLNsFEPCHA" rel="noreferrer">
+                                    {userData === "no_user" ? (
+                                        <a onClick={() => { loginToRegister() }} className="btn btn--white">
+                                            Register Now
+                                        </a>
+                                    ) : userData.event5 == "no" ? (
+                                        <a onClick={() => { eventRegister("event5") }} className="btn btn--white">
                                             Register Now
                                         </a>
                                     ) : (

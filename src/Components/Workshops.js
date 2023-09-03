@@ -1,10 +1,17 @@
 import React, { useState } from "react";
 import PopupModal from "./PopupModal";
+import Swal from 'sweetalert2';
+import axios from "axios";
 
 const Workshops = () => {
   const [isPopupVisible, setPopupVisible] = useState(false);
+  const [isBlurBackground, setBlurBackground] = useState(false);
 
-  // State variables to store event information
+  const loguser = JSON.parse(localStorage.getItem('userData'));
+  const userData = loguser ? JSON.parse(localStorage.getItem('userData')) : "no_user";
+
+  console.log(userData, "user");
+
   const [eventInfo, setEventInfo] = useState({
     heading: "",
     content: "",
@@ -16,17 +23,7 @@ const Workshops = () => {
     venue: "",
   });
 
-  // Function to toggle the popup visibility
-  const toggle = (
-    title,
-    content,
-    org1Name,
-    org2Name,
-    org1Phone,
-    org2Phone,
-    registrationLink,
-    venue
-  ) => {
+  const toggle = (title, content, org1Name, org2Name, org1Phone, org2Phone, registrationLink, venue) => {
     setEventInfo({
       heading: title,
       content,
@@ -39,6 +36,41 @@ const Workshops = () => {
     });
     setPopupVisible(!isPopupVisible);
   };
+
+  const loginToRegister = () => {
+    Swal.fire({
+      icon: "info",
+      title: "Login",
+      text: "Kindly login to register for the event.",
+    }).then((result) => {
+      setBlurBackground(false);
+    });
+  }
+
+
+  const eventRegister = async (eventName) => {
+    try {
+      const email = userData.email;
+      const { data } = await axios.post('/eventRegister', {
+        eventName, email
+      })
+      // console.log(data);
+      localStorage.setItem('userData', JSON.stringify(data));
+      Swal.fire({
+        icon: "success",
+        title: "Registered Successfully!",
+        text: "You have successfully registered for the event.",
+      }).then((result) => {
+        setBlurBackground(false);
+      });
+
+      // Apply the blur effect to the background
+      setBlurBackground(true);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   return (
     <div className="section-tours" id="events">
       <div className="u-center-text u-margin-bottom-big">
@@ -87,14 +119,19 @@ const Workshops = () => {
                   </p>
                 </div>
                 <div className="card__price-box">
-                  <a
-                    className="btn btn--white"
-                    target="_blank"
-                    href="https://forms.gle/RqExTs9gLNsFEPCHA"
-                    rel="noreferrer"
-                  >
-                    Register Now
-                  </a>
+                  {userData === "no_user" ? (
+                    <a onClick={() => { loginToRegister() }} className="btn btn--white">
+                      Register Now
+                    </a>
+                  ) : userData.workshop1 == "no" ? (
+                    <a onClick={() => { eventRegister("workshop1") }} className="btn btn--white">
+                      Register Now
+                    </a>
+                  ) : (
+                    <a className="btn btn--white" target="_blank" href="https://forms.gle/RqExTs9gLNsFEPCHA" rel="noreferrer">
+                      Registered
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
@@ -141,22 +178,27 @@ const Workshops = () => {
                   </p>
                 </div>
                 <div className="card__price-box">
-                  <a
-                    href="https://forms.gle/G9GTWJTvh4SZGvqJA"
-                    target="_blank"
-                    className="btn btn--white"
-                    rel="noreferrer"
-                  >
-                    Register Now
-                  </a>
+                  {userData === "no_user" ? (
+                    <a onClick={() => { loginToRegister() }} className="btn btn--white">
+                      Register Now
+                    </a>
+                  ) : userData.workshop2 == "no" ? (
+                    <a onClick={() => { eventRegister("workshop2") }} className="btn btn--white">
+                      Register Now
+                    </a>
+                  ) : (
+                    <a className="btn btn--white" target="_blank" href="https://forms.gle/RqExTs9gLNsFEPCHA" rel="noreferrer">
+                      Registered
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
           </div>
         </div>
-        </div>
+      </div>
 
-        
+
       <PopupModal
         title={eventInfo.heading}
         content={eventInfo.content}
