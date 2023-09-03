@@ -50,7 +50,7 @@ const Home = () => {
         }, 400)
     }
     const userData = JSON.parse(localStorage.getItem('userData'));
-    console.log(userData,"user");
+    // console.log(userData,"user");
     const fullName = userData ? userData.fullName : ""
 
     return isLoading ? (
@@ -102,14 +102,6 @@ const Home = () => {
                                     </div>
                                 </li>
                             )}
-                            {/* <li className="navigation__item">
-                                <div className="navigation__link">
-                                    <a href='' onClick={() => { navigate('/login') }} className="navigation__link four"> Login </a>
-                            <li className="navigation__item">
-                                <div className="navigation__link" onClick={toggleCheckbox}>
-                                    <a href='' onClick={() => {navigate('/login')}} className="navigation__link four"> Login </a>
-                                </div>
-                            </li> */}
                         </ul>
                     </nav>
                 </div>

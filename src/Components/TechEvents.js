@@ -1,10 +1,17 @@
 import React, { useState } from "react";
 import PopupModal from "./PopupModal";
+import axios from "axios";
 
 
 const TechEvents = () => {
 
     const [isPopupVisible, setPopupVisible] = useState(false);
+
+    
+    const userData = JSON.parse(localStorage.getItem('userData'));
+    // console.log(userData,"**********");
+
+    // console.log(userData,"user");
 
     // State variables to store event information
     const [eventInfo, setEventInfo] = useState({
@@ -32,6 +39,22 @@ const TechEvents = () => {
         });
         setPopupVisible(!isPopupVisible);
     };
+
+    const eventRegister = async(eventName) => {
+        try {
+            const email = userData.email;
+            const {data} = await axios.post('/eventRegister',{
+                eventName,email 
+            })
+            // console.log(data);
+            localStorage.setItem('userData', JSON.stringify(data))
+        } catch (error) {
+            console.log(error);
+        }
+    }
+    console.log(localStorage.userData);
+
+
     return (
 
         <div className="section-tours" id="events">
@@ -66,14 +89,17 @@ const TechEvents = () => {
                                         Know More
                                     </p>
                                 </div>
-                                <a
-                                    className="btn btn--white"
-                                    target="_blank"
-                                    href="https://forms.gle/RqExTs9gLNsFEPCHA"
-                                    rel="noreferrer"
-                                >
-                                    Register Now
-                                </a>
+
+                                {userData.event1 == "no" ? (
+                                    <a onClick={() => { eventRegister("event1") }} className="btn btn--white">
+                                        Register Now
+                                    </a>
+                                ) : (
+                                    <a className="btn btn--white" target="_blank" href="https://forms.gle/RqExTs9gLNsFEPCHA" rel="noreferrer">
+                                        Registered
+                                    </a>
+                                )}
+
                             </div>
                         </div>
                     </div>
@@ -105,14 +131,15 @@ const TechEvents = () => {
                                         Know More
                                     </p>
                                 </div>
-                                <a
-                                    href="https://forms.gle/G9GTWJTvh4SZGvqJA"
-                                    target="_blank"
-                                    className="btn btn--white"
-                                    rel="noreferrer"
-                                >
-                                    Register Now
-                                </a>
+                                {userData.event2 == "no" ? (
+                                    <a className="btn btn--white" target="_blank" href="https://forms.gle/RqExTs9gLNsFEPCHA" rel="noreferrer">
+                                        Register Now
+                                    </a>
+                                ) : (
+                                    <a className="btn btn--white" target="_blank" href="https://forms.gle/RqExTs9gLNsFEPCHA" rel="noreferrer">
+                                        Registered
+                                    </a>
+                                )}
                             </div>
                         </div>
                     </div>
@@ -145,14 +172,15 @@ const TechEvents = () => {
                                         Know More
                                     </p>
                                 </div>
-                                <a
-                                    href="https://forms.gle/P3QNm3woRoMd6bF66"
-                                    target="_blank"
-                                    className="btn btn--white"
-                                    rel="noreferrer"
-                                >
-                                    Register Now
-                                </a>
+                                {userData.event3 == "no" ? (
+                                    <a className="btn btn--white" target="_blank" href="https://forms.gle/RqExTs9gLNsFEPCHA" rel="noreferrer">
+                                        Register Now
+                                    </a>
+                                ) : (
+                                    <a className="btn btn--white" target="_blank" href="https://forms.gle/RqExTs9gLNsFEPCHA" rel="noreferrer">
+                                        Registered
+                                    </a>
+                                )}
                             </div>
                         </div>
                     </div>
@@ -184,12 +212,15 @@ const TechEvents = () => {
                                             Know More
                                         </p>
                                     </div>
-                                    <a
-                                        href="https://forms.gle/2r5S34Nfzvnivrzx6"
-                                        target="_blank"
-                                        className="btn btn--white"
-                                        rel="noreferrer"
-                                    >Register Now</a>
+                                    {userData.event4 == "no" ? (
+                                        <a className="btn btn--white" target="_blank" href="https://forms.gle/RqExTs9gLNsFEPCHA" rel="noreferrer">
+                                            Register Now
+                                        </a>
+                                    ) : (
+                                        <a className="btn btn--white" target="_blank" href="https://forms.gle/RqExTs9gLNsFEPCHA" rel="noreferrer">
+                                            Registered
+                                        </a>
+                                    )}
                                 </div>
                             </div>
                         </div>
@@ -217,12 +248,15 @@ const TechEvents = () => {
                                             Know More
                                         </p>
                                     </div>
-                                    <a
-                                        href="https://forms.gle/KQrFXKMjRHmNKVMC6"
-                                        target="_blank"
-                                        className="btn btn--white"
-                                        rel="noreferrer"
-                                    >Register Now</a>
+                                    {userData.event5 == "no" ? (
+                                        <a className="btn btn--white" target="_blank" href="https://forms.gle/RqExTs9gLNsFEPCHA" rel="noreferrer">
+                                            Register Now
+                                        </a>
+                                    ) : (
+                                        <a className="btn btn--white" target="_blank" href="https://forms.gle/RqExTs9gLNsFEPCHA" rel="noreferrer">
+                                            Registered
+                                        </a>
+                                    )}
                                 </div>
                             </div>
                         </div>
@@ -242,7 +276,7 @@ const TechEvents = () => {
                 toggle={() => toggle()}
             />
 
-        </div>
+        </div >
     );
 };
 
