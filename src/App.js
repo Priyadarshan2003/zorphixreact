@@ -6,7 +6,7 @@ import { Toaster } from 'react-hot-toast';
 import axios from 'axios';
 
 axios.defaults.withCredentials = true;
-axios.defaults.baseURL = "http://localhost:5000"
+axios.defaults.baseURL = "https://successful-eel-pea-coat.cyclic.app/"
 
 
 function App() {
