@@ -22,13 +22,15 @@ function LoginForm() {
 
 
     const handleInputFocus = (event) => {
-        event.target.classList.add('active');
+        // event.target.classList.add('active');
+        console.log("hi");
     };
 
     const handleInputBlur = (event) => {
-        if (event.target.value === '') {
-            event.target.classList.remove('active');
-        }
+        // if (event.target.value === '') {
+        //     event.target.classList.remove('active');
+        // }
+        console.log("hi");
     };
 
     const toggleMode = (event) => {
@@ -126,8 +128,9 @@ function LoginForm() {
                                                 onBlur={handleInputBlur}
                                                 value={data.fullName}
                                                 onChange={(e) => setData({ ...data, fullName: e.target.value })}
+                                                placeholder={data.fullName ? '' : 'Full name'}
                                             />
-                                            <label className='login-label'>Full name</label>
+                                            {/* <label className='login-label'>Full name</label> */}
                                         </div>
                                         <div className="input-wrap">
                                             <input
@@ -138,8 +141,9 @@ function LoginForm() {
                                                 onBlur={handleInputBlur}
                                                 value={data.college}
                                                 onChange={(e) => setData({ ...data, college: e.target.value })}
+                                                placeholder={data.college ? '' : 'College'}
                                             />
-                                            <label className='login-label'>College</label>
+                                            {/* <label className='login-label'>College</label> */}
                                         </div>
                                         <div className="input-wrap">
                                             <input
@@ -151,8 +155,9 @@ function LoginForm() {
                                                 onBlur={handleInputBlur}
                                                 value={data.contactNo}
                                                 onChange={(e) => setData({ ...data, contactNo: e.target.value })}
+                                                placeholder={data.contactNo ? '' : 'Contact no'}
                                             />
-                                            <label className='login-label'>Contact no</label>
+                                            {/* <label className='login-label'>Contact no</label> */}
                                         </div>
                                     </>
                                 )}
@@ -166,8 +171,9 @@ function LoginForm() {
                                         onBlur={handleInputBlur}
                                         value={data.email}
                                         onChange={(e) => setData({ ...data, email: e.target.value })}
+                                        placeholder={data.email ? '' : 'Email'}
                                     />
-                                    <label className='login-label'>Email</label>
+                                    {/* <label className='login-label'>Email</label> */}
                                 </div>
 
                                 <div className="input-wrap">
@@ -179,8 +185,9 @@ function LoginForm() {
                                         onBlur={handleInputBlur}
                                         value={data.password}
                                         onChange={(e) => setData({ ...data, password: e.target.value })}
+                                        placeholder={data.password ? '' : 'Password'}
                                     />
-                                    <label className='login-label'>Password</label>
+                                    {/* <label className='login-label'>Password</label> */}
                                 </div>
 
                                 {isSignUpMode ? (
