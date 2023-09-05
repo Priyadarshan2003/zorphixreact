@@ -21,6 +21,7 @@ const EntryPass = () => {
     Workshop1 : ${userData.workshop1}
     Workshop2 : ${userData.workshop2}
   `;
+  
 
   return (
     <div id="EntryPass" className="section-EntryPass">
