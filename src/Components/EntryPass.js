@@ -3,6 +3,7 @@ import "../App.css";
 import QRCode from "qrcode.react";
 
 const EntryPass = () => {
+  
   const userData = JSON.parse(localStorage.getItem("userData"));
 
   return (
