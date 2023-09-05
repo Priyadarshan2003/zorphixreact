@@ -1,151 +1,202 @@
-import React from 'react';
-import { useState, useEffect, useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
-import '../App.css';
-import Main from '../Components/Main';
-import citlogo from '../img/NEW LOGO CIT.png';
-import zorphixfinal from '../img/Zorphix final without name.png';
-import zorphixlanding from '../img/zorphix-landing-logo.png';
+import React from "react";
+import { useState, useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
+import "../App.css";
+import Main from "../Components/Main";
+import citlogo from "../img/NEW LOGO CIT.png";
+import zorphixfinal from "../img/Zorphix final without name.png";
+import zorphixlanding from "../img/zorphix-landing-logo.png";
 import { motion, useScroll } from "framer-motion";
-import Loader from '../Components/Loader/Loader';
-import bgvideo from '../video/zorphixbgnew.mp4';
-import Counter from '../Components/Counter';
+import Loader from "../Components/Loader/Loader";
+import bgvideo from "../video/zorphixbgnew.mp4";
+import Counter from "../Components/Counter";
 
 const Home = () => {
+  const { scrollYProgress } = useScroll();
+  const initialScrollProgress = 0;
+  const navigate = useNavigate();
+  const [isLoading, setIsLoading] = useState(true);
+  const checkboxRef = useRef(null);
+//   const QRCode = require("qrcode");
+  
+  // const[isNavOpen, setIsNavOpen] = useState(false);
 
-    const { scrollYProgress } = useScroll();
-    const initialScrollProgress = 0;
-    const navigate = useNavigate();
-    const [isLoading, setIsLoading] = useState(true);
-    const checkboxRef = useRef(null);
-    // const[isNavOpen, setIsNavOpen] = useState(false);
+  // const toggleNav = () => {
+  //     setIsNavOpen(!isNavOpen);
+  // };
 
-    // const toggleNav = () => {
-    //     setIsNavOpen(!isNavOpen);
-    // };
+  // const closeNav = () => {
+  //     setIsNavOpen(false);
+  // };
 
-    // const closeNav = () => {
-    //     setIsNavOpen(false);
-    // };
+  const toggleCheckbox = () => {
+    if (checkboxRef.current) {
+      checkboxRef.current.checked = !checkboxRef.current.checked;
+    }
+  };
 
-    const toggleCheckbox = () => {
-        if (checkboxRef.current){
-            checkboxRef.current.checked = !checkboxRef.current.checked;
-        }
+  useEffect(() => {
+    const fakeDataFetch = () => {
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 2000);
     };
 
-    useEffect(() => {
-        const fakeDataFetch = () => {
-            setTimeout(() => {
-                setIsLoading(false);
-            }, 2000);
-        };
+    fakeDataFetch();
+  }, []);
+  const logout = () => {
+    localStorage.removeItem("userData");
+    // navigate('/login');
+    setTimeout(() => {
+      window.location.reload();
+    }, 400);
+  };
+  const userData = JSON.parse(localStorage.getItem("userData"));
+  // console.log(userData,"user");
+  const fullName = userData ? userData.fullName : "";
 
-        fakeDataFetch();
-    }, []);
-    const logout  = () => {
-        localStorage.removeItem('userData');
-        // navigate('/login');
-        setTimeout(() => {
-            window.location.reload();
-        }, 400)
-    }
-    const userData = JSON.parse(localStorage.getItem('userData'));
-    // console.log(userData,"user");
-    const fullName = userData ? userData.fullName : ""
+//   const generateQRCode = async (uniqueId) => {
+//     try {
+//       const qrCodeDataUrl = await QRCode.toDataURL(uniqueId);
+//       console.log(qrCodeDataUrl);
+//       return qrCodeDataUrl;
+//     } catch (error) {
+//       console.error("Error generating QR code:", error);
+//       throw error;
+//     }
+//   };
 
-    return isLoading ? (
-        <Loader />
-    ) : (
-        <div className='home'>
-            <div id="blur">
-                <div className="navigation">
-                    <input type="checkbox" className="navigation__checkbox" id="navi-toggle" ref={checkboxRef} />
+//   const qrsource = userData ? generateQRCode(userData.zorid) : " ";
 
-                    <label htmlFor="navi-toggle" className="navigation__button">
-                        <span className="navigation__icon">&nbsp;</span>
-                    </label>
+  return isLoading ? (
+    <Loader />
+  ) : (
+    <div className="home">
+      <div id="blur">
+        <div className="navigation">
+          <input
+            type="checkbox"
+            className="navigation__checkbox"
+            id="navi-toggle"
+            ref={checkboxRef}
+          />
 
-                    <div className="navigation__background"> &nbsp; </div>
+          <label htmlFor="navi-toggle" className="navigation__button">
+            <span className="navigation__icon">&nbsp;</span>
+          </label>
 
-                    <nav className="navigation__nav">
-                        <ul className="navigation__list">
-                            <li className="navigation__item">
-                                <div className="navigation__link" onClick={toggleCheckbox}>
-                                    <a href="#" className="navigation__link one"> Home </a>
-                                </div>
-                            </li>
-                            <li className="navigation__item">
-                                <div className="navigation__link" onClick={toggleCheckbox}>
-                                    <a href="#about" className="navigation__link two"> About </a>
-                                </div>
-                            </li>
-                            <li className="navigation__item">
-                                <div className="navigation__link" onClick={toggleCheckbox}>
-                                    <a href="#events" className="navigation__link three"> Events </a>
-                                </div>
-                            </li>
-                            <li className="navigation__item">
-                                <div className="navigation__link" onClick={toggleCheckbox}>
-                                    <a href="#team" className="navigation__link four"> Team </a>
-                                </div>
-                            </li>
-                            {fullName != "" ? (
-                                <li className="navigation__item">
-                                    <div className="navigation__link">
-                                        <a href='' onClick={() => { logout() }} className="navigation__link four">Logout</a>
-                                    </div>
-                                </li>
-                            ) : (
-                                <li className="navigation__item">
-                                    <div className="navigation__link">
-                                        <a href='' onClick={() => { navigate('/login') }} className="navigation__link four">Login</a>
-                                    </div>
-                                </li>
-                            )}
-                        </ul>
-                    </nav>
+          <div className="navigation__background"> &nbsp; </div>
+
+          <nav className="navigation__nav">
+            <ul className="navigation__list">
+              <li className="navigation__item">
+                <div className="navigation__link" onClick={toggleCheckbox}>
+                  <a href="#" className="navigation__link one">
+                    {" "}
+                    Home{" "}
+                  </a>
                 </div>
-
-                <div className="bg-video">
-                    <video className="bg-video__content" autoPlay muted loop>
-                        <source src={bgvideo} type="video/mp4" />
-                        Your browser is not supported!
-                    </video>
+              </li>
+              <li className="navigation__item">
+                <div className="navigation__link" onClick={toggleCheckbox}>
+                  <a href="#about" className="navigation__link two">
+                    {" "}
+                    About{" "}
+                  </a>
                 </div>
-
-                <div className="header" id="header">
-                    <div className="header__logo-box">
-                        <img className="citlogo" src={citlogo} alt="clg-logo" />
-                    </div>
-
-                    <div className="header__text-box">
-                        <div className="logos">
-                            <img
-                                className="heading-primary--sub zor"
-                                src={zorphixfinal}
-                                alt="new-logo"
-                            />
-                            <img
-                                className="heading-primary--main zorphix"
-                                src={zorphixlanding} alt='zorphix-logo'
-                            />
-                        </div>
-                        <Counter />
-                        <h1 className="heading-primary--sub date">September 20th 2023</h1>
-
-                        <a href="#about" className="btn btn--white btn--animated bold">
-                            Get Started
-                        </a>
-                    </div>
+              </li>
+              <li className="navigation__item">
+                <div className="navigation__link" onClick={toggleCheckbox}>
+                  <a href="#events" className="navigation__link three">
+                    {" "}
+                    Events{" "}
+                  </a>
                 </div>
-
-                <Main />
-
-            </div>
-            <motion.div className="progress-bar" style={{ scaleX: scrollYProgress  }} initial={{scaleX : 0}} />
+              </li>
+              <li className="navigation__item">
+                <div className="navigation__link" onClick={toggleCheckbox}>
+                  <a href="#team" className="navigation__link four">
+                    {" "}
+                    Team{" "}
+                  </a>
+                </div>
+              </li>
+              {fullName != "" ? (
+                <li className="navigation__item">
+                  <div className="navigation__link">
+                    <a
+                      href=""
+                      onClick={() => {
+                        logout();
+                      }}
+                      className="navigation__link four"
+                    >
+                      Logout
+                    </a>
+                  </div>
+                </li>
+              ) : (
+                <li className="navigation__item">
+                  <div className="navigation__link">
+                    <a
+                      href=""
+                      onClick={() => {
+                        navigate("/login");
+                      }}
+                      className="navigation__link four"
+                    >
+                      Login
+                    </a>
+                  </div>
+                </li>
+              )}
+            </ul>
+          </nav>
         </div>
-    );
-}
 
-export default Home
+        <div className="bg-video">
+          <video className="bg-video__content" autoPlay muted loop>
+            <source src={bgvideo} type="video/mp4" />
+            Your browser is not supported!
+          </video>
+        </div>
+
+        <div className="header" id="header">
+          <div className="header__logo-box">
+            <img className="citlogo" src={citlogo} alt="clg-logo" />
+          </div>
+
+          <div className="header__text-box">
+            <div className="logos">
+              <img
+                className="heading-primary--sub zor"
+                src={zorphixfinal}
+                alt="new-logo"
+              />
+              <img
+                className="heading-primary--main zorphix"
+                src={zorphixlanding}
+                alt="zorphix-logo"
+              />
+            </div>
+            <Counter />
+            <h1 className="heading-primary--sub date">September 20th 2023</h1>
+
+            <a href="#EntryPass" className="btn btn--white btn--animated bold">
+              Get Started
+            </a>
+          </div>
+        </div>
+
+        <Main />
+      </div>
+      <motion.div
+        className="progress-bar"
+        style={{ scaleX: scrollYProgress }}
+        initial={{ scaleX: 0 }}
+      />
+    </div>
+  );
+};
+
+export default Home;

@@ -14,25 +14,25 @@ import img10 from '../img/eventphotos/DSC_0510.JPG'
 
 const CarouselComponent = () => {
   return (
-    <div className='container-fluid'>
+    <div className='carousel_container'>
     <Carousel className='carousel' interval={2000}>
     <Carousel.Item>
       <img
-        className="d-block w-100"
+        className="d-block"
         src={img1}
         alt="First slide"
       />
     </Carousel.Item>
     <Carousel.Item>
       <img
-        className="d-block w-100"
+        className="d-block"
         src={img2}
         alt="Second slide"
       />
     </Carousel.Item>
     <Carousel.Item>
       <img
-        className="d-block w-100"
+        className="d-block"
         src={img3}
         alt="Third slide"
       />
@@ -40,49 +40,49 @@ const CarouselComponent = () => {
     {/* Add more Carousel.Items for additional images */}
     <Carousel.Item>
       <img
-        className="d-block w-100"
+        className="d-block"
         src={img4}
         alt="Fourth slide"
       />
     </Carousel.Item>
     <Carousel.Item>
       <img
-        className="d-block w-100"
+        className="d-block"
         src={img5}
         alt="Fifth slide"
       />
     </Carousel.Item>
     <Carousel.Item>
       <img
-        className="d-block w-100"
+        className="d-block"
         src={img6}
         alt="Sixth slide"
       />
     </Carousel.Item>
     <Carousel.Item>
       <img
-        className="d-block w-100"
+        className="d-block"
         src={img7}
         alt="Seventh slide"
       />
     </Carousel.Item>
     <Carousel.Item>
       <img
-        className="d-block w-100"
+        className="d-block"
         src={img8}
         alt="Eighth slide"
       />
     </Carousel.Item>
     <Carousel.Item>
       <img
-        className="d-block w-100"
+        className="d-block"
         src={img9}
         alt="Ninth slide"
       />
     </Carousel.Item>
     <Carousel.Item>
       <img
-        className="d-block w-100"
+        className="d-block"
         src={img10}
         alt="Tenth slide"
       />

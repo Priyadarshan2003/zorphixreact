@@ -2212,6 +2212,22 @@ only screen and (min-width: 125em) {
     -25px 0px 20px -20px rgba(0, 0, 0, 3);
 }
 
+.section-EntryPass{
+  background: linear-gradient(to right top, black, #243763, black);
+  padding: 5rem 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #fff;
+  /* border: 1px solid #243763; */
+  border-radius: 20px;
+  box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 3),
+    25px 0px 20px -20px rgba(0, 0, 0, 3),
+    0px 25px 20px -20px rgba(0, 0, 0, 3),
+    -25px 0px 20px -20px rgba(0, 0, 0, 3);
+}
+
 @media screen and (max-width: 728px) {
   .navigation__nav a {
     padding: 0.5rem 1.5rem !important;
@@ -2636,7 +2652,7 @@ only screen and (min-width: 125em) {
 
 .timer-container {
   color: white;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   /* border-radius: 20px; */
 }
 
@@ -2703,17 +2719,63 @@ section p:first-child,
   }
 }
 
-
-.carousel {
-  z-index: 1;
+.carousel_container{
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
-.carousel img {
 
+.carousel {
+  
+  height: 80vh;
+  width: 75vw;
   
 }
+
+.carousel img{
+  height: 80vh;
+  width: 100%;
+  /* max-width: 100%;
+  max-height: 100%; */
+}
+
+
+@media (max-width:1200px) {
+  .carousel_container{
+    height: auto;
+    width: 100%;
+  }
+  .carousel{
+    height: auto;
+    max-width: 100%;
+  }
+
+  .carousel img{
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media (min-width:1201px) {
+  .carousel_container{
+    height: auto;
+    width: auto;
+  }
+  .carousel{
+    height: auto;
+    width: 60vw;
+  }
+  .carousel img{
+    height: auto;
+    width: 60vw;
+  }
+  
+}
+
 
 /* @media (min-width: 768px) and (max-width: 1000px) {
   .carousel {
@@ -2750,4 +2812,20 @@ section p:first-child,
 .blur-background {
   filter: blur(5px); /* Adjust the blur amount as needed */
   pointer-events: none; /* Prevent interaction with the blurred background */
+}
+
+
+.qrcodeimage{
+  border: 10px solid white;
+
+}
+
+.qrdiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#EntryPass h2{
+  margin-bottom: 50px;
 }
