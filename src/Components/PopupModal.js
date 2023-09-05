@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import '../component-css/Popup.css';
 import '../App.css'
+import '../component-css/Popup.css';
 
 const PopupModal = ({ title, content, name1, name2, phone1, phone2, register, venue, isVisible, toggle }) => {
   const [showAbout, setShowAbout] = useState(true);
@@ -63,7 +63,6 @@ const PopupModal = ({ title, content, name1, name2, phone1, phone2, register, ve
           ) : null}
           <div className="modal-button">
             <a className="btn btn--green" onClick={() => toggle()}>Close</a>
-            <a className="btn btn--green regi" target="_blank" rel="noopener noreferrer">Register</a>
           </div>
         </div>
       </div>
