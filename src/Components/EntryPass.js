@@ -4,7 +4,7 @@ import QRCode from "qrcode.react";
 
 const EntryPass = () => {
   
-  const userData = JSON.parse(localStorage.getItem("userData"));
+  const userData = userData ? JSON.parse(localStorage.getItem("userData")) : "";
 
   const qrCodeValue = `
     ID: ${userData.zorid}
