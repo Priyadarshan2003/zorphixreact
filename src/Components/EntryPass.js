@@ -3,7 +3,7 @@ import "../App.css";
 import QRCode from "qrcode.react";
 
 const EntryPass = () => {
-  
+
   const userData = JSON.parse(localStorage.getItem("userData"));
 
   return (
@@ -14,7 +14,7 @@ const EntryPass = () => {
       {!userData ? (
         <div style={{ color: "white" }} className="qrdiv">
           <a href="/login" className="btn btn--white btn--animated bold">
-            <h3>Login to get Entry Pass</h3>
+            <h3 className="mt-2">Login to get Entry Pass</h3>
           </a>
           <br></br>
         </div>
