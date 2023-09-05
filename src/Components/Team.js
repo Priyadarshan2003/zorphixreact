@@ -13,7 +13,7 @@ const Team = () => {
         </video>
       </div>
       <div className="u-center-text u-margin-bottom-big">
-        <h2 className="heading-secondary">Our Team</h2>
+        <h2 className="heading-secondary" style={{color:'white'}}>Our Team</h2>
       </div>
       <div className="main-section">
         <div className="box">

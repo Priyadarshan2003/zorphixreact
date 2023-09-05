@@ -14,10 +14,10 @@ const About = () => {
             <div class="row">
                 <div class="col-1-of-2">
                     <p class="paragraph">
-                        <b>Computer Science & Business Systems</b>
+                        <b>Computer Science & Business Systems </b>
                         is the first stream in engineering designed to meet the future
                         demands of the rapidly changing tech industry in the era of
-                        Business 4.0. Designed by Tata Consultancy services in an MoU
+                        Business 4.0. Designed by Tata Consultancy Services in an MoU
                         with educational institutions, CSBS is the degree program of the
                         future. The curriculum aims to ensure that the students
                         graduating from the program not only skill up in computer

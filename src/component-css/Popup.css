@@ -14,3 +14,31 @@
     opacity: 1;
     z-index: 0;
 }
+
+.modal-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event_section{
+    display: flex;
+    justify-content: center;
+}
+
+div > h2,p{
+    text-align: center;
+}
+
+.venue{
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.modal-button > .btn:hover {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+    -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    color: #0c0b0b;
+  }

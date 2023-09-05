@@ -11,7 +11,7 @@ main {
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
-    background: linear-gradient(#9d4edd, #10002b);
+    background: linear-gradient(to right top, black, #243763, black);
     padding: 2rem;
     display: flex;
     align-items: center;
@@ -210,7 +210,8 @@ main.sign-up-mode .carousel {
     width: 55%;
     left: 45%;
     top: 0;
-    background: linear-gradient(#9d4edd, #10002b);
+    background: linear-gradient(to right top, black, #243763, black);
+    /* background: linear-gradient(#9d4edd, #10002b); */
     border-radius: 3rem;
     display: grid;
     grid-template-rows: auto 1fr;
