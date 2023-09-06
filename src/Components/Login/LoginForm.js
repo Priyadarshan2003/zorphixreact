@@ -6,11 +6,13 @@ import img2 from '../../img/loginimg2.png';
 import img3 from '../../img/loginimg3.png';
 import axios from 'axios';
 import { toast } from 'react-hot-toast';
+import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router-dom';
 
 function LoginForm() {
     const [isSignUpMode, setIsSignUpMode] = useState(false);
     const [activeImage, setActiveImage] = useState(1);
+    const [isBlurBackground, setBlurBackground] = useState(false);
     const navigate = useNavigate();
     const [data, setData] = useState({
         fullName: '',
@@ -19,19 +21,6 @@ function LoginForm() {
         email: '',
         password: '',
     });
-
-
-    const handleInputFocus = (event) => {
-        // event.target.classList.add('active');
-        console.log("hi");
-    };
-
-    const handleInputBlur = (event) => {
-        // if (event.target.value === '') {
-        //     event.target.classList.remove('active');
-        // }
-        console.log("hi");
-    };
 
     const toggleMode = (event) => {
         event.preventDefault();
@@ -78,22 +67,38 @@ function LoginForm() {
         const { fullName, college, contactNo, email, password } = data;
         console.log(data);
         try {
-            const { data } = await axios.post('/register', {
-                fullName, college, contactNo, email, password
-            })
-            if (data.error) {
-                toast.error(data.error)
+            if (isValidMobileNumber(contactNo)) {
+                const { data } = await axios.post('/register', {
+                    fullName, college, contactNo, email, password
+                })
+                if (data.error) {
+                    toast.error(data.error)
+                }
+                else {
+                    // setData({})
+                    toast.success("Registered Successfully")
+                    setIsSignUpMode(!isSignUpMode);
+                    setActiveImage(1);
+                }
             }
             else {
-                // setData({})
-                toast.success("Registered Successfully")
-                setIsSignUpMode(!isSignUpMode);
-                setActiveImage(1);
+                Swal.fire({
+                    icon: "warning",
+                    title: "Invalid Mobile Number",
+                    text: "Please enter your 10 digit mobile number",
+                }).then((result) => {
+                    setBlurBackground(false);
+                });
             }
         } catch (error) {
             console.log(error);
         }
     }
+
+    const isValidMobileNumber = (phoneNumber) => {
+        const pattern = /^\d{10}$/;
+        return pattern.test(phoneNumber);
+    };
 
 
     return (
@@ -124,40 +129,35 @@ function LoginForm() {
                                                 type="text"
                                                 className="input-field"
                                                 autoComplete="off"
-                                                onFocus={handleInputFocus}
-                                                onBlur={handleInputBlur}
                                                 value={data.fullName}
                                                 onChange={(e) => setData({ ...data, fullName: e.target.value })}
                                                 placeholder={data.fullName ? '' : 'Full name'}
                                             />
-                                            {/* <label className='login-label'>Full name</label> */}
                                         </div>
                                         <div className="input-wrap">
                                             <input
                                                 type="text"
                                                 className="input-field"
                                                 autoComplete="off"
-                                                onFocus={handleInputFocus}
-                                                onBlur={handleInputBlur}
                                                 value={data.college}
                                                 onChange={(e) => setData({ ...data, college: e.target.value })}
                                                 placeholder={data.college ? '' : 'College'}
                                             />
-                                            {/* <label className='login-label'>College</label> */}
+
                                         </div>
                                         <div className="input-wrap">
                                             <input
-                                                type="text"
+                                                type="number"
                                                 minLength="4"
                                                 className="input-field"
                                                 autoComplete="off"
-                                                onFocus={handleInputFocus}
-                                                onBlur={handleInputBlur}
                                                 value={data.contactNo}
                                                 onChange={(e) => setData({ ...data, contactNo: e.target.value })}
                                                 placeholder={data.contactNo ? '' : 'Contact no'}
                                             />
-                                            {/* <label className='login-label'>Contact no</label> */}
+                                        </div>
+                                        <div className='warning-div'>
+                                            <span className='contact-span'>{isValidMobileNumber(data.contactNo) ? ('') : ('Enter a valid Mobile Number')}</span>
                                         </div>
                                     </>
                                 )}
@@ -167,8 +167,6 @@ function LoginForm() {
                                         type="email"
                                         className="input-field"
                                         autoComplete="off"
-                                        onFocus={handleInputFocus}
-                                        onBlur={handleInputBlur}
                                         value={data.email}
                                         onChange={(e) => setData({ ...data, email: e.target.value })}
                                         placeholder={data.email ? '' : 'Email'}
@@ -181,8 +179,6 @@ function LoginForm() {
                                         type="password"
                                         className="input-field"
                                         autoComplete="off"
-                                        onFocus={handleInputFocus}
-                                        onBlur={handleInputBlur}
                                         value={data.password}
                                         onChange={(e) => setData({ ...data, password: e.target.value })}
                                         placeholder={data.password ? '' : 'Password'}

@@ -17,17 +17,6 @@ const Home = () => {
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(true);
   const checkboxRef = useRef(null);
-//   const QRCode = require("qrcode");
-  
-  // const[isNavOpen, setIsNavOpen] = useState(false);
-
-  // const toggleNav = () => {
-  //     setIsNavOpen(!isNavOpen);
-  // };
-
-  // const closeNav = () => {
-  //     setIsNavOpen(false);
-  // };
 
   const toggleCheckbox = () => {
     if (checkboxRef.current) {
@@ -44,6 +33,7 @@ const Home = () => {
 
     fakeDataFetch();
   }, []);
+
   const logout = () => {
     localStorage.removeItem("userData");
     // navigate('/login');
@@ -54,19 +44,6 @@ const Home = () => {
   const userData = JSON.parse(localStorage.getItem("userData"));
   // console.log(userData,"user");
   const fullName = userData ? userData.fullName : "";
-
-//   const generateQRCode = async (uniqueId) => {
-//     try {
-//       const qrCodeDataUrl = await QRCode.toDataURL(uniqueId);
-//       console.log(qrCodeDataUrl);
-//       return qrCodeDataUrl;
-//     } catch (error) {
-//       console.error("Error generating QR code:", error);
-//       throw error;
-//     }
-//   };
-
-//   const qrsource = userData ? generateQRCode(userData.zorid) : " ";
 
   return isLoading ? (
     <Loader />
