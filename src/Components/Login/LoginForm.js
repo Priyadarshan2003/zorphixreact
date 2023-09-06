@@ -5,6 +5,7 @@ import img1 from '../../img/loginimg1.png';
 import img2 from '../../img/loginimg2.png';
 import img3 from '../../img/loginimg3.png';
 import axios from 'axios';
+import Select from 'react-select'
 import { toast } from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 
@@ -44,6 +45,46 @@ function LoginForm() {
         const textSlider = document.querySelector('.text-group');
         textSlider.style.transform = `translateY(${-(index - 1) * 2.2}rem)`;
     };
+
+    const collegeOptions = [
+        { value: 'University Departments of Anna University Chennai - CEG Campus', label: 'University Departments of Anna University Chennai - CEG Campus' },
+        { value: 'University Departments of Anna University Chennai - ACT Campus', label: 'University Departments of Anna University Chennai - ACT Campus' },
+        { value: 'School of Architecture and Planning Anna University', label: 'School of Architecture and Planning Anna University' },
+        { value: 'University Departments of Anna University Chennai - MIT Campus ', label: 'University Departments of Anna University Chennai - MIT Campus ' },
+        { value: 'Annamalai University Faculty of Engineering and Technology', label: 'Annamalai University Faculty of Engineering and Technology' },
+        { value: 'University College of Engineering Villupuram', label: ' University College of Engineering Villupuram' },
+        { value: 'University College of Engineering Tindivanam', label: 'University College of Engineering Tindivanam' },
+        { value: 'University College of Engineering Arni', label: 'University College of Engineering Arni' },
+        { value: 'University College of Engineering Kancheepuram Ponnerikarai Campus', label: 'University College of Engineering Kancheepuram Ponnerikarai Campus' },
+        { value: 'Aalim Muhammed Salegh College of Engineering', label: ' Aalim Muhammed Salegh College of Engineering' },
+        { value: 'Jaya Engineering College', label: 'Jaya Engineering College' },
+        { value: 'Jaya Institute of Technology', label: 'Jaya Institute of Technology' },
+        { value: 'Prathyusha Engineering college (Autonomous)', label: 'Prathyusha Engineering college (Autonomous)' },
+        { value: 'R M D Engineering College (Autonomous)', label: 'R M D Engineering College (Autonomous)' },
+        { value: 'R M K Engineering College (Autonomous)', label: 'R M  Engineering College (Autonomous)' },
+        { value: 'vanilla', label: 'Vanilla' },
+        { value: 'vanilla', label: 'Vanilla' },
+        { value: 'vanilla', label: 'Vanilla' },
+        { value: 'vanilla', label: 'Vanilla' },
+        { value: 'vanilla', label: 'Vanilla' },
+        { value: 'vanilla', label: 'Vanilla' },
+        { value: 'vanilla', label: 'Vanilla' },
+        { value: 'vanilla', label: 'Vanilla' },
+        { value: 'vanilla', label: 'Vanilla' },
+        { value: 'vanilla', label: 'Vanilla' },
+        { value: 'vanilla', label: 'Vanilla' },
+        { value: 'vanilla', label: 'Vanilla' },
+        { value: 'vanilla', label: 'Vanilla' },
+        { value: 'vanilla', label: 'Vanilla' }
+      ]
+      
+      const [selectedCollege, setSelectedCollege] = useState(null);
+
+      const handleCollegeChange = (selectedOption) => {
+          setSelectedCollege(selectedOption);
+      };
+
+
 
     // console.log(data, "**");
 
@@ -99,6 +140,14 @@ function LoginForm() {
     return (
         <main>
             <div className={`login-box ${isSignUpMode ? 'sign-up-mode' : ''}`}>
+                <div className="input-wrap">
+                    <Select
+                        options={collegeOptions}
+                        value={selectedCollege}
+                        onChange={handleCollegeChange}
+                        placeholder="Select your college..."
+                    />
+                </div>
                 <div className="inner-box">
                     <div className="forms-wrap">
                         <form id='login' autoComplete="off" className="sign-in-form">
@@ -133,7 +182,7 @@ function LoginForm() {
                                             {/* <label className='login-label'>Full name</label> */}
                                         </div>
                                         <div className="input-wrap">
-                                            <input
+                                            {/* <input
                                                 type="text"
                                                 className="input-field"
                                                 autoComplete="off"
@@ -142,7 +191,13 @@ function LoginForm() {
                                                 value={data.college}
                                                 onChange={(e) => setData({ ...data, college: e.target.value })}
                                                 placeholder={data.college ? '' : 'College'}
-                                            />
+                                            /> */}
+                                             <Select
+                                             options={collegeOptions}
+                                             value={selectedCollege}
+                                             onChange={handleCollegeChange}
+                                              placeholder="Select your college..."
+    />
                                             {/* <label className='login-label'>College</label> */}
                                         </div>
                                         <div className="input-wrap">
