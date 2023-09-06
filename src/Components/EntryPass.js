@@ -20,6 +20,7 @@ const EntryPass = () => {
         </div>
       ) : (
         <div className="qrdiv">
+          <div className="qrDivContent">
           <QRCode
             className="qrcodeimage"
             value={`
@@ -39,6 +40,8 @@ const EntryPass = () => {
   `}
             size={200}
           />
+          <h3>ID : {userData.zorid}</h3>
+          </div>
         </div>
       )}
     </div>

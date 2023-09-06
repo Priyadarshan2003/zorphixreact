@@ -2832,3 +2832,14 @@ section p:first-child,
 #EntryPass h2{
   margin-bottom: 50px;
 }
+
+.qrDivContent{
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.qrDivContent > h3{
+  text-align: center;
+  margin:5px;
+}
