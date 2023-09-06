@@ -2831,6 +2831,7 @@ section p:first-child,
 }
 
 .qrDivContent{
+  color: white;
   display: flex;
   flex-direction: column;
 }
