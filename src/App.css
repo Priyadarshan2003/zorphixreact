@@ -2639,6 +2639,9 @@ only screen and (min-width: 125em) {
   text-align: center;
 }
 
+.entry{
+  padding-top: 5px;
+}
 .progress-bar {
   position: fixed;
   top: 0;
