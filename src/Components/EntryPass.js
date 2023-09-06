@@ -42,6 +42,7 @@ const EntryPass = () => {
           />
           <h3>ID : {userData.zorid}</h3>
           </div>
+          
         </div>
       )}
     </div>
