@@ -305,7 +305,9 @@ main.sign-up-mode .carousel {
 .text-white {
     color: white;
 }
-
+.warning-div{
+    margin-top: -12px;
+}
 @media (max-width: 850px) {
     .login-box {
         height: auto;
