@@ -64,26 +64,39 @@ const TechEvents = () => {
   };
 
   const eventRegister = async (eventName) => {
-    try {
-      const email = userData.email;
-      const { data } = await axios.post("/eventRegister", {
-        eventName,
-        email,
-      });
-      // console.log(data);
-      localStorage.setItem("userData", JSON.stringify(data));
+    if (eventName == "registered") {
       Swal.fire({
-        icon: "success",
-        title: "Registered Successfully!",
-        text: "You have successfully registered for the event.",
+        icon: "info",
+        title: "Already Registered !",
+        text: "You have already registered for this event.",
       }).then((result) => {
         setBlurBackground(false);
       });
 
-      // Apply the blur effect to the background
       setBlurBackground(true);
-    } catch (error) {
-      console.log(error);
+    }
+    else{
+      try {
+        const email = userData.email;
+        const { data } = await axios.post("/eventRegister", {
+          eventName,
+          email,
+        });
+        // console.log(data);
+        localStorage.setItem("userData", JSON.stringify(data));
+        Swal.fire({
+          icon: "success",
+          title: "Registered Successfully!",
+          text: "You have successfully registered for the event.",
+        }).then((result) => {
+          setBlurBackground(false);
+        });
+  
+        // Apply the blur effect to the background
+        setBlurBackground(true);
+      } catch (error) {
+        console.log(error);
+      }
     }
   };
   // console.log(localStorage.userData);
@@ -161,9 +174,9 @@ const TechEvents = () => {
                 ) : (
                   <a
                     className="btn btn--white"
-                    target="_blank"
-                    href="https://forms.gle/RqExTs9gLNsFEPCHA"
-                    rel="noreferrer"
+                    onClick={() => {
+                      eventRegister('registered')
+                    }}
                   >
                     Registered
                   </a>
@@ -234,9 +247,9 @@ const TechEvents = () => {
                 ) : (
                   <a
                     className="btn btn--white"
-                    target="_blank"
-                    href="https://forms.gle/RqExTs9gLNsFEPCHA"
-                    rel="noreferrer"
+                    onClick={() => {
+                      eventRegister('registered')
+                    }}
                   >
                     Registered
                   </a>
@@ -306,9 +319,9 @@ const TechEvents = () => {
                 ) : (
                   <a
                     className="btn btn--white"
-                    target="_blank"
-                    href="https://forms.gle/RqExTs9gLNsFEPCHA"
-                    rel="noreferrer"
+                    onClick={() => {
+                      eventRegister('registered')
+                    }}
                   >
                     Registered
                   </a>
@@ -383,9 +396,9 @@ const TechEvents = () => {
                   ) : (
                     <a
                       className="btn btn--white"
-                      target="_blank"
-                      href="https://forms.gle/RqExTs9gLNsFEPCHA"
-                      rel="noreferrer"
+                      onClick={() => {
+                        eventRegister('registered')
+                      }}
                     >
                       Registered
                     </a>
@@ -457,9 +470,9 @@ const TechEvents = () => {
                   ) : (
                     <a
                       className="btn btn--white"
-                      target="_blank"
-                      href="https://forms.gle/RqExTs9gLNsFEPCHA"
-                      rel="noreferrer"
+                      onClick={() => {
+                        eventRegister('registered')
+                      }}
                     >
                       Registered
                     </a>

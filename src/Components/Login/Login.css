@@ -128,7 +128,7 @@ form.sign-up-form {
     border-bottom: 1px solid #bbb;
     padding: 0;
     font-size: 1.7rem;
-    color: #151111;
+    color: grey;
     transition: 0.4s;
 }
 
@@ -305,9 +305,17 @@ main.sign-up-mode .carousel {
 .text-white {
     color: white;
 }
-.warning-div{
+
+.warning-div {
     margin-top: -12px;
 }
+
+.college-select {
+    background: white;
+    margin-left: -3px;
+    font-size: 1.2rem;
+}
+
 @media (max-width: 850px) {
     .login-box {
         height: auto;
