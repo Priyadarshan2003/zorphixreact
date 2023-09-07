@@ -41,53 +41,11 @@ function LoginForm() {
         { value: '3', label: 'School of Architecture and Planning Anna University' },
         { value: '4', label: 'University Departments of Anna University Chennai - MIT Campus ' },
         { value: '5', label: 'Annamalai University Faculty of Engineering and Technology' },
-<<<<<<< HEAD
-=======
-        
-        { value: 'c1', label: 'Indian Institute of Information Technology Design & Manufacturing' },
-        { value: 'c2', label: 'Indian Institute of Information Technology Tiruchirappalli' },
-        { value: 'c3', label: 'Indian Institute of Technology Madras' },
-        { value: 'c4', label: 'National Institute of Technology, Tiruchirappalli' },
-
-
-        { value: '1d', label: 'Academy of Maritime Education and Training' },
-        { value: '2d', label: 'Amrita Vishwa Vidyapeetham' },
-        { value: '3d', label: 'Avinashilingam Institute for Home Science & Higher Education for Women' },
-        { value: '4d', label: 'Bharath Institute of Higher Education & Research' },
-        { value: '5d', label: 'Chennai Mathematical Institute' },
-        { value: '6d', label: 'Chettinad Academy of Research and Education (CARE)' },
-        { value: '7d', label: 'Dr. M.G.R. Educational and Research Institute' },
-        { value: '8d', label: 'Hindustan Institute of Technology and Science (HITS)' },
-        { value: '9d', label: 'Kalasalingam Academy of Research and Education' },
-        { value: '10d', label: 'Karpagam Academy of Higher Education' },
-        { value: '11d', label: 'Karunya Institute of Technology and Sciences' },
-        { value: '12d', label: 'Meenakshi Academy of Higher Education and Research' },
-        { value: '13d', label: 'Noorul Islam Centre for Higher Education' },
-        { value: '14d', label: 'Periyar Maniammai Institute of Science & Technology' },
-        { value: '15d', label: 'Ponnaiyah Ramajayam Institute of Science & technology (PMIST)' },
-        { value: '16d', label: 'S.R.M. Institute of Science and Technology' },
-        { value: '17d', label: 'Sathyabama Institute of Science and Technology' },
-        { value: '18d', label: 'Saveetha Institute of Medical and Technical Sciences' },
-        { value: '19d', label: 'Shanmugha Arts, Science, Technology & Research Academy (SASTRA)' },
-        { value: '20d', label: 'Sri Chandrasekharandra Saraswati Vishwa Mahavidyalaya' },
-        { value: '21d', label: 'Sri Ramachandra Institute of Higher Education and Research' },
-        { value: '22d', label: "St. Peter's Institute of Higher Education and Research" },
-        { value: '23d', label: 'The Gandhigram Rural Institute' },
-        { value: '24d', label: 'Vel Tech Rangarajan Dr Sagunthala R&D Institute of Science & Technology' },
-        { value: '25d', label: 'Vellore Institute of Technology' },
-        { value: '26d', label: 'Vels Institute of Science, Technology & Advanced Studies (VISTAS)' },
-        { value: '27d', label: "Vinayaka Mission's Research Foundation" },
-
->>>>>>> 5f89ef6c6dc71d02703af8e778b22c24c02541f6
         { value: '1013', label: 'University College of Engineering Villupuram' },
         { value: '1014', label: 'University College of Engineering Tindivanam' },
         { value: '1015', label: 'University College of Engineering Arni' },
         { value: '1026', label: 'University College of Engineering Kancheepuram Ponnerikarai Campus' },
-<<<<<<< HEAD
         { value: '1101', label: ' Aalim Muhammed Salegh College of Engineering' },
-=======
-        { value: '1101', label: 'Aalim Muhammed Salegh College of Engineering' },
->>>>>>> 5f89ef6c6dc71d02703af8e778b22c24c02541f6
         { value: '1106', label: 'Jaya Engineering College' },
         { value: '1107', label: 'Jaya Institute of Technology' },
         { value: '1110', label: 'Prathyusha Engineering college (Autonomous)' },
@@ -280,184 +238,6 @@ function LoginForm() {
         { value: '2643', label: 'Bharathiyar Institute of Engineering for Women' },
         { value: '2646', label: 'Tagore Institute of Engineering and Technology' },
         { value: '2647', label: 'J K K Nataraja College of Engineering and Technology' },
-<<<<<<< HEAD
-        { value: '2648', label: '' },
-        { value: '2650', label: '' },
-        { value: '2651', label: '' },
-        { value: '2652', label: '' },
-        { value: '2653', label: '' },
-        { value: '2656', label: '' },
-        { value: '2658', label: '' },
-        { value: '2659', label: '' },
-        { value: '2661', label: '' },
-        { value: '2673', label: '' },
-        { value: '2683', label: '' },
-        { value: '2702', label: '' },
-        { value: '2704', label: '' },
-        { value: '2705', label: '' },
-        { value: '2706', label: '' },
-        { value: '2707', label: '' },
-        { value: '2708', label: '' },
-        { value: '2709', label: '' },
-        { value: '2710', label: '' },
-        { value: '2711', label: '' },
-        { value: '2712', label: '' },
-        { value: '2713', label: '' },
-        { value: '2715', label: '' },
-        { value: '2716', label: '' },
-        { value: '2717', label: '' },
-        { value: '2718', label: '' },
-        { value: '2719', label: '' },
-        { value: '2721', label: '' },
-        { value: '2722', label: '' },
-        { value: '2723', label: '' },
-        { value: '2725', label: '' },
-        { value: '2726', label: '' },
-        { value: '2727', label: '' },
-        { value: '2729', label: '' },
-        { value: '2731', label: '' },
-        { value: '2732', label: '' },
-        { value: '2733', label: '' },
-        { value: '2734', label: '' },
-        { value: '2735', label: '' },
-        { value: '2736', label: '' },
-        { value: '2737', label: '' },
-        { value: '2739', label: '' },
-        { value: '2740', label: '' },
-        { value: '2741', label: '' },
-        { value: '2743', label: '' },
-        { value: '2744', label: '' },
-        { value: '2745', label: '' },
-        { value: '2747', label: '' },
-        { value: '2748', label: '' },
-        { value: '2749', label: '' },
-        { value: '2750', label: '' },
-        { value: '2751', label: '' },
-        { value: '2752', label: '' },
-        { value: '2753', label: '' },
-        { value: '2755', label: '' },
-        { value: '2758', label: '' },
-        { value: '2761', label: '' },
-        { value: '2762', label: '' },
-        { value: '2763', label: '' },
-        { value: '2764', label: '' },
-        { value: '2767', label: '' },
-        { value: '2768', label: '' },
-        { value: '2769', label: '' },
-        { value: '2770', label: '' },
-        { value: '2772', label: '' },
-        { value: '2776', label: '' },
-        { value: '3011', label: '' },
-        { value: '3016', label: '' },
-        { value: '3018', label: '' },
-        { value: '3019', label: '' },
-        { value: '3021', label: '' },
-        { value: '3403', label: '' },
-        { value: '3410', label: '' },
-        { value: '3425', label: '' },
-        { value: '3454', label: '' },
-        { value: '3456', label: '' },
-        { value: '3460', label: '' },
-        { value: '3461', label: '' },
-        { value: '3462', label: '' },
-        { value: '3464', label: '' },
-        { value: '3465', label: '' },
-        { value: '3466', label: '' },
-        { value: '3701', label: '' },
-        { value: '3760', label: '' },
-        { value: '3766', label: '' },
-        { value: '3782', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-        { value: '', label: '' },
-
-
-
-    ]
-
-    const [selectedCollege, setSelectedCollege] = useState(null);
-
-    const handleCollegeChange = (selectedOption) => {
-        setSelectedCollege(selectedOption);
-
-    };
-
-=======
         { value: '2648', label: 'Annapoorana Engineering College (Autonomous)' },
         { value: '2650', label: 'Christ The King Engineering College' },
         { value: '2651', label: 'Jai Shriram Engineering College' },
@@ -696,18 +476,19 @@ function LoginForm() {
         { value: '5986', label: 'Velammal College of Engineering and Technology (Autonomous) ' },
         { value: '5988', label: 'Theni Kammavar Sangam College of Technology' },
         { value: '5990', label: 'Latha Mathavan Engineering College' },
-        
         { value: '10000', label: 'Other' },
-      ]
-      
-      const [selectedCollege, setSelectedCollege] = useState(null);
 
-      const handleCollegeChange = (selectedOption) => {
-          setSelectedCollege(selectedOption);
 
-      };
-    
->>>>>>> 5f89ef6c6dc71d02703af8e778b22c24c02541f6
+
+    ]
+
+    const [selectedCollege, setSelectedCollege] = useState(null);
+
+    const handleCollegeChange = (selectedOption) => {
+        setSelectedCollege(selectedOption);
+
+    };
+
 
 
 
@@ -810,7 +591,6 @@ function LoginForm() {
                                                 placeholder={data.fullName ? '' : 'Full name'}
                                             />
                                         </div>
-<<<<<<< HEAD
                                         <div className="input-wrap college-select">
                                             <Select                                           
                                                 className='college-select input-field'
@@ -819,15 +599,6 @@ function LoginForm() {
                                                 onChange={handleCollegeChange}
                                                 placeholder={selectedCollege == null ? "Select your college " : selectedCollege.label}
                                             />
-=======
-                                        <div className="input-wrap">
-                                            
-                                             <Select
-                                             options={collegeOptions}
-                                             value={selectedCollege == null ? "" : selectedCollege.label}
-                                             onChange={handleCollegeChange}
-                                              placeholder={selectedCollege == null ? "Select your college " : selectedCollege.label}    />
->>>>>>> 5f89ef6c6dc71d02703af8e778b22c24c02541f6
                                         </div>
 
 
