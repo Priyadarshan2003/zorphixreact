@@ -146,10 +146,10 @@ const TechEvents = () => {
                       toggle(
                         "xCoders",
                         "CrossCoders is an electrifying coding competition where participants go beyond traditional coding. Contestants are expected to analyze code snippets and convert them into a language of their choice.",
-                        "Yaazhini J",
-                        "Sai Subash Chandra",
-                        "+91 8428640960",
-                        "+91 8754470644",
+                        "Bhanupriya M",
+                        "Jawahar Ganesh D",
+                        "+91 9677055652",
+                        "+91 9360390526",
                         "forms.gle/RqExTs9gLNsFEPCHA",
                         "Venue1"
                       )
@@ -220,10 +220,10 @@ const TechEvents = () => {
                       toggle(
                         "Thesis-Precized",
                         "Inspire us to redefine the tech landscape. Thesis Precised is your platform to present and engage in the presentation as they delve into the captivating realm of your thesis precisely. Emerge victorious, and you take home the title of BEST PAPER.",
-                        "Hemalakshumi K ",
-                        "Madhuvanthi R",
-                        "+91 89254 53687",
-                        "+91 91508 64004",
+                        "Harini A",
+                        "Poovizhi P",
+                        "+91 9952051446",
+                        "+91 9150002718",
                         "forms.gle/G9GTWJTvh4SZGvqJA",
                         "Venue2"
                       )
@@ -292,10 +292,10 @@ const TechEvents = () => {
                       toggle(
                         "Coin Quest",
                         "Ever wanted to participate in a digital tech game event? Here's your chance! Participants play a series of wordplay, quizzes, and games that advance through rounds. Get ready to tech it up at Coin Quest.",
-                        "Rex Milan",
-                        "Siva Manoj Kumar",
-                        "+91 73586 97901",
-                        "+91 80722 32119",
+                        "Ram Kumar M",
+                        "Priyadharshini N",
+                        "+91 6380941457",
+                        "+91 7395930205",
                         "forms.gle/P3QNm3woRoMd6bF66",
                         "Venue3"
                       )
@@ -350,14 +350,14 @@ const TechEvents = () => {
                 </div>
                 <h4 className="card__heading">
                   <span className="card__heading-span card__heading-span--1 bold-white">
-                    2 Facts 1 Lie
+                    Plutus
                   </span>
                 </h4>
                 <div className="card__details">
                   <p>
                     66% of all statistics are made up. And we just made this up
                     too. Plutus is an event based on the popular party game 2
-                    Truths 1 Lie, albeit with a business touch to it! Unravel
+                    Facts 1 Lie, albeit with a business touch to it! Unravel
                     the truth from a web of captivating statements.
                   </p>
                 </div>
@@ -369,12 +369,12 @@ const TechEvents = () => {
                       className="btn btn--white"
                       onClick={() =>
                         toggle(
-                          "2 Facts 1 Lie",
-                          "66% of all statistics are made up. And we just made this up too. Plutus is an event based on the popular party game 2 Truths 1 Lie, albeit with a business touch to it! Unravel the truth from a web of captivating statements.",
-                          "Priyadarshan N S",
-                          "Vishal",
-                          "+91 9498379770",
-                          "+91 6382145874",
+                          "Plutus",
+                          "66% of all statistics are made up. And we just made this up too. Plutus is an event based on the popular party game 2 Facts 1 Lie, albeit with a business touch to it! Unravel the truth from a web of captivating statements.",
+                          "Vinoth S",
+                          "Adithya B",
+                          "+91 9342537734",
+                          "+91 7339044512",
                           "forms.gle/2r5S34Nfzvnivrzx6",
                           "Venue4"
                         )
@@ -445,8 +445,8 @@ const TechEvents = () => {
                         toggle(
                           "ALGO-RHYTHMS",
                           "Are you ready to dive into a world where melodies are composed by lines of code, and rhythm is dictated by algorithms? Here, the tech enthusiast delves into coding against the distraction of music. Let the beats and coding begin!",
-                          "Nisha",
-                          "Harisha",
+                          "Nisha V",
+                          "Harisha BS",
                           "+91 6369946328",
                           "+91 9710514448",
                           "forms.gle/KQrFXKMjRHmNKVMC6",
@@ -470,6 +470,157 @@ const TechEvents = () => {
                     <a
                       onClick={() => {
                         eventRegister("event5");
+                      }}
+                      className="btn btn--white"
+                    >
+                      Register Now
+                    </a>
+                  ) : (
+                    <a
+                      className="btn btn--white"
+                      onClick={() => {
+                        eventRegister('registered')
+                      }}
+                    >
+                      Registered
+                    </a>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-1-of-3">
+            <div className="card" data-aos = "zoom-in">
+              <div className="card__side card__side--front">
+                <div className="card__picture card__picture--5-tech">
+                  &nbsp;
+                </div>
+                <h4 className="card__heading">
+                  <span className="card__heading-span card__heading-span--3 bold-white">
+                  FLIP IT & QUIZ IT
+                  </span>
+                </h4>
+                <div className="card__details">
+                  <p>
+                  Prepare for an event of mind-bending scenarios, where the participants will 
+                  be presented with complex situational questions that demand creative problem-solving, 
+                  but the twist lies in who can master the art of bottle flipping to secure their chance 
+                  to answer first.
+                  </p>
+                </div>
+              </div>
+              <div className="card__side card__side--back card__side--back-3">
+                <div className="card__cta">
+                  <div className="card__price-box">
+                    <p
+                      className="btn btn--white"
+                      onClick={() =>
+                        toggle(
+                          "FLIP IT & QUIZ IT",
+                          "Prepare for an event of mind-bending scenarios, where the participants will be presented with complex situational questions that demand creative problem-solving, but the twist lies in who can master the art of bottle flipping to secure their chance to answer first. Join us for a journey of intellect and strategy at 'Flip it & Quiz it'.",
+                          "Navinaa G",
+                          "TBU",
+                          "+91 9080230690",
+                          "TBU",
+                          "forms.gle/KQrFXKMjRHmNKVMC6",
+                          "Venue5"
+                        )
+                      }
+                    >
+                      Know More
+                    </p>
+                  </div>
+                  {userData === "no_user" ? (
+                    <a
+                      onClick={() => {
+                        loginToRegister();
+                      }}
+                      className="btn btn--white"
+                    >
+                      Register Now
+                    </a>
+                  ) : userData.event5 == "no" ? (
+                    <a
+                      onClick={() => {
+                        eventRegister("event5");
+                      }}
+                      className="btn btn--white"
+                    >
+                      Register Now
+                    </a>
+                  ) : (
+                    <a
+                      className="btn btn--white"
+                      onClick={() => {
+                        eventRegister('registered')
+                      }}
+                    >
+                      Registered
+                    </a>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div className="sm-padding" id="section-tours">
+        <div className="row">
+          <div className="col-1-of-3">
+            <div className="card" data-aos = "zoom-in">
+              <div className="card__side card__side--front">
+                <div className="card__picture card__picture--4-tech">
+                  &nbsp;
+                </div>
+                <h4 className="card__heading">
+                  <span className="card__heading-span card__heading-span--1 bold-white">
+                  Virtuoso
+                  </span>
+                </h4>
+                <div className="card__details">
+                  <p>
+                  Paying homage to Vijay TV's iconic Start Music, we're raising the stakes 
+                  in music games. Evoke your inner music detective in a dynamic guessing game 
+                  event with three rounds of song and melody challenges. Join us for a day filled 
+                  with musical excitement at Virtuoso!
+                  </p>
+                </div>
+              </div>
+              <div className="card__side card__side--back card__side--back-1">
+                <div className="card__cta">
+                  <div className="card__price-box">
+                    <p
+                      className="btn btn--white"
+                      onClick={() =>
+                        toggle(
+                          "VIRTUOSO",
+                          "Paying homage to Vijay TV's iconic Start Music, we're raising the stakes in music games. Evoke your inner music detective in a dynamic guessing game event with three rounds of song and melody challenges. Join us for a day filled with musical excitement at Virtuoso!",
+                          "Mathuku Jayasimha Reddy",
+                          "Lakshmi Vardhan Reddy",
+                          "+91 8341273412",
+                          "+91 9381858745",
+                          "forms.gle/2r5S34Nfzvnivrzx6",
+                          "Venue4"
+                        )
+                      }
+                    >
+                      Know More
+                    </p>
+                  </div>
+                  {userData === "no_user" ? (
+                    <a
+                      onClick={() => {
+                        loginToRegister();
+                      }}
+                      className="btn btn--white"
+                    >
+                      Register Now
+                    </a>
+                  ) : userData.event4 == "no" ? (
+                    <a
+                      onClick={() => {
+                        eventRegister("event4");
                       }}
                       className="btn btn--white"
                     >

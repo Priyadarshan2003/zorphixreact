@@ -1086,9 +1086,9 @@ body {
       right bottom,
       from(#10002b),
       to(#240046)),
-    url(./img/xcoder.png);
+    url(./img/XCnew.jpg);
   background-image: linear-gradient(to right bottom, #10002b, #240046),
-    url(./img/xcoder.png);
+    url(./img/XCnew.jpg);
 }
 
 .card__picture--2-tech {
@@ -1219,15 +1219,15 @@ body {
   transform: translateX(-50%);
 }
 
-.card__picture--3-business {
+.card__picture--3-workshop {
   background-image: -webkit-gradient(linear,
       left top,
       right bottom,
       from(#10002b),
       to(#240046)),
-    url(./img/trail.png);
+    url(./img/trade.jpg);
   background-image: linear-gradient(to right bottom, #10002b, #240046),
-    url(./img/trail.png);
+    url(./img/trade.jpg);
 }
 
 .card__picture--2-workshop {
@@ -1236,9 +1236,9 @@ body {
       right bottom,
       from(#10002b),
       to(#240046)),
-    url(./img/workshop.png);
+    url(./img/figma.jpg);
   background-image: linear-gradient(to right bottom, #10002b, #240046),
-    url(./img/workshop.png);
+    url(./img/figma.jpg);
 }
 
 .card__heading {
