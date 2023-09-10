@@ -4,7 +4,7 @@ import instalogo from '../img/insta footer.png';
 
 const Footer = () => {
     return (
-        <div class="footer">
+        <div id="footer" class="footer">
             <div class="footer__logo-box">
                 <picture class="footer__logo">
                     <img alt="Full logo" src={fulllogo}/>
@@ -36,6 +36,11 @@ const Footer = () => {
             <div className='text-center'>
                 <span class="copyright">@Zorphix 2023 All rights reserved</span>
             </div>
+            <div className='text-center'>
+                <span>Visitors:</span>
+                <a className='count' href="#footer">
+                <img src="https://hitwebcounter.com/counter/counter.php?page=9020036&style=0024&nbdigits=4&type=ip&initCount=0" title="Counter Widget" Alt="visitor-counter"   border="0" /></a>   
+                </div>
         </div>
     )
 }

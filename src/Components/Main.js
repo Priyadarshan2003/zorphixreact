@@ -9,6 +9,7 @@ import Footer from './Footer';
 import CarouselComponent from './Carousel';
 import EntryPass from './EntryPass';
 
+
 const Main = () => {
     return (
         <div>
