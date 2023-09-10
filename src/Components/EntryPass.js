@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../App.css";
 import QRCode from "qrcode.react";
+import Aos from "aos";
+import 'aos/dist/aos.css';
+
 
 const EntryPass = () => {
+
+  useEffect(() => {
+    Aos.init({duration: 1000});
+  },[])
 
   const userData = JSON.parse(localStorage.getItem("userData"));
 
   return (
-    <div id="EntryPass" className="section-EntryPass">
+    <div id="EntryPass" className="section-EntryPass" data-aos = "fade-down">
       <div class="u-center-text">
         <h2 class="heading-secondary white letter-spacing">Your Entry Pass</h2>
       </div>

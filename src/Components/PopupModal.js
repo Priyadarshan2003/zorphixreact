@@ -62,7 +62,7 @@ const PopupModal = ({ title, content, name1, name2, phone1, phone2, register, ve
             </div>
           ) : null}
           <div className="modal-button">
-            <a className="btn btn--green" onClick={() => toggle()}>Close</a>
+            <a className="btn font-close btn--green" onClick={() => toggle()}>Close</a>
           </div>
         </div>
       </div>

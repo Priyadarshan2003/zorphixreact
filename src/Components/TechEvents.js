@@ -1,11 +1,17 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import PopupModal from "./PopupModal";
 import Swal from "sweetalert2";
 import "../App.css";
 import "sweetalert2/dist/sweetalert2.min.css";
 import axios from "axios";
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 const TechEvents = () => {
+
+  useEffect(() => {
+    Aos.init({duration: 1000});
+  })
   const [isPopupVisible, setPopupVisible] = useState(false);
   const [isBlurBackground, setBlurBackground] = useState(false);
 
@@ -114,7 +120,7 @@ const TechEvents = () => {
 
       <div className="row">
         <div className="col-1-of-3">
-          <div className="card">
+          <div className="card" data-aos = "zoom-in">
             <div className="card__side card__side--front">
               <div className="card__picture card__picture--1-tech">&nbsp;</div>
               <h4 className="card__heading">
@@ -187,7 +193,7 @@ const TechEvents = () => {
         </div>
 
         <div className="col-1-of-3">
-          <div className="card">
+          <div className="card" data-aos = "zoom-in">
             <div className="card__side card__side--front">
               <div className="card__picture card__picture--2-tech">&nbsp;</div>
               <h4 className="card__heading">
@@ -260,7 +266,7 @@ const TechEvents = () => {
         </div>
 
         <div className="col-1-of-3">
-          <div className="card">
+          <div className="card" data-aos = "zoom-in">
             <div className="card__side card__side--front">
               <div className="card__picture card__picture--3-tech">&nbsp;</div>
               <h4 className="card__heading">
@@ -335,7 +341,7 @@ const TechEvents = () => {
       <div className="sm-padding" id="section-tours">
         <div className="row">
           <div className="col-1-of-3">
-            <div className="card">
+            <div className="card" data-aos = "zoom-in">
               <div className="card__side card__side--front">
                 <div className="card__picture card__picture--4-tech">
                   &nbsp;
@@ -408,7 +414,7 @@ const TechEvents = () => {
             </div>
           </div>
           <div className="col-1-of-3">
-            <div className="card">
+            <div className="card" data-aos = "zoom-in">
               <div className="card__side card__side--front">
                 <div className="card__picture card__picture--5-tech">
                   &nbsp;

@@ -1,9 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import PopupModal from "./PopupModal";
 import Swal from 'sweetalert2';
 import axios from "axios";
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 const Workshops = () => {
+  
+  useEffect(() => {
+    Aos.init({duration: 1000});
+  })
+
   const [isPopupVisible, setPopupVisible] = useState(false);
   const [isBlurBackground, setBlurBackground] = useState(false);
 
@@ -81,7 +88,7 @@ const Workshops = () => {
 
       <div className="row">
         <div className="col-1-of-2">
-          <div className="card">
+          <div className="card" data-aos = "zoom-in">
             <div className="card__side card__side--front">
               <div className="card__picture card__picture--1-tech">&nbsp;</div>
               <h4 className="card__heading">
@@ -139,7 +146,7 @@ const Workshops = () => {
         </div>
 
         <div className="col-1-of-2">
-          <div className="card">
+          <div className="card" data-aos = "zoom-in">
             <div className="card__side card__side--front">
               <div className="card__picture card__picture--2-tech">&nbsp;</div>
               <h4 className="card__heading">

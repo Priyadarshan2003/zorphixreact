@@ -15,7 +15,7 @@ const Main = () => {
             <EntryPass/>
             <About />
             <Sponsors />
-            <TechEvents />
+            <TechEvents/>
             <Workshops />
             <CarouselComponent/>
             <Team />

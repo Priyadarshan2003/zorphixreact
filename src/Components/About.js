@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import i1 from '../img/logo3-01-min.jpeg';
 import i2 from '../img/main-img1-01-min.jpeg';
 import i3 from '../img/team-01-min.jpeg';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
+
+    useEffect(() => {
+        Aos.init({duration: 1500});
+    })
+
     return (
-        <div id="about" class="section-about">
+        <div id="about" class="section-about" data-aos = "fade-down">
 
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary white letter-spacing">About Us</h2>
