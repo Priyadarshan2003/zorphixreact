@@ -2073,7 +2073,7 @@ only screen and (min-width: 125em) {
   width: 0;
   -webkit-transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  background-color: rgba(23, 1, 55, 0.778);
+  background: linear-gradient(to right top, black, #243763, black);;
   backdrop-filter: blur(15px);
 }
 

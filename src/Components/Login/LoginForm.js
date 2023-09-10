@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './Login.css';
 import logo from '../../img/loginlog.png';
-import img1 from '../../img/loginimg1.png';
-import img2 from '../../img/loginimg2.png';
-import img3 from '../../img/loginimg3.png';
+import img1 from '../../img/eventphotos/year 1/DSC_0026.JPG';
+import img2 from '../../img/eventphotos/year 2/IMG_4396.JPG';
+import img3 from '../../img/eventphotos/year 1/DSC_0034.JPG';
 import axios from 'axios';
 import Select from 'react-select'
 import { toast } from 'react-hot-toast';
@@ -342,7 +342,7 @@ function LoginForm() {
         { value: '3021', label: 'University College of Engineering Thanjavur' },
         { value: '3403', label: 'Mahalakshmi Engineering College Trichy-Salem' },
         { value: '3410', label: 'Krishnasamy College of Engineering and Technology Cuddalore District' },
-        { value: '3425', label: 'C K College of Engineering and Technology Chellangkuppam '},
+        { value: '3425', label: 'C K College of Engineering and Technology Chellangkuppam ' },
         { value: '3454', label: 'Sri Ramakrishna College of Engineering Perambur District' },
         { value: '3456', label: 'K S K College of Engineering and Technology Thanjavur Districy' },
         { value: '3460', label: 'Surya College of Engineering Thiruchirapally District' },
@@ -623,7 +623,7 @@ function LoginForm() {
                                             />
                                         </div>
                                         <div className="input-wrap college-select">
-                                            <Select                                           
+                                            <Select
                                                 className='college-select input-field'
                                                 options={collegeOptions}
                                                 value={selectedCollege == null ? "" : selectedCollege.label}
@@ -693,25 +693,14 @@ function LoginForm() {
                     </div>
 
                     <div className="login-carousel">
-                        <div className="images-wrapper">
-                            <img src={img1} className={`image img-1 ${activeImage === 1 ? 'show' : ''}`} alt="" />
-                            <img src={img2} className={`image img-2 ${activeImage === 2 ? 'show' : ''}`} alt="" />
-                            <img src={img3} className={`image img-3 ${activeImage === 3 ? 'show' : ''}`} alt="" />
-                        </div>
-
-                        <div className="text-slider">
-                            <div className="text-wrap">
-                                <div className="text-group">
-                                    <h2 className='text-white'>Welcome to Zorphix 2k23.5</h2>
-                                    <h2 className='text-white'>By the Dept of CSBS</h2>
-                                    <h2 className='text-white'>Experience the Tehcnical Sympo</h2>
-                                </div>
-                            </div>
-
-                            <div className="bullets">
-                                <span className={`active ${activeImage === 1 ? 'active' : ''}`} data-value="1" onClick={() => moveSlider(1)}></span>
-                                <span className={`active ${activeImage === 2 ? 'active' : ''}`} data-value="2" onClick={() => moveSlider(2)}></span>
-                                <span className={`active ${activeImage === 3 ? 'active' : ''}`} data-value="3" onClick={() => moveSlider(3)}></span>
+                        <div className="overflow-scroll">
+                            <div className='scrolling-images'>
+                                <img src={img1} className='image img-1 show' alt="" />
+                                <img src={img2} className='image img-2 show' alt="" />
+                                <img src={img3} className='image img-3 show' alt="" />
+                                <img src={img1} className='image img-1 show' alt="" />
+                                <img src={img2} className='image img-2 show' alt="" />
+                                <img src={img3} className='image img-3 show' alt="" />
                             </div>
                         </div>
                     </div>
