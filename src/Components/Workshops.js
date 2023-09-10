@@ -90,17 +90,18 @@ const Workshops = () => {
         <div className="col-1-of-2">
           <div className="card" data-aos = "zoom-in">
             <div className="card__side card__side--front">
-              <div className="card__picture card__picture--1-tech">&nbsp;</div>
+              <div className="card__picture card__picture--2-workshop">&nbsp;</div>
               <h4 className="card__heading">
                 <span className="card__heading-span card__heading-span--1 bold-white">
-                  xCoders
+                Ui/Ux Feat. Figma
                 </span>
               </h4>
               <div className="card__details">
                 <p>
-                  CrossCoders is a zappy solo event where plain old coding is
-                  not the only task. Participants are expected to analyze code
-                  snippets and convert them into a language of their choice.
+                Discover this exceptional collaborative process in UI/UX workshops to elevate digital product design.
+                By the end of this workshop, you'll not only possess the technical skills to wield design tools but also
+                the mindset to shape the future of user-centric innovation. Engage in this notable collaborative approach
+                during UI/UX workshops to refine the design of digital solutions.
                 </p>
               </div>
             </div>
@@ -111,12 +112,12 @@ const Workshops = () => {
                     className="btn btn--white"
                     onClick={() =>
                       toggle(
-                        "xCoders",
-                        "CrossCoders is a zappy solo event where plain old coding is not the only task. Participants are expected to analyze code snippets and convert them into a language of their choice. The most accurate conversion of the snippet takes the win. Don’t wait, let’s decode the code at ×Coders!",
-                        "Yaazhini J",
-                        "Sai Subash Chandra",
-                        "+91 8428640960",
-                        "+91 8754470644",
+                        "UI/UX Feat. Figma",
+                        "Discover this exceptional collaborative process in UI/UX workshops to elevate digital product design. By the end of this workshop, you'll not only possess the technical skills to wield design tools but also the mindset to shape the future of user-centric innovation. Engage in this notable collaborative approach during UI/UX workshops to refine the design of digital solutions.",
+                        "Jey Shreemen GR",
+                        "Mahmoodah Hafsah S",
+                        "+91 7604813964",
+                        "+91 9940261966",
                         "forms.gle/RqExTs9gLNsFEPCHA",
                         "Venue1"
                       )
@@ -148,18 +149,17 @@ const Workshops = () => {
         <div className="col-1-of-2">
           <div className="card" data-aos = "zoom-in">
             <div className="card__side card__side--front">
-              <div className="card__picture card__picture--2-tech">&nbsp;</div>
+              <div className="card__picture card__picture--3-workshop">&nbsp;</div>
               <h4 className="card__heading">
                 <span className="card__heading-span card__heading-span--2 bold-white">
-                  Thesis-Precized
+                Trading & Investment
                 </span>
               </h4>
               <div className="card__details">
                 <p>
-                  Make us reimagine the future of tech. Thesis-Precized is your
-                  platform to present your papers to a distinguished panel of
-                  judges. Emerge victorious, and you take home the title of Best
-                  Paper!
+                Unlock financial empowerment through our trading and investment workshop. Whether you're a pro or a newcomer,
+                gain the tools to navigate finance confidently. Don't miss the chance to boost your financial literacy and step
+                into the world of trading and investment. Get ready to go from zero to hero!
                 </p>
               </div>
             </div>
@@ -170,12 +170,12 @@ const Workshops = () => {
                     className="btn btn--white"
                     onClick={() =>
                       toggle(
-                        "Thesis-Precized",
-                        "Make us reimagine the future of tech. Thesis-Precized is your platform to present your papers to a distinguished panel of judges. Emerge victorious, and you take home the title of Best Paper!",
-                        "Hemalakshumi K ",
-                        "Madhuvanthi R",
-                        "+91 89254 53687",
-                        "+91 91508 64004",
+                        "Trading & Investment",
+                        "Unlock financial empowerment through our trading and investment workshop. Whether you're a pro or a newcomer, gain the tools to navigate finance confidently. Don't miss the chance to boost your financial literacy and step into the world of trading and investment. Get ready to go from zero to hero!",
+                        "Prathap D",
+                        "Madhukeshwar MS",
+                        "+91 6379754326",
+                        "+91 8072892365",
                         "forms.gle/G9GTWJTvh4SZGvqJA",
                         "Venue2"
                       )
