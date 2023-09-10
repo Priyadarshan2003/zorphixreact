@@ -48,7 +48,7 @@ const Home = () => {
   return isLoading ? (
     <Loader />
   ) : (
-    <div className="home">
+    <div id="home" className="home">
       <div id="blur">
         <div className="navigation">
           <input
@@ -131,11 +131,14 @@ const Home = () => {
           </nav>
         </div>
 
+        <div id="video-container">
+          <div id="video-overlay"></div>
         <div className="bg-video">
           <video className="bg-video__content" autoPlay muted loop>
             <source src={bgvideo} type="video/mp4" />
             Your browser is not supported!
           </video>
+        </div>
         </div>
 
         <div className="header" id="header">

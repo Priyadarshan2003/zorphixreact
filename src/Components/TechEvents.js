@@ -114,7 +114,7 @@ const TechEvents = () => {
     >
       <div className="u-center-text u-margin-bottom-big">
         <h2 className="heading-secondary white letter-spacing">
-          Technical Events
+          Events
         </h2>
       </div>
 
@@ -337,6 +337,8 @@ const TechEvents = () => {
           </div>
         </div>
       </div>
+      
+      
 
       <div className="sm-padding" id="section-tours">
         <div className="row">

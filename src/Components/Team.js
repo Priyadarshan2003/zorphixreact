@@ -5,7 +5,7 @@ import video from '../video/video.mp4'
 const Team = () => {
   return (
     <div className="team section-stories" id="team">
-      <div className="bg-video">
+      <div className="bg-video-2">
         <video className="bg-video__content" autoPlay muted loop>
           <source src={video} type="video/mp4" />
           <source src="img/video.webm" type="video/webm" />

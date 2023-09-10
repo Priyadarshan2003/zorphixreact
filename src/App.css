@@ -869,8 +869,8 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: -1;
-  opacity: 0.25;
+  z-index:-1;
+  opacity: 1;
   overflow: hidden;
 }
 
@@ -1678,11 +1678,12 @@ only screen and (hover: none) {
 }
 
 .footer {
-  background-color: #000;
+  background-color: #00000000;
   padding: 10rem 0;
   font-size: 1.4rem;
   color: #f7f7f7;
 }
+
 
 .footer__img {
   height: 50px;
@@ -1741,7 +1742,9 @@ html {
 }
 
 .footer__navigation {
-  border-top: 1px solid #000;
+  border-top: 0.5px solid #f7f7f76e;
+  padding-top:20px;
+  
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -2073,7 +2076,7 @@ only screen and (min-width: 125em) {
   width: 0;
   -webkit-transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  background: linear-gradient(to right top, black, #243763, black);;
+  background: linear-gradient(to right top, rgba(0,0,0,0.7), rgba(36,55,99,0.7), rgba(0,0,0,0.7));
   backdrop-filter: blur(15px);
 }
 
@@ -2200,7 +2203,7 @@ only screen and (min-width: 125em) {
 }
 
 .section-about {
-  background: linear-gradient(to right top, black, #243763, black);
+  background: linear-gradient(to right top, rgba(0,0,0,0.5), rgba(36,55,99,0.5), rgba(0,0,0,0.5));
   padding: 10rem 0;
   padding-bottom: 15rem;
   margin-top: 50px;
@@ -2217,7 +2220,7 @@ only screen and (min-width: 125em) {
 }
 
 .section-EntryPass{
-  background: linear-gradient(to right top, black, #243763, black);
+  background: linear-gradient(to right top, rgba(0,0,0,0.5), rgba(36,55,99,0.5), rgba(0,0,0,0.5));
   padding: 5rem 0;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -2254,7 +2257,7 @@ only screen and (min-width: 125em) {
   display: flex;
   flex-direction: column;
   padding: 20rem 0;
-  background: linear-gradient(to right top, black, #243763, black);
+  background: linear-gradient(to right top, rgba(0,0,0,0.5), rgba(36,55,99,0.5), rgba(0,0,0,0.5));
   /* border: 1px solid white; */
   border-radius: 20px;
   box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 3),
@@ -2426,7 +2429,7 @@ only screen and (min-width: 125em) {
 }
 
 .section-tours {
-  background: linear-gradient(to right top, black, #243763, black);
+  background: linear-gradient(to right top, rgba(0,0,0,0.5), rgba(36,55,99,0.5), rgba(0,0,0,0.5));
   padding: 10rem 0 5rem 0;
   /* border: 1px solid white; */
   border-radius: 20px;
@@ -2847,3 +2850,30 @@ section p:first-child,
   text-align: center;
   margin:5px;
 }
+
+#video-container{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+}
+
+#video-overlay{
+  height: 100%;
+  background-color: #0c0e1fc9;
+  z-index: 1;
+  filter: blur();
+}
+
+.bg-video-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index:-1;
+  opacity: 0.25;
+  overflow: hidden;
+}
+

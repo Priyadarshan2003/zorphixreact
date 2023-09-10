@@ -8,11 +8,13 @@ import Team from './Team';
 import Footer from './Footer';
 import CarouselComponent from './Carousel';
 import EntryPass from './EntryPass';
+import BackgroundAnimation from './BackgroundAnimation';
 
 
 const Main = () => {
     return (
         <div>
+            <BackgroundAnimation/>
             <EntryPass/>
             <About />
             <Sponsors />
