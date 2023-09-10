@@ -18,6 +18,9 @@ function LoginForm() {
     const [data, setData] = useState({
         fullName: '',
         college: '',
+        degree: '',
+        dept: '',
+        year: '',
         contactNo: '',
         email: '',
         password: '',
@@ -513,6 +516,14 @@ function LoginForm() {
 
     ]
 
+    const yearOptions = [
+        {value:'I', label:'I'},
+        {value:'II', label:'II'},
+        {value:'III', label:'III'},
+        {value:'IV', label:'IV'},
+        {value:'V', label:'V'},
+    ]
+
     const [selectedCollege, setSelectedCollege] = useState(null);
 
     const handleCollegeChange = (selectedOption) => {
@@ -520,8 +531,12 @@ function LoginForm() {
 
     };
 
+    const [selectedYear, setSelectedYear] = useState(null);
 
+    const handleYearChange = (selectedOption) => {
+        setSelectedYear(selectedOption);
 
+    };
 
     // console.log(data, "**");
 
@@ -553,12 +568,12 @@ function LoginForm() {
 
     const registerUser = async (e) => {
         e.preventDefault();
-        const { fullName, college, contactNo, email, password } = data;
+        const { fullName, college, degree, dept, contactNo, email, password } = data;
         console.log(data);
         try {
             if (isValidMobileNumber(contactNo)) {
                 const { data } = await axios.post('/register', {
-                    fullName, college: selectedCollege.label, contactNo, email, password
+                    fullName, college: selectedCollege.label , degree, year: selectedYear.label, dept, contactNo, email, password
                 })
                 if (data.error) {
                     toast.error(data.error)
@@ -632,6 +647,38 @@ function LoginForm() {
                                             />
                                         </div>
 
+                                        <div className="input-wrap div-flex">
+                                            <div>
+                                                <input
+                                                    type="text"
+                                                    className="input-field degree-field"
+                                                    autoComplete="off"
+                                                    value={data.degree}
+                                                    onChange={(e) => setData({ ...data, degree: e.target.value })}
+                                                    placeholder={data.degree ? '' : 'Degree'}
+                                                />
+                                            </div>
+                                            <div>
+                                                <Select
+                                                    className='college-select input-field year-field'
+                                                    options={yearOptions}
+                                                    value={selectedYear == null ? "" : selectedYear.label}
+                                                    onChange={handleYearChange}
+                                                    placeholder={selectedYear == null ? "Year " : selectedYear.label}
+                                                />
+                                            </div>
+                                        </div>
+
+                                        <div className="input-wrap">
+                                            <input
+                                                type="text"
+                                                className="input-field"
+                                                autoComplete="off"
+                                                value={data.dept}
+                                                onChange={(e) => setData({ ...data, dept: e.target.value })}
+                                                placeholder={data.dept ? '' : 'Department'}
+                                            />
+                                        </div>
 
                                         <div className="input-wrap">
                                             <input
