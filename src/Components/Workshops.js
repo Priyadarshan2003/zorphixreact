@@ -127,19 +127,11 @@ const Workshops = () => {
                   </p>
                 </div>
                 <div className="card__price-box">
-                  {userData === "no_user" ? (
-                    <a onClick={() => { loginToRegister() }} className="btn btn--white">
+                  
+                    <a href="https://forms.gle/SqxqzPeT3f4Csyxa9" target="_blank" className="btn btn--white">
                       Register Now
                     </a>
-                  ) : userData.workshop1 == "no" ? (
-                    <a onClick={() => { eventRegister("workshop1") }} className="btn btn--white">
-                      Register Now
-                    </a>
-                  ) : (
-                    <a className="btn btn--white" target="_blank" href="https://forms.gle/RqExTs9gLNsFEPCHA" rel="noreferrer">
-                      Registered
-                    </a>
-                  )}
+    
                 </div>
               </div>
             </div>
@@ -185,19 +177,11 @@ const Workshops = () => {
                   </p>
                 </div>
                 <div className="card__price-box">
-                  {userData === "no_user" ? (
-                    <a onClick={() => { loginToRegister() }} className="btn btn--white">
+                  
+                    <a href="https://forms.gle/sg9qZ6mV9bRwidXC6" target="_blank" className="btn btn--white">
                       Register Now
                     </a>
-                  ) : userData.workshop2 == "no" ? (
-                    <a onClick={() => { eventRegister("workshop2") }} className="btn btn--white">
-                      Register Now
-                    </a>
-                  ) : (
-                    <a className="btn btn--white" target="_blank" href="https://forms.gle/RqExTs9gLNsFEPCHA" rel="noreferrer">
-                      Registered
-                    </a>
-                  )}
+                  
                 </div>
               </div>
             </div>

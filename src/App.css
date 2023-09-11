@@ -1174,9 +1174,9 @@ body {
       right bottom,
       from(#10002b),
       to(#240046)),
-    url(./img/img6PNG.jpg);
+    url(./img/virtuoso.jpg);
   background-image: linear-gradient(to right bottom, #10002b, #240046),
-    url(./img/img6PNG.jpg);
+    url(./img/virtuoso.jpg);
 }
 
 .card__picture--5-nontech {
@@ -2861,7 +2861,7 @@ section p:first-child,
 
 #video-overlay{
   height: 100%;
-  background-color: #0c0e1fc9;
+  background-color: #001a35c9;
   z-index: 1;
   filter: blur();
 }
