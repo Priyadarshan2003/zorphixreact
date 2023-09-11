@@ -574,7 +574,7 @@ const TechEvents = () => {
           <div className="col-1-of-3">
             <div className="card" data-aos="zoom-in">
               <div className="card__side card__side--front">
-                <div className="card__picture card__picture--4-tech">
+                <div className="card__picture card__picture--4-nontech">
                   &nbsp;
                 </div>
                 <h4 className="card__heading">
