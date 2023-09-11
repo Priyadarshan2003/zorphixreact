@@ -10,7 +10,7 @@ import 'aos/dist/aos.css';
 const TechEvents = () => {
 
   useEffect(() => {
-    Aos.init({duration: 1000});
+    Aos.init({ duration: 1000 });
   })
   const [isPopupVisible, setPopupVisible] = useState(false);
   const [isBlurBackground, setBlurBackground] = useState(false);
@@ -81,7 +81,7 @@ const TechEvents = () => {
 
       setBlurBackground(true);
     }
-    else{
+    else {
       try {
         const email = userData.email;
         const { data } = await axios.post("/eventRegister", {
@@ -97,7 +97,7 @@ const TechEvents = () => {
         }).then((result) => {
           setBlurBackground(false);
         });
-  
+
         // Apply the blur effect to the background
         setBlurBackground(true);
       } catch (error) {
@@ -120,7 +120,7 @@ const TechEvents = () => {
 
       <div className="row">
         <div className="col-1-of-3">
-          <div className="card" data-aos = "zoom-in">
+          <div className="card" data-aos="zoom-in">
             <div className="card__side card__side--front">
               <div className="card__picture card__picture--1-tech">&nbsp;</div>
               <h4 className="card__heading">
@@ -168,10 +168,11 @@ const TechEvents = () => {
                   >
                     Register Now
                   </a>
-                ) : userData.event1 == "no" ? (
+                ) : userData.xcoders
+                  == "no" ? (
                   <a
                     onClick={() => {
-                      eventRegister("event1");
+                      eventRegister("xcoders");
                     }}
                     className="btn btn--white"
                   >
@@ -193,7 +194,7 @@ const TechEvents = () => {
         </div>
 
         <div className="col-1-of-3">
-          <div className="card" data-aos = "zoom-in">
+          <div className="card" data-aos="zoom-in">
             <div className="card__side card__side--front">
               <div className="card__picture card__picture--2-tech">&nbsp;</div>
               <h4 className="card__heading">
@@ -241,10 +242,11 @@ const TechEvents = () => {
                   >
                     Register Now
                   </a>
-                ) : userData.event2 == "no" ? (
+                ) : userData.thesis_precized
+                == "no" ? (
                   <a
                     onClick={() => {
-                      eventRegister("event2");
+                      eventRegister("thesis_precized");
                     }}
                     className="btn btn--white"
                   >
@@ -266,7 +268,7 @@ const TechEvents = () => {
         </div>
 
         <div className="col-1-of-3">
-          <div className="card" data-aos = "zoom-in">
+          <div className="card" data-aos="zoom-in">
             <div className="card__side card__side--front">
               <div className="card__picture card__picture--3-tech">&nbsp;</div>
               <h4 className="card__heading">
@@ -313,10 +315,11 @@ const TechEvents = () => {
                   >
                     Register Now
                   </a>
-                ) : userData.event3 == "no" ? (
+                ) : userData.coin_quest
+                == "no" ? (
                   <a
                     onClick={() => {
-                      eventRegister("event3");
+                      eventRegister("coin_quest");
                     }}
                     className="btn btn--white"
                   >
@@ -337,13 +340,13 @@ const TechEvents = () => {
           </div>
         </div>
       </div>
-      
-      
+
+
 
       <div className="sm-padding" id="section-tours">
         <div className="row">
           <div className="col-1-of-3">
-            <div className="card" data-aos = "zoom-in">
+            <div className="card" data-aos="zoom-in">
               <div className="card__side card__side--front">
                 <div className="card__picture card__picture--4-tech">
                   &nbsp;
@@ -392,10 +395,10 @@ const TechEvents = () => {
                     >
                       Register Now
                     </a>
-                  ) : userData.event4 == "no" ? (
+                  ) : userData.plutus == "no" ? (
                     <a
                       onClick={() => {
-                        eventRegister("event4");
+                        eventRegister("plutus");
                       }}
                       className="btn btn--white"
                     >
@@ -416,7 +419,7 @@ const TechEvents = () => {
             </div>
           </div>
           <div className="col-1-of-3">
-            <div className="card" data-aos = "zoom-in">
+            <div className="card" data-aos="zoom-in">
               <div className="card__side card__side--front">
                 <div className="card__picture card__picture--5-tech">
                   &nbsp;
@@ -466,10 +469,11 @@ const TechEvents = () => {
                     >
                       Register Now
                     </a>
-                  ) : userData.event5 == "no" ? (
+                  ) : userData.algo_rhythms
+                  == "no" ? (
                     <a
                       onClick={() => {
-                        eventRegister("event5");
+                        eventRegister("algo_rhythms");
                       }}
                       className="btn btn--white"
                     >
@@ -490,22 +494,22 @@ const TechEvents = () => {
             </div>
           </div>
           <div className="col-1-of-3">
-            <div className="card" data-aos = "zoom-in">
+            <div className="card" data-aos="zoom-in">
               <div className="card__side card__side--front">
                 <div className="card__picture card__picture--5-tech">
                   &nbsp;
                 </div>
                 <h4 className="card__heading">
                   <span className="card__heading-span card__heading-span--3 bold-white">
-                  FLIP IT & QUIZ IT
+                    FLIP IT & QUIZ IT
                   </span>
                 </h4>
                 <div className="card__details">
                   <p>
-                  Prepare for an event of mind-bending scenarios, where the participants will 
-                  be presented with complex situational questions that demand creative problem-solving, 
-                  but the twist lies in who can master the art of bottle flipping to secure their chance 
-                  to answer first.
+                    Prepare for an event of mind-bending scenarios, where the participants will
+                    be presented with complex situational questions that demand creative problem-solving,
+                    but the twist lies in who can master the art of bottle flipping to secure their chance
+                    to answer first.
                   </p>
                 </div>
               </div>
@@ -539,10 +543,10 @@ const TechEvents = () => {
                     >
                       Register Now
                     </a>
-                  ) : userData.event5 == "no" ? (
+                  ) : userData.flip_it == "no" ? (
                     <a
                       onClick={() => {
-                        eventRegister("event5");
+                        eventRegister("flip_it");
                       }}
                       className="btn btn--white"
                     >
@@ -568,22 +572,22 @@ const TechEvents = () => {
       <div className="sm-padding" id="section-tours">
         <div className="row">
           <div className="col-1-of-3">
-            <div className="card" data-aos = "zoom-in">
+            <div className="card" data-aos="zoom-in">
               <div className="card__side card__side--front">
                 <div className="card__picture card__picture--4-nontech">
                   &nbsp;
                 </div>
                 <h4 className="card__heading">
                   <span className="card__heading-span card__heading-span--1 bold-white">
-                  Virtuoso
+                    Virtuoso
                   </span>
                 </h4>
                 <div className="card__details">
                   <p>
-                  Paying homage to Vijay TV's iconic Start Music, we're raising the stakes 
-                  in music games. Evoke your inner music detective in a dynamic guessing game 
-                  event with three rounds of song and melody challenges. Join us for a day filled 
-                  with musical excitement at Virtuoso!
+                    Paying homage to Vijay TV's iconic Start Music, we're raising the stakes
+                    in music games. Evoke your inner music detective in a dynamic guessing game
+                    event with three rounds of song and melody challenges. Join us for a day filled
+                    with musical excitement at Virtuoso!
                   </p>
                 </div>
               </div>
@@ -617,10 +621,10 @@ const TechEvents = () => {
                     >
                       Register Now
                     </a>
-                  ) : userData.event4 == "no" ? (
+                  ) : userData.vituoso == "no" ? (
                     <a
                       onClick={() => {
-                        eventRegister("event4");
+                        eventRegister("vituoso");
                       }}
                       className="btn btn--white"
                     >
