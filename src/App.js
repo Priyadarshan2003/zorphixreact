@@ -7,6 +7,7 @@ import axios from 'axios';
 
 axios.defaults.withCredentials = true;
 axios.defaults.baseURL = "https://successful-eel-pea-coat.cyclic.app"
+// axios.defaults.baseURL = "http://localhost:8000"
 
 
 function App() {
