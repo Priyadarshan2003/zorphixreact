@@ -702,6 +702,7 @@ html {
 body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+
 }
 
 .home {
@@ -1097,9 +1098,9 @@ body {
       right bottom,
       from(#10002b),
       to(#240046)),
-    url(.img/thez.jpg);
+    url(./img/thesis.jpg);
   background-image: linear-gradient(to right bottom, #10002b, #240046),
-    url(./img/thez.jpg);
+    url(./img/thesis.jpg);
 }
 
 .card__picture--3-tech {
@@ -2877,3 +2878,7 @@ section p:first-child,
   overflow: hidden;
 }
 
+.count{
+  background-color: white;
+  border: 5px solid white;
+}
