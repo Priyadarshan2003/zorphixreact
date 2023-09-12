@@ -985,7 +985,6 @@ function LoginForm() {
     setSelectedYear(selectedOption);
   };
 
-  // console.log(data, "**");
 
   const loginUser = async (e) => {
     e.preventDefault();
@@ -1002,7 +1001,6 @@ function LoginForm() {
         setData({});
         navigate("/");
         localStorage.setItem("userData", JSON.stringify(data));
-        // console.log();
         toast.success("Login Successful");
         setTimeout(() => {
           window.location.reload();
@@ -1033,7 +1031,6 @@ function LoginForm() {
         if (data.error) {
           toast.error(data.error);
         } else {
-          // setData({})
           toast.success("Registered Successfully");
           setIsSignUpMode(!isSignUpMode);
           setActiveImage(1);
@@ -1185,7 +1182,6 @@ function LoginForm() {
                     }
                     placeholder={data.email ? "" : "Email"}
                   />
-                  {/* <label className='login-label'>Email</label> */}
                 </div>
 
                 <div className="input-wrap">
@@ -1199,7 +1195,6 @@ function LoginForm() {
                     }
                     placeholder={data.password ? "" : "Password"}
                   />
-                  {/* <label className='login-label'>Password</label> */}
                 </div>
 
                 {isSignUpMode ? (
