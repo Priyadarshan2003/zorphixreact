@@ -115,9 +115,9 @@ const Workshops = () => {
                         "UI/UX Feat. Figma",
                         "Discover this exceptional collaborative process in UI/UX workshops to elevate digital product design. By the end of this workshop, you'll not only possess the technical skills to wield design tools but also the mindset to shape the future of user-centric innovation. Engage in this notable collaborative approach during UI/UX workshops to refine the design of digital solutions.",
                         "Jey Shreemen GR",
-                        "Mahmoodah Hafsah S",
+                        "TBU",
                         "+91 7604813964",
-                        "+91 9940261966",
+                        "TBU",
                         "forms.gle/RqExTs9gLNsFEPCHA",
                         "Venue1"
                       )

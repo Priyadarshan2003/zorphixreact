@@ -83,13 +83,6 @@ const TechEvents = () => {
     }
     else {
       try {
-        const email = userData.email;
-        const { data } = await axios.post("/eventRegister", {
-          eventName,
-          email,
-        });
-        // console.log(data);
-        localStorage.setItem("userData", JSON.stringify(data));
         Swal.fire({
           icon: "success",
           title: "Registered Successfully!",
@@ -97,7 +90,13 @@ const TechEvents = () => {
         }).then((result) => {
           setBlurBackground(false);
         });
-
+        const email = userData.email;
+        const { data } = await axios.post("/eventRegister", {
+          eventName,
+          email,
+        });
+        // console.log(data);
+        localStorage.setItem("userData", JSON.stringify(data));
         // Apply the blur effect to the background
         setBlurBackground(true);
       } catch (error) {
@@ -523,9 +522,9 @@ const TechEvents = () => {
                           "FLIP IT & QUIZ IT",
                           "Prepare for an event of mind-bending scenarios, where the participants will be presented with complex situational questions that demand creative problem-solving, but the twist lies in who can master the art of bottle flipping to secure their chance to answer first. Join us for a journey of intellect and strategy at 'Flip it & Quiz it'.",
                           "Navinaa G",
-                          "TBU",
+                          "Mahmoodah Hafsah S",
                           "+91 9080230690",
-                          "TBU",
+                          "+91 9940261966",
                           "forms.gle/KQrFXKMjRHmNKVMC6",
                           "Venue5"
                         )
