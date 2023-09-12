@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import git from "../img/git.png";
-import wolfr from "../img/wolfr.png";
-import do_logo from "../img/DO_Logo_Vertical_White.png";
+import hubsol from "../img/hubsolutionswhitecrop.jpeg";
+import poorvi from "../img/poorvika.png";
 import people_logo from "../img/people_logo-removebg-preview.png";
 import cake_logo from "../img/cake_logo_white.png";
 import "../App.css";
@@ -19,26 +19,26 @@ const Sponsors = () => {
         <h2 class="heading-secondary white letter-spacing">Sponsored By</h2>
       </div>
       <div class="sponsor">
-        <div class="github-sponsor">
+        {/* <div class="github-sponsor">
           <div class="section-sponsor-card" data-aos = "fade-right">
             <img src={git} class="git" alt="github" />
           </div>
-        </div>
+        </div> */}
         <div class="row1">
           <div class="section-sponsor-card" data-aos = "fade-right">
-            <img src={wolfr} class="i padding wol" alt="wolfram" />
+            <img src={hubsol} class="i padding wol" alt="hubsolution" />
           </div>
 
           <div class="section-sponsor-card" data-aos = "fade-right">
-            <img src={do_logo} class="i ocean" alt="digitalOcean" />
+            <img src={poorvi} class="i ocean" alt="poorvika" />
           </div>
-          <div class="section-sponsor-card" data-aos = "fade-right">
+          {/* <div class="section-sponsor-card" data-aos = "fade-right">
             <img src={people_logo} alt="people's logo" class="i some-large" />
           </div>
 
           <div class="section-sponsor-card" data-aos = "fade-right">
             <img src={cake_logo} class="i padding-not" alt="interviewcake" />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
