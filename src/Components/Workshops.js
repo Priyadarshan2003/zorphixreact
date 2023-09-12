@@ -44,40 +44,6 @@ const Workshops = () => {
     setPopupVisible(!isPopupVisible);
   };
 
-  const loginToRegister = () => {
-    Swal.fire({
-      icon: "info",
-      title: "Login",
-      text: "Kindly login to register for the event.",
-    }).then((result) => {
-      setBlurBackground(false);
-    });
-  }
-
-
-  const eventRegister = async (eventName) => {
-    try {
-      const email = userData.email;
-      const { data } = await axios.post('/eventRegister', {
-        eventName, email
-      })
-      // console.log(data);
-      localStorage.setItem('userData', JSON.stringify(data));
-      Swal.fire({
-        icon: "success",
-        title: "Registered Successfully!",
-        text: "You have successfully registered for the event.",
-      }).then((result) => {
-        setBlurBackground(false);
-      });
-
-      // Apply the blur effect to the background
-      setBlurBackground(true);
-    } catch (error) {
-      console.log(error);
-    }
-  }
-
   return (
     <div className="section-tours" id="events">
       <div className="u-center-text u-margin-bottom-big">
@@ -119,7 +85,7 @@ const Workshops = () => {
                         "+91 7604813964",
                         "TBU",
                         "forms.gle/RqExTs9gLNsFEPCHA",
-                        "Venue1"
+                        "To be announced"
                       )
                     }
                   >
@@ -169,7 +135,7 @@ const Workshops = () => {
                         "+91 6379754326",
                         "+91 8072892365",
                         "forms.gle/G9GTWJTvh4SZGvqJA",
-                        "Venue2"
+                        "To be announced"
                       )
                     }
                   >

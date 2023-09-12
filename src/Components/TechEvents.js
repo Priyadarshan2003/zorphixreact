@@ -596,9 +596,9 @@ const TechEvents = () => {
                           "VIRTUOSO",
                           "Paying homage to Vijay TV's iconic Start Music, we're raising the stakes in music games. Evoke your inner music detective in a dynamic guessing game event with three rounds of song and melody challenges. Join us for a day filled with musical excitement at Virtuoso!",
                           "Mathuku Jayasimha Reddy",
-                          "Lakshmi Vardhan Reddy",
+                          "Abirami S",
                           "+91 8341273412",
-                          "+91 9381858745",
+                          "+91 7358290831",
                           "forms.gle/2r5S34Nfzvnivrzx6",
                           "To be announced"
                         )
