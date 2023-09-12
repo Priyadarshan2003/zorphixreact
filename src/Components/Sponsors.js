@@ -15,7 +15,7 @@ const Sponsors = () => {
   })
   return (
     <div class="section-features" data-aos = "fade-down">
-      <div class="u-center-text u-margin-bottom-big">
+      <div class="u-center-text">
         <h2 class="heading-secondary white letter-spacing">Sponsored By</h2>
       </div>
       <div class="sponsor">
@@ -26,11 +26,11 @@ const Sponsors = () => {
         </div> */}
         <div class="row1">
           <div class="section-sponsor-card" data-aos = "fade-right">
-            <img src={hubsol} class="i padding wol" alt="hubsolution" />
+            <img src={poorvi} class="i poorvika" alt="poorvika" />
           </div>
 
           <div class="section-sponsor-card" data-aos = "fade-right">
-            <img src={poorvi} class="i ocean" alt="poorvika" />
+            <img src={hubsol} class="i hubsolutions" alt="hub solutions" />
           </div>
           {/* <div class="section-sponsor-card" data-aos = "fade-right">
             <img src={people_logo} alt="people's logo" class="i some-large" />
