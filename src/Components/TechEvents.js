@@ -146,7 +146,7 @@ const TechEvents = () => {
                         "+91 9677055652",
                         "+91 9360390526",
                         "forms.gle/RqExTs9gLNsFEPCHA",
-                        "Venue1"
+                        "To be announced"
                       )
                     }
                   >
@@ -221,7 +221,7 @@ const TechEvents = () => {
                         "+91 9952051446",
                         "+91 9150002718",
                         "forms.gle/G9GTWJTvh4SZGvqJA",
-                        "Venue2"
+                        "To be announced"
                       )
                     }
                   >
@@ -294,7 +294,7 @@ const TechEvents = () => {
                         "+91 6380941457",
                         "+91 7395930205",
                         "forms.gle/P3QNm3woRoMd6bF66",
-                        "Venue3"
+                        "To be announced"
                       )
                     }
                   >
@@ -374,7 +374,7 @@ const TechEvents = () => {
                           "+91 9342537734",
                           "+91 7339044512",
                           "forms.gle/2r5S34Nfzvnivrzx6",
-                          "Venue4"
+                          "To be announced"
                         )
                       }
                     >
@@ -448,7 +448,7 @@ const TechEvents = () => {
                           "+91 6369946328",
                           "+91 9710514448",
                           "forms.gle/KQrFXKMjRHmNKVMC6",
-                          "Venue5"
+                          "To be announced"
                         )
                       }
                     >
@@ -522,7 +522,7 @@ const TechEvents = () => {
                           "+91 9080230690",
                           "+91 9940261966",
                           "forms.gle/KQrFXKMjRHmNKVMC6",
-                          "Venue5"
+                          "To be announced"
                         )
                       }
                     >
@@ -600,7 +600,7 @@ const TechEvents = () => {
                           "+91 8341273412",
                           "+91 9381858745",
                           "forms.gle/2r5S34Nfzvnivrzx6",
-                          "Venue4"
+                          "To be announced"
                         )
                       }
                     >
