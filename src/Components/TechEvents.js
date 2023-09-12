@@ -80,17 +80,18 @@ const TechEvents = () => {
     }
     else {
       try {
+        
+        const email = userData.email;
+        const { data } = await axios.post("/eventRegister", {
+          eventName,
+          email,
+        });
         Swal.fire({
           icon: "success",
           title: "Registered Successfully!",
           text: "You have successfully registered for the event.",
         }).then((result) => {
           setBlurBackground(false);
-        });
-        const email = userData.email;
-        const { data } = await axios.post("/eventRegister", {
-          eventName,
-          email,
         });
         localStorage.setItem("userData", JSON.stringify(data));
         // Apply the blur effect to the background
