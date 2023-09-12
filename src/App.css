@@ -702,6 +702,7 @@ html {
 body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+
 }
 
 .home {
@@ -2890,3 +2891,7 @@ section p:first-child,
   overflow: hidden;
 }
 
+.count{
+  background-color: white;
+  border: 5px solid white;
+}
