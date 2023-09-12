@@ -37,7 +37,6 @@ const CarouselComponent = () => {
         alt="Third slide"
       />
     </Carousel.Item>
-    {/* Add more Carousel.Items for additional images */}
     <Carousel.Item>
       <img
         className="d-block"

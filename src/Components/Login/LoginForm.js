@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import "./Login.css";
 import logo from "../../img/loginlog.png";
-import img1 from "../../img/eventphotos/year 1/DSC_0026.JPG";
-import img2 from "../../img/eventphotos/year 2/IMG_4396.JPG";
-import img3 from "../../img/eventphotos/year 1/DSC_0034.JPG";
+import img1 from "../../img/eventposters/xcoders.jpg";
+import img2 from "../../img/eventposters/thesis precised.jpg";
+import img3 from "../../img/eventposters/coin quest.jpg";
+import img4 from "../../img/eventposters/plutus.jpg";
+import img5 from "../../img/eventposters/algo rhythms.jpg";
+import img6 from "../../img/eventposters/virtuoso.jpg";
+import img7 from "../../img/eventposters/trading and investment.jpg";
 import axios from "axios";
 import Select from "react-select";
 import { toast } from "react-hot-toast";
@@ -1233,9 +1237,24 @@ function LoginForm() {
                 <img src={img1} className="image img-1 show" alt="" />
                 <img src={img2} className="image img-2 show" alt="" />
                 <img src={img3} className="image img-3 show" alt="" />
+                <img src={img4} className="image img-3 show" alt="" />
+                <img src={img5} className="image img-3 show" alt="" />
+                <img src={img6} className="image img-3 show" alt="" />
+                <img src={img7} className="image img-3 show" alt="" />
                 <img src={img1} className="image img-1 show" alt="" />
                 <img src={img2} className="image img-2 show" alt="" />
                 <img src={img3} className="image img-3 show" alt="" />
+                <img src={img4} className="image img-3 show" alt="" />
+                <img src={img5} className="image img-3 show" alt="" />
+                <img src={img6} className="image img-3 show" alt="" />
+                <img src={img7} className="image img-3 show" alt="" />
+                <img src={img1} className="image img-1 show" alt="" />
+                <img src={img2} className="image img-2 show" alt="" />
+                <img src={img3} className="image img-3 show" alt="" />
+                <img src={img4} className="image img-3 show" alt="" />
+                <img src={img5} className="image img-3 show" alt="" />
+                <img src={img6} className="image img-3 show" alt="" />
+                <img src={img7} className="image img-3 show" alt="" />
               </div>
             </div>
           </div>
