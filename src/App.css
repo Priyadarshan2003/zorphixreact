@@ -1998,9 +1998,10 @@ html {
       transparent 0%,
       transparent 50%,
       #fff 50%);
-  background-size: 220%;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  background-size: 250%;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+
 }
 
 .navigation__link:link span,
