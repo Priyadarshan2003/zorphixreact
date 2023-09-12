@@ -19,9 +19,6 @@ const TechEvents = () => {
   const userData = loguser
     ? JSON.parse(localStorage.getItem("userData"))
     : "no_user";
-  // console.log(userData,"**********");
-
-  // console.log(userData, "user");
 
   // State variables to store event information
   const [eventInfo, setEventInfo] = useState({
@@ -83,6 +80,12 @@ const TechEvents = () => {
     }
     else {
       try {
+        
+        const email = userData.email;
+        const { data } = await axios.post("/eventRegister", {
+          eventName,
+          email,
+        });
         Swal.fire({
           icon: "success",
           title: "Registered Successfully!",
@@ -90,12 +93,6 @@ const TechEvents = () => {
         }).then((result) => {
           setBlurBackground(false);
         });
-        const email = userData.email;
-        const { data } = await axios.post("/eventRegister", {
-          eventName,
-          email,
-        });
-        // console.log(data);
         localStorage.setItem("userData", JSON.stringify(data));
         // Apply the blur effect to the background
         setBlurBackground(true);
@@ -104,7 +101,6 @@ const TechEvents = () => {
       }
     }
   };
-  // console.log(localStorage.userData);
 
   return (
     <div

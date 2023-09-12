@@ -28,13 +28,6 @@ const Team = () => {
           <h3 className="heading-tertiary u-margin-bottom-small">Bharath</h3>
           <p>+91 97515 83361</p>
         </div>
-        {/* <div className="box">
-          <h2 className="position">Core Organizer</h2>
-          <h3 className="heading-tertiary u-margin-bottom-small">
-            Alen Joseph Babu & Bhuvanesh
-          </h3>
-          <p>+91 8825994012</p>
-        </div> */}
         <div className="box">
           <h2 className="position">Treasurer</h2>
           <h3 className="heading-tertiary u-margin-bottom-small">Karan & Sheryl</h3>

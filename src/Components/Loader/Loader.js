@@ -1,6 +1,5 @@
 import React from "react";
 import "./Loader.css";
-// import zorphixlogo from '../../img/zorphix-landing-logo.png';
 import loadervid from '../../video/loader1.mp4';
 
 const Loader = () => {

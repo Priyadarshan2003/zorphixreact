@@ -229,7 +229,6 @@ main.sign-up-mode .carousel {
     left: 45%;
     top: 0;
     background-color: white;
-    /* background: linear-gradient(#9d4edd, #10002b); */
     border-radius: 3rem;
     display: grid;
     grid-template-rows: auto 1fr;
