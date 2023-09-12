@@ -1005,6 +1005,7 @@ body {
   -moz-perspective: 150rem;
   position: relative;
   height: 52rem;
+  background-color: #0000;
 }
 
 .card__side {
@@ -1015,6 +1016,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  /* border-radius: 50px; */
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   overflow: hidden;
@@ -1077,8 +1079,8 @@ body {
   background-blend-mode: screen;
   /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); */
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  /* border-top-left-radius: 3px;
+  border-top-right-radius: 3px; */
 }
 
 .card__picture--1-tech {
@@ -1087,9 +1089,9 @@ body {
       right bottom,
       from(#10002b),
       to(#240046)),
-    url(./img/XCnew.jpg);
+    url(./img/xcoders.png);
   background-image: linear-gradient(to right bottom, #10002b, #240046),
-    url(./img/XCnew.jpg);
+    url(./img/xcoders.png);
 }
 
 .card__picture--2-tech {
@@ -1098,9 +1100,9 @@ body {
       right bottom,
       from(#10002b),
       to(#240046)),
-    url(./img/thesis.jpg);
+    url(.img/thesisprecised.jpg);
   background-image: linear-gradient(to right bottom, #10002b, #240046),
-    url(./img/thesis.jpg);
+    url(./img/thesisprecised.jpg);
 }
 
 .card__picture--3-tech {
@@ -1109,9 +1111,9 @@ body {
       right bottom,
       from(#10002b),
       to(#240046)),
-    url(./img/plug_wmrem.jpeg);
+    url(./img/coinquest.jpg);
   background-image: linear-gradient(to right bottom, #10002b, #240046),
-    url(./img/plug_wmrem.jpeg);
+    url(./img/coinquest.jpg);
 }
 
 .card__picture--4-tech {
@@ -1120,9 +1122,9 @@ body {
       right bottom,
       from(#10002b),
       to(#240046)),
-    url(./img/game.jpg);
+    url(./img/plutus.jpg);
   background-image: linear-gradient(to right bottom, #10002b, #240046),
-    url(./img/game.jpg);
+    url(./img/plutus.jpg);
 }
 
 .card__picture--5-tech {
@@ -1131,12 +1133,23 @@ body {
       right bottom,
       from(#10002b),
       to(#240046)),
-    url(./img/algo.jpg);
+    url(./img/algo1.jpg);
   background-image: linear-gradient(to right bottom, #10002b, #240046),
-    url(./img/algo.jpg);
+    url(./img/algo1.jpg);
 }
 
-.card__picture--1-nontech {
+.card__picture--6-tech {
+  background-image: -webkit-gradient(linear,
+      left top,
+      right bottom,
+      from(#10002b),
+      to(#240046)),
+    url(./img/ftb1.png);
+  background-image: linear-gradient(to right bottom, #10002b, #240046),
+    url(./img/ftb1.png);
+}
+
+/* .card__picture--1-nontech {
   background-image: -webkit-gradient(linear,
       left top,
       right bottom,
@@ -1145,9 +1158,9 @@ body {
     url(./img/football.jpeg);
   background-image: linear-gradient(to right bottom, #10002b, #240046),
     url(./img/football.jpeg);
-}
+} */
 
-.card__picture--2-nontech {
+/* .card__picture--2-nontech {
   background-image: -webkit-gradient(linear,
       left top,
       right bottom,
@@ -1156,9 +1169,9 @@ body {
     url(./img/img4.PNG);
   background-image: linear-gradient(to right bottom, #10002b, #240046),
     url(./img/img4.PNG);
-}
+} */
 
-.card__picture--3-nontech {
+/* .card__picture--3-nontech {
   background-image: -webkit-gradient(linear,
       left top,
       right bottom,
@@ -1167,7 +1180,7 @@ body {
     url(./img/img5.PNG);
   background-image: linear-gradient(to right bottom, #10002b, #240046),
     url(./img/img5.PNG);
-}
+} */
 
 .card__picture--4-nontech {
   background-image: -webkit-gradient(linear,
@@ -1180,7 +1193,7 @@ body {
     url(./img/virtuoso.jpg);
 }
 
-.card__picture--5-nontech {
+/* .card__picture--5-nontech {
   background-image: -webkit-gradient(linear,
       left top,
       right bottom,
@@ -1189,9 +1202,9 @@ body {
     url(./img/cricket.jpeg);
   background-image: linear-gradient(to right bottom, #10002b, #240046),
     url(./img/cricket.jpeg);
-}
+} */
 
-.card__picture--1-business {
+/* .card__picture--1-business {
   background-image: -webkit-gradient(linear,
       left top,
       right bottom,
@@ -1200,9 +1213,9 @@ body {
     url(./img/2fact1.jpg);
   background-image: linear-gradient(to right bottom, #10002b, #240046),
     url(./img/2fact1.jpg);
-}
+} */
 
-.card__picture--2-business {
+/* .card__picture--2-business {
   background-image: -webkit-gradient(linear,
       left top,
       right bottom,
@@ -1211,7 +1224,7 @@ body {
     url(./img/pitch.png);
   background-image: linear-gradient(to right bottom, #10002b, #240046),
     url(./img/pitch.png);
-}
+} */
 
 .single-card {
   width: 320px;
@@ -2473,7 +2486,7 @@ only screen and (min-width: 125em) {
   }
 }
 
-.book {
+/* .book {
   background-image: linear-gradient(105deg,
       rgba(255, 255, 255, 0.9) 0%,
       rgba(255, 255, 255, 0.9) 50%,
@@ -2483,9 +2496,9 @@ only screen and (min-width: 125em) {
   border-radius: 3px;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-}
+} */
 
-@media only screen and (max-width: 75em) {
+/* @media only screen and (max-width: 75em) {
   .book {
     background-image: linear-gradient(105deg,
         rgba(255, 255, 255, 0.9) 0%,
@@ -2494,9 +2507,9 @@ only screen and (min-width: 125em) {
       url(./img/nat-10.jpg);
     background-size: cover;
   }
-}
+} */
 
-@media only screen and (max-width: 56.25em) {
+/* @media only screen and (max-width: 56.25em) {
   .book {
     background-image: -webkit-gradient(linear,
         left top,
@@ -2509,7 +2522,7 @@ only screen and (min-width: 125em) {
         rgba(255, 255, 255, 0.9) 100%),
       url(./img/nat-10.jpg);
   }
-}
+} */
 
 .book__form {
   width: 50%;
@@ -2862,7 +2875,7 @@ section p:first-child,
 
 #video-overlay{
   height: 100%;
-  background-color: #001a35c9;
+  background-color: #0c1c22ae;
   z-index: 1;
   filter: blur();
 }
