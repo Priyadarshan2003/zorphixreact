@@ -351,8 +351,7 @@ main.sign-up-mode .carousel {
 .scrolling-images {
     display: flex;
     flex-direction: column;
-    animation: scrollAnimation 30s linear infinite;
-    /* Adjust the duration as needed */
+    animation: scrollAnimation 90s linear infinite;
 }
 
 @keyframes scrollAnimation {
@@ -361,7 +360,7 @@ main.sign-up-mode .carousel {
     }
 
     100% {
-        transform: translateY(-100%);
+        transform: translateY(-94%);
     }
 }
 
@@ -411,7 +410,7 @@ main.sign-up-mode .carousel {
 
     .login-carousel {
         position: revert;
-        height: auto;
+        height: 100vh;
         width: 100%;
         padding: 3rem 2rem;
         display: flex;
