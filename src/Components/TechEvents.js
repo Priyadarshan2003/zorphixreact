@@ -19,9 +19,6 @@ const TechEvents = () => {
   const userData = loguser
     ? JSON.parse(localStorage.getItem("userData"))
     : "no_user";
-  // console.log(userData,"**********");
-
-  // console.log(userData, "user");
 
   // State variables to store event information
   const [eventInfo, setEventInfo] = useState({
@@ -83,13 +80,12 @@ const TechEvents = () => {
     }
     else {
       try {
+        
         const email = userData.email;
         const { data } = await axios.post("/eventRegister", {
           eventName,
           email,
         });
-        // console.log(data);
-        localStorage.setItem("userData", JSON.stringify(data));
         Swal.fire({
           icon: "success",
           title: "Registered Successfully!",
@@ -97,7 +93,7 @@ const TechEvents = () => {
         }).then((result) => {
           setBlurBackground(false);
         });
-
+        localStorage.setItem("userData", JSON.stringify(data));
         // Apply the blur effect to the background
         setBlurBackground(true);
       } catch (error) {
@@ -105,7 +101,6 @@ const TechEvents = () => {
       }
     }
   };
-  // console.log(localStorage.userData);
 
   return (
     <div
@@ -151,7 +146,7 @@ const TechEvents = () => {
                         "+91 9677055652",
                         "+91 9360390526",
                         "forms.gle/RqExTs9gLNsFEPCHA",
-                        "Venue1"
+                        "To be announced"
                       )
                     }
                   >
@@ -226,7 +221,7 @@ const TechEvents = () => {
                         "+91 9952051446",
                         "+91 9150002718",
                         "forms.gle/G9GTWJTvh4SZGvqJA",
-                        "Venue2"
+                        "To be announced"
                       )
                     }
                   >
@@ -299,7 +294,7 @@ const TechEvents = () => {
                         "+91 6380941457",
                         "+91 7395930205",
                         "forms.gle/P3QNm3woRoMd6bF66",
-                        "Venue3"
+                        "To be announced"
                       )
                     }
                   >
@@ -379,7 +374,7 @@ const TechEvents = () => {
                           "+91 9342537734",
                           "+91 7339044512",
                           "forms.gle/2r5S34Nfzvnivrzx6",
-                          "Venue4"
+                          "To be announced"
                         )
                       }
                     >
@@ -453,7 +448,7 @@ const TechEvents = () => {
                           "+91 6369946328",
                           "+91 9710514448",
                           "forms.gle/KQrFXKMjRHmNKVMC6",
-                          "Venue5"
+                          "To be announced"
                         )
                       }
                     >
@@ -496,7 +491,7 @@ const TechEvents = () => {
           <div className="col-1-of-3">
             <div className="card" data-aos="zoom-in">
               <div className="card__side card__side--front">
-                <div className="card__picture card__picture--5-tech">
+                <div className="card__picture card__picture--6-tech">
                   &nbsp;
                 </div>
                 <h4 className="card__heading">
@@ -523,11 +518,11 @@ const TechEvents = () => {
                           "FLIP IT & QUIZ IT",
                           "Prepare for an event of mind-bending scenarios, where the participants will be presented with complex situational questions that demand creative problem-solving, but the twist lies in who can master the art of bottle flipping to secure their chance to answer first. Join us for a journey of intellect and strategy at 'Flip it & Quiz it'.",
                           "Navinaa G",
-                          "TBU",
+                          "Mahmoodah Hafsah S",
                           "+91 9080230690",
-                          "TBU",
+                          "+91 9940261966",
                           "forms.gle/KQrFXKMjRHmNKVMC6",
-                          "Venue5"
+                          "To be announced"
                         )
                       }
                     >
@@ -601,11 +596,11 @@ const TechEvents = () => {
                           "VIRTUOSO",
                           "Paying homage to Vijay TV's iconic Start Music, we're raising the stakes in music games. Evoke your inner music detective in a dynamic guessing game event with three rounds of song and melody challenges. Join us for a day filled with musical excitement at Virtuoso!",
                           "Mathuku Jayasimha Reddy",
-                          "Lakshmi Vardhan Reddy",
+                          "Abirami S",
                           "+91 8341273412",
-                          "+91 9381858745",
+                          "+91 7358290831",
                           "forms.gle/2r5S34Nfzvnivrzx6",
-                          "Venue4"
+                          "To be announced"
                         )
                       }
                     >

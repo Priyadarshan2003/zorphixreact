@@ -13,8 +13,8 @@ const Footer = () => {
             <div class="row">
                 <div class="col-1-of-2">
                     <p class="footer__copyright">
-                        Zorphix is a techno-management symposium organized by the
-                        Department of 'Computer Science and Business Systems' at Chennai Institute of Technology.
+                        Zorphix is a national level techno-management symposium organized by the
+                        Department of Computer Science and Business Systems at Chennai Institute of Technology.
                     </p>
                 </div>
 
@@ -34,7 +34,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='text-center'>
-                <span class="copyright">@Zorphix 2023 All rights reserved</span>
+                <span class="copyright">©Zorphix 2023 All rights reserved</span>
             </div>
             <div className='text-center'>
                 <span>Visitors:</span>

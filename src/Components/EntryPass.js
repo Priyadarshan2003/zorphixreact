@@ -31,23 +31,27 @@ const EntryPass = () => {
           <QRCode
             className="qrcodeimage"
             value={`
-    ID: ${userData.zorid}
-    Name: ${userData.fullName}
-    College: ${userData.college}
-    Degree: ${userData.degree}
-    Dept: ${userData.dept}
-    Year: ${userData.year}
-    Event1 : ${userData.event1}
-    Event2 : ${userData.event2}
-    Event3 : ${userData.event3}
-    Event4 : ${userData.event4}
-    Event5 : ${userData.event5}
-    Workshop1 : ${userData.workshop1}
-    Workshop2 : ${userData.workshop2}
+ID: ${userData._id}
+Reference No. : ${userData.zorid}
+Name: ${userData.fullName}
+College: ${userData.college}
+Degree: ${userData.degree}
+Year: ${userData.year}
+Dept: ${userData.dept}
+Contact No : ${userData.contactNo}
+E mail : ${userData.email}
+Xcoders : ${userData.xcoders}
+Thesis-Precized : ${userData.thesis_precized}
+Coin Quest : ${userData.coin_quest}
+Plutus : ${userData.plutus}
+Algo-Rhythms : ${userData.algo_rhythms}
+Flip it & Quiz it : ${userData.flip_it}
+Virtuoso : ${userData.vituoso}
+
   `}
-            size={200}
+            size={250}
           />
-          <h3>ID : {userData.zorid}</h3>
+          <h3>Reference no. {userData.zorid}</h3>
           </div>
           
         </div>

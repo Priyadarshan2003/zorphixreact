@@ -44,40 +44,6 @@ const Workshops = () => {
     setPopupVisible(!isPopupVisible);
   };
 
-  const loginToRegister = () => {
-    Swal.fire({
-      icon: "info",
-      title: "Login",
-      text: "Kindly login to register for the event.",
-    }).then((result) => {
-      setBlurBackground(false);
-    });
-  }
-
-
-  const eventRegister = async (eventName) => {
-    try {
-      const email = userData.email;
-      const { data } = await axios.post('/eventRegister', {
-        eventName, email
-      })
-      // console.log(data);
-      localStorage.setItem('userData', JSON.stringify(data));
-      Swal.fire({
-        icon: "success",
-        title: "Registered Successfully!",
-        text: "You have successfully registered for the event.",
-      }).then((result) => {
-        setBlurBackground(false);
-      });
-
-      // Apply the blur effect to the background
-      setBlurBackground(true);
-    } catch (error) {
-      console.log(error);
-    }
-  }
-
   return (
     <div className="section-tours" id="events">
       <div className="u-center-text u-margin-bottom-big">
@@ -115,11 +81,11 @@ const Workshops = () => {
                         "UI/UX Feat. Figma",
                         "Discover this exceptional collaborative process in UI/UX workshops to elevate digital product design. By the end of this workshop, you'll not only possess the technical skills to wield design tools but also the mindset to shape the future of user-centric innovation. Engage in this notable collaborative approach during UI/UX workshops to refine the design of digital solutions.",
                         "Jey Shreemen GR",
-                        "Mahmoodah Hafsah S",
+                        "TBU",
                         "+91 7604813964",
-                        "+91 9940261966",
+                        "TBU",
                         "forms.gle/RqExTs9gLNsFEPCHA",
-                        "Venue1"
+                        "To be announced"
                       )
                     }
                   >
@@ -169,7 +135,7 @@ const Workshops = () => {
                         "+91 6379754326",
                         "+91 8072892365",
                         "forms.gle/G9GTWJTvh4SZGvqJA",
-                        "Venue2"
+                        "To be announced"
                       )
                     }
                   >

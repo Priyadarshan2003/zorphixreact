@@ -43,10 +43,6 @@ const Counter = () => {
   return (
     <section className='timer-container'>
       <section className='timer'>
-        {/* <div>
-          <span className='mdi mdi-calendar-clock timer-icon'></span>
-          <h2>Get ready to experience the Zorphix 2K23 !</h2>
-        </div> */}
         <div>
           <section>
             <p>{timerDays}</p>
