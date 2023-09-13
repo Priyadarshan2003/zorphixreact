@@ -730,6 +730,7 @@ body {
   font-weight: 400;
   color: #777;
   background-color: #243763;
+  overflow-x: hidden;
 }
 
 .home {
