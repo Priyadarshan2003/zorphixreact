@@ -81,9 +81,9 @@ const Workshops = () => {
                         "UI/UX Feat. Figma",
                         "Discover this exceptional collaborative process in UI/UX workshops to elevate digital product design. By the end of this workshop, you'll not only possess the technical skills to wield design tools but also the mindset to shape the future of user-centric innovation. Engage in this notable collaborative approach during UI/UX workshops to refine the design of digital solutions.",
                         "Jey Shreemen GR",
-                        "TBU",
-                        "+91 7604813964",
-                        "TBU",
+                        "P Athulya Kairali",
+                        "+91 76048 13964",
+                        "+91 98400 92758",
                         "forms.gle/RqExTs9gLNsFEPCHA",
                         "To be announced"
                       )
@@ -132,8 +132,8 @@ const Workshops = () => {
                         "Unlock financial empowerment through our trading and investment workshop. Whether you're a pro or a newcomer, gain the tools to navigate finance confidently. Don't miss the chance to boost your financial literacy and step into the world of trading and investment. Get ready to go from zero to hero!",
                         "Prathap D",
                         "Madhukeshwar MS",
-                        "+91 6379754326",
-                        "+91 8072892365",
+                        "+91 63797 54326",
+                        "+91 80728 92365",
                         "forms.gle/G9GTWJTvh4SZGvqJA",
                         "To be announced"
                       )

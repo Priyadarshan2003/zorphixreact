@@ -143,8 +143,8 @@ const TechEvents = () => {
                         "CrossCoders is an electrifying coding competition where participants go beyond traditional coding. Contestants are expected to analyze code snippets and convert them into a language of their choice.",
                         "Bhanupriya M",
                         "Jawahar Ganesh D",
-                        "+91 9677055652",
-                        "+91 9360390526",
+                        "+91 96770 55652",
+                        "+91 93603 90526",
                         "forms.gle/RqExTs9gLNsFEPCHA",
                         "To be announced"
                       )
@@ -218,8 +218,8 @@ const TechEvents = () => {
                         "Inspire us to redefine the tech landscape. Thesis Precised is your platform to present and engage in the presentation as they delve into the captivating realm of your thesis precisely. Emerge victorious, and you take home the title of BEST PAPER.",
                         "Harini A",
                         "Poovizhi P",
-                        "+91 9952051446",
-                        "+91 9150002718",
+                        "+91 99520 51446",
+                        "+91 91500 02718",
                         "forms.gle/G9GTWJTvh4SZGvqJA",
                         "To be announced"
                       )
@@ -291,8 +291,8 @@ const TechEvents = () => {
                         "Ever wanted to participate in a digital tech game event? Here's your chance! Participants play a series of wordplay, quizzes, and games that advance through rounds. Get ready to tech it up at Coin Quest.",
                         "Ram Kumar M",
                         "Priyadharshini N",
-                        "+91 6380941457",
-                        "+91 7395930205",
+                        "+91 63809 41457",
+                        "+91 73959 30205",
                         "forms.gle/P3QNm3woRoMd6bF66",
                         "To be announced"
                       )
@@ -371,8 +371,8 @@ const TechEvents = () => {
                           "66% of all statistics are made up. And we just made this up too. Plutus is an event based on the popular party game 2 Facts 1 Lie, albeit with a business touch to it! Unravel the truth from a web of captivating statements.",
                           "Vinoth S",
                           "Adithya B",
-                          "+91 9342537734",
-                          "+91 7339044512",
+                          "+91 93425 37734",
+                          "+91 73390 44512",
                           "forms.gle/2r5S34Nfzvnivrzx6",
                           "To be announced"
                         )
@@ -445,8 +445,8 @@ const TechEvents = () => {
                           "Are you ready to dive into a world where melodies are composed by lines of code, and rhythm is dictated by algorithms? Here, the tech enthusiast delves into coding against the distraction of music. Let the beats and coding begin!",
                           "Nisha V",
                           "Harisha BS",
-                          "+91 6369946328",
-                          "+91 9710514448",
+                          "+91 63699 46328",
+                          "+91 97105 14448",
                           "forms.gle/KQrFXKMjRHmNKVMC6",
                           "To be announced"
                         )
@@ -519,8 +519,8 @@ const TechEvents = () => {
                           "Prepare for an event of mind-bending scenarios, where the participants will be presented with complex situational questions that demand creative problem-solving, but the twist lies in who can master the art of bottle flipping to secure their chance to answer first. Join us for a journey of intellect and strategy at 'Flip it & Quiz it'.",
                           "Navinaa G",
                           "Mahmoodah Hafsah S",
-                          "+91 9080230690",
-                          "+91 9940261966",
+                          "+91 90802 30690",
+                          "+91 99402 61966",
                           "forms.gle/KQrFXKMjRHmNKVMC6",
                           "To be announced"
                         )
@@ -597,8 +597,8 @@ const TechEvents = () => {
                           "Paying homage to Vijay TV's iconic Start Music, we're raising the stakes in music games. Evoke your inner music detective in a dynamic guessing game event with three rounds of song and melody challenges. Join us for a day filled with musical excitement at Virtuoso!",
                           "Mathuku Jayasimha Reddy",
                           "Abirami S",
-                          "+91 8341273412",
-                          "+91 7358290831",
+                          "+91 83412 73412",
+                          "+91 73582 90831",
                           "forms.gle/2r5S34Nfzvnivrzx6",
                           "To be announced"
                         )

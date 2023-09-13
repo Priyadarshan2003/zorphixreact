@@ -1222,7 +1222,7 @@ function LoginForm() {
                 {isSignUpMode ? (
                   <p className="text">
                     Forgotten your password or your login details? &nbsp;
-                    <a href="mailto:zorphix@citchennai.net" target="_blank" className="link-button">Get help</a> signing in
+                    <a href="mailto:zorphix@citchennai.net" target="_blank" className="toggle link-button">Get help</a> signing in
                   </p>
                 ) : (
                   ""

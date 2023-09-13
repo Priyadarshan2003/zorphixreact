@@ -1624,7 +1624,7 @@ only screen and (hover: none) {
 
 
 .footer__img {
-  height: 50px;
+  height: 30px;
 }
 
 .f {
@@ -2585,11 +2585,22 @@ section p:first-child,
   
 }
 
+.f_inner{
+  display: flex;
+}
+
 .carousel img{
   height: 80vh;
   width: 100%;
 }
 
+@media (max-width:800px) {
+
+  .carousel{
+    height: auto;
+    width: 100%;
+  }
+}
 
 @media (max-width:1200px) {
   .carousel_container{

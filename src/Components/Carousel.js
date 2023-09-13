@@ -1,16 +1,21 @@
 import '../App.css';
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import img2 from '../img/eventphotos/year 1/DSC_0034.JPG'
-import img1 from '../img/eventphotos/year 1/DSC_0026.JPG'
-import img3 from '../img/eventphotos/year 1/DSC_0191.JPG'
-import img4 from '../img/eventphotos/year 1/DSC_0217.JPG'
-import img5 from '../img/eventphotos/year 1/DSC_0382.JPG'
-import img6 from '../img/eventphotos/year 1/DSC_0436.JPG'
-import img7 from '../img/eventphotos/year 2/IMG_2736.JPG'
-import img8 from '../img/eventphotos/year 2/IMG_4396.JPG'
-import img9 from '../img/eventphotos/year 2/IMG_4841.JPG'
-import img10 from '../img/eventphotos/DSC_0510.JPG'
+import img1 from '../img/eventphotos/event1.JPG'
+import img2 from '../img/eventphotos/event2.JPG'
+import img3 from '../img/eventphotos/event3.JPG'
+import img4 from '../img/eventphotos/event4.JPG'
+import img5 from '../img/eventphotos/event5.JPG'
+import img6 from '../img/eventphotos/event6.JPG'
+import img7 from '../img/eventphotos/event7.JPG'
+import img8 from '../img/eventphotos/event8.JPG'
+import img9 from '../img/eventphotos/event9.JPG'
+import img10 from '../img/eventphotos/event10.JPG'
+import img11 from '../img/eventphotos/event11.JPG'
+import img12 from '../img/eventphotos/event12.JPG'
+import img13 from '../img/eventphotos/event13.JPG'
+import img14 from '../img/eventphotos/event14.JPG'
+import img15 from '../img/eventphotos/event15.JPG'
 
 const CarouselComponent = () => {
   return (
@@ -84,6 +89,41 @@ const CarouselComponent = () => {
         className="d-block"
         src={img10}
         alt="Tenth slide"
+      />
+    </Carousel.Item>
+    <Carousel.Item>
+      <img
+        className="d-block"
+        src={img11}
+        alt="Eleventh slide"
+      />
+    </Carousel.Item>
+    <Carousel.Item>
+      <img
+        className="d-block"
+        src={img12}
+        alt="Twelfth slide"
+      />
+    </Carousel.Item>
+    <Carousel.Item>
+      <img
+        className="d-block"
+        src={img13}
+        alt="Thirteenth slide"
+      />
+    </Carousel.Item>
+    <Carousel.Item>
+      <img
+        className="d-block"
+        src={img14}
+        alt="Fourteenth slide"
+      />
+    </Carousel.Item>
+    <Carousel.Item>
+      <img
+        className="d-block"
+        src={img15}
+        alt="Fifteenth slide"
       />
     </Carousel.Item>
   </Carousel>
