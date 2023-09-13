@@ -4,9 +4,11 @@ import Home from './Components/Home';
 import LoginForm from './Components/Login/LoginForm';
 import { Toaster } from 'react-hot-toast';
 import axios from 'axios';
+import Attendence from './Components/Attendence'
 
 axios.defaults.withCredentials = true;
-axios.defaults.baseURL = "https://successful-eel-pea-coat.cyclic.app"
+// axios.defaults.baseURL = "https://successful-eel-pea-coat.cyclic.app"
+axios.defaults.baseURL ="http://localhost:8000"
 
 
 function App() {
@@ -22,6 +24,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/login' element={<LoginForm />} />
+        <Route path='/attendence' element={<Attendence />} />
       </Routes>
     </>
 

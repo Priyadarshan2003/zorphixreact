@@ -549,7 +549,7 @@ function LoginForm() {
                 password
             })
             if (data.error) {
-                toast.error(data.error)
+                toast.error(data.error);
             }
             else {
                 setData({});
