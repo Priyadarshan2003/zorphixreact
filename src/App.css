@@ -2187,6 +2187,15 @@ html {
 .poorvika,.hubsolutions{
   border-radius: 15px;
 }
+@media screen and (max-width: 480px){
+  .i{
+    width:90%;
+  }
+}
+.poorvika,.hubsolutions{
+  border-radius: 20px;
+  margin-top: 50px;
+}
 
 .padding {
   height: 140px !important;

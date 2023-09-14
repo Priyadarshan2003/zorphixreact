@@ -1,16 +1,16 @@
 import '../App.css';
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import img2 from '../img/eventphotos/year 1/DSC_0034.jpg'
-import img1 from '../img/eventphotos/year 1/DSC_0026.jpg'
-import img3 from '../img/eventphotos/year 1/DSC_0191.jpg'
-import img4 from '../img/eventphotos/year 1/DSC_0217.jpg'
-import img5 from '../img/eventphotos/year 1/DSC_0382.jpg'
-import img6 from '../img/eventphotos/year 1/DSC_0436.jpg'
-import img7 from '../img/eventphotos/year 2/IMG_2736.jpg'
-import img8 from '../img/eventphotos/year 2/IMG_4396.jpg'
-import img9 from '../img/eventphotos/year 2/IMG_4841.jpg'
-import img10 from '../img/eventphotos/DSC_0510.jpg'
+import img2 from '../img/eventphotos/year 1/DSC_0034.JPG'
+import img1 from '../img/eventphotos/year 1/DSC_0026.JPG'
+import img3 from '../img/eventphotos/year 1/DSC_0191.JPG'
+import img4 from '../img/eventphotos/year 1/DSC_0217.JPG'
+import img5 from '../img/eventphotos/year 1/DSC_0382.JPG'
+import img6 from '../img/eventphotos/year 1/DSC_0436.JPG'
+import img7 from '../img/eventphotos/year 2/IMG_2736.JPG'
+import img8 from '../img/eventphotos/year 2/IMG_4396.JPG'
+import img9 from '../img/eventphotos/year 2/IMG_4841.JPG'
+import img10 from '../img/eventphotos/DSC_0510.JPG'
 
 const CarouselComponent = () => {
   return (
