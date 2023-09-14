@@ -979,9 +979,15 @@ function LoginForm() {
 
   const [selectedCollege, setSelectedCollege] = useState(null);
 
+  const [otherCollege, setOtherCollege] = useState(null);
+
   const handleCollegeChange = (selectedOption) => {
     setSelectedCollege(selectedOption);
   };
+
+  const handleOtherCollege = (collegeName) => {
+    setOtherCollege(collegeName.target.value);
+  }
 
   const [selectedYear, setSelectedYear] = useState(null);
 
@@ -1024,7 +1030,7 @@ function LoginForm() {
       if (isValidMobileNumber(contactNo)) {
         const { data } = await axios.post("/register", {
           fullName,
-          college: selectedCollege.label,
+          college: selectedCollege.label === "Other" ? otherCollege : selectedCollege.label ,
           degree,
           year: selectedYear.label,
           dept,
@@ -1112,6 +1118,20 @@ function LoginForm() {
                         }
                       />
                     </div>
+
+                    {selectedCollege !=null && selectedCollege.label == "Other" &&
+
+                    <div className="input-wrap">
+                      <input
+                        type="text"
+                        className="input-field"
+                        autoComplete="off"
+                        value={otherCollege}
+                        onChange={handleOtherCollege}
+                        placeholder={otherCollege ? "" : "Enter your college name"}
+                      />
+                    </div>
+                    }
 
                     <div className="input-wrap div-flex">
                       <div>
@@ -1222,7 +1242,7 @@ function LoginForm() {
                 {isSignUpMode ? (
                   <p className="text">
                     Forgotten your password or your login details? &nbsp;
-                    <a href="mailto:zorphix@citchennai.net" target="_blank" className="link-button">Get help</a> signing in
+                    <a href="mailto:zorphix@citchennai.net" target="_blank" className="toggle link-button">Get help</a> signing in
                   </p>
                 ) : (
                   ""

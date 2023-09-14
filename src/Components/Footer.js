@@ -1,6 +1,7 @@
 import React from 'react'
 import fulllogo from '../img/footer.png'
 import instalogo from '../img/insta footer.png';
+import gmaillogo from '../img/gmail.png'
 
 const Footer = () => {
     return (
@@ -22,6 +23,7 @@ const Footer = () => {
                     <div class="footer__navigation">
                         <div class="f">
                             <h3>CONNECT WITH US</h3>
+                            <div class="f_inner">
                             <a
                                 href="https://www.instagram.com/zorphix.cit/"
                                 target="_blank"
@@ -29,6 +31,14 @@ const Footer = () => {
                             >
                                 <img class="footer__img" src={instalogo} alt=""
                                 /></a>
+                            <a
+                                href="mailto:zorphix@citchennai.net"
+                                target="_blank"
+                                rel='noreferrer'
+                            >
+                                <img class="footer__img" src={gmaillogo} alt=""
+                                /></a>
+                            </div>
                         </div>
                     </div>
                 </div>
