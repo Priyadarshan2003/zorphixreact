@@ -6,8 +6,11 @@ import img2 from "../../img/eventposters/thesis precised.jpg";
 import img3 from "../../img/eventposters/coin quest.jpg";
 import img4 from "../../img/eventposters/plutus.jpg";
 import img5 from "../../img/eventposters/algo rhythms.jpg";
-import img6 from "../../img/eventposters/virtuoso.jpg";
-import img7 from "../../img/eventposters/trading and investment.jpg";
+import img6 from "../../img/eventposters/flipitquizit.jpg";
+import img7 from "../../img/eventposters/virtuoso.jpg";
+import img8 from "../../img/eventposters/ui ux.jpg";
+import img9 from "../../img/eventposters/trading and investment.jpg";
+
 import axios from "axios";
 import Select from "react-select";
 import { toast } from "react-hot-toast";
@@ -1252,29 +1255,54 @@ function LoginForm() {
           </div>
 
           <div className="login-carousel">
+            <div className="overlay"></div>
             <div className="overflow-scroll">
               <div className="scrolling-images">
                 <img src={img1} className="image img-1 show" alt="" />
                 <img src={img2} className="image img-2 show" alt="" />
                 <img src={img3} className="image img-3 show" alt="" />
-                <img src={img4} className="image img-3 show" alt="" />
-                <img src={img5} className="image img-3 show" alt="" />
-                <img src={img6} className="image img-3 show" alt="" />
-                <img src={img7} className="image img-3 show" alt="" />
+                <img src={img4} className="image img-4 show" alt="" />
+                <img src={img5} className="image img-5 show" alt="" />
+                <img src={img6} className="image img-6 show" alt="" />
+                <img src={img7} className="image img-7 show" alt="" />
+                <img src={img8} className="image img-8 show" alt="" />
+                <img src={img9} className="image img-9 show" alt="" />
                 <img src={img1} className="image img-1 show" alt="" />
                 <img src={img2} className="image img-2 show" alt="" />
                 <img src={img3} className="image img-3 show" alt="" />
-                <img src={img4} className="image img-3 show" alt="" />
-                <img src={img5} className="image img-3 show" alt="" />
-                <img src={img6} className="image img-3 show" alt="" />
-                <img src={img7} className="image img-3 show" alt="" />
+                <img src={img4} className="image img-4 show" alt="" />
+                <img src={img5} className="image img-5 show" alt="" />
+                <img src={img6} className="image img-6 show" alt="" />
+                <img src={img7} className="image img-7 show" alt="" />
+                <img src={img8} className="image img-8 show" alt="" />
+                <img src={img9} className="image img-9 show" alt="" />
                 <img src={img1} className="image img-1 show" alt="" />
                 <img src={img2} className="image img-2 show" alt="" />
                 <img src={img3} className="image img-3 show" alt="" />
-                <img src={img4} className="image img-3 show" alt="" />
-                <img src={img5} className="image img-3 show" alt="" />
-                <img src={img6} className="image img-3 show" alt="" />
-                <img src={img7} className="image img-3 show" alt="" />
+                <img src={img4} className="image img-4 show" alt="" />
+                <img src={img5} className="image img-5 show" alt="" />
+                <img src={img6} className="image img-6 show" alt="" />
+                <img src={img7} className="image img-7 show" alt="" />
+                <img src={img8} className="image img-8 show" alt="" />
+                <img src={img9} className="image img-9 show" alt="" />
+                <img src={img1} className="image img-1 show" alt="" />
+                <img src={img2} className="image img-2 show" alt="" />
+                <img src={img3} className="image img-3 show" alt="" />
+                <img src={img4} className="image img-4 show" alt="" />
+                <img src={img5} className="image img-5 show" alt="" />
+                <img src={img6} className="image img-6 show" alt="" />
+                <img src={img7} className="image img-7 show" alt="" />
+                <img src={img8} className="image img-8 show" alt="" />
+                <img src={img9} className="image img-9 show" alt="" />
+                <img src={img1} className="image img-1 show" alt="" />
+                <img src={img2} className="image img-2 show" alt="" />
+                <img src={img3} className="image img-3 show" alt="" />
+                <img src={img4} className="image img-4 show" alt="" />
+                <img src={img5} className="image img-5 show" alt="" />
+                <img src={img6} className="image img-6 show" alt="" />
+                <img src={img7} className="image img-7 show" alt="" />
+                <img src={img8} className="image img-8 show" alt="" />
+                <img src={img9} className="image img-9 show" alt="" />
               </div>
             </div>
           </div>

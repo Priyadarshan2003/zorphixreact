@@ -6,12 +6,7 @@ import img2 from '../img/eventphotos/event2.JPG'
 import img3 from '../img/eventphotos/event3.JPG'
 import img4 from '../img/eventphotos/event4.JPG'
 import img5 from '../img/eventphotos/event5.JPG'
-import img6 from '../img/eventphotos/event6.JPG'
-import img7 from '../img/eventphotos/event7.JPG'
-import img8 from '../img/eventphotos/event8.JPG'
-import img9 from '../img/eventphotos/event9.JPG'
 import img10 from '../img/eventphotos/event10.JPG'
-import img11 from '../img/eventphotos/event11.JPG'
 import img12 from '../img/eventphotos/event12.JPG'
 import img13 from '../img/eventphotos/event13.JPG'
 import img14 from '../img/eventphotos/event14.JPG'
@@ -59,29 +54,8 @@ const CarouselComponent = () => {
     <Carousel.Item>
       <img
         className="d-block"
-        src={img6}
-        alt="Sixth slide"
-      />
-    </Carousel.Item>
-    <Carousel.Item>
-      <img
-        className="d-block"
-        src={img7}
-        alt="Seventh slide"
-      />
-    </Carousel.Item>
-    <Carousel.Item>
-      <img
-        className="d-block"
-        src={img8}
-        alt="Eighth slide"
-      />
-    </Carousel.Item>
-    <Carousel.Item>
-      <img
-        className="d-block"
-        src={img9}
-        alt="Ninth slide"
+        src={img15}
+        alt="Fifteenth slide"
       />
     </Carousel.Item>
     <Carousel.Item>
@@ -89,13 +63,6 @@ const CarouselComponent = () => {
         className="d-block"
         src={img10}
         alt="Tenth slide"
-      />
-    </Carousel.Item>
-    <Carousel.Item>
-      <img
-        className="d-block"
-        src={img11}
-        alt="Eleventh slide"
       />
     </Carousel.Item>
     <Carousel.Item>
@@ -119,13 +86,7 @@ const CarouselComponent = () => {
         alt="Fourteenth slide"
       />
     </Carousel.Item>
-    <Carousel.Item>
-      <img
-        className="d-block"
-        src={img15}
-        alt="Fifteenth slide"
-      />
-    </Carousel.Item>
+    
   </Carousel>
   </div>
   );
