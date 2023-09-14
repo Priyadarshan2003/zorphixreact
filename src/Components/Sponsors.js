@@ -14,23 +14,23 @@ const Sponsors = () => {
     Aos.init({duration: 1000});
   })
   return (
-    <div class="section-features" data-aos = "fade-down">
-      <div class="u-center-text">
-        <h2 class="heading-secondary white letter-spacing">Sponsored By</h2>
+    <div className="section-features" data-aos = "fade-down">
+      <div className="u-center-text">
+        <h2 className="heading-secondary white letter-spacing">Sponsored By</h2>
       </div>
-      <div class="sponsor">
+      <div className="sponsor">
         {/* <div class="github-sponsor">
           <div class="section-sponsor-card" data-aos = "fade-right">
             <img src={git} class="git" alt="github" />
           </div>
         </div> */}
-        <div class="row1">
-          <div class="section-sponsor-card" data-aos = "fade-right">
-            <img src={poorvi} class="i poorvika" alt="poorvika" />
+        <div className="row1">
+          <div className="section-sponsor-card" data-aos = "fade-right">
+            <img src={poorvi} className="i poorvika" alt="poorvika" />
           </div>
 
-          <div class="section-sponsor-card" data-aos = "fade-right">
-            <img src={hubsol} class="i hubsolutions" alt="hub solutions" />
+          <div className="section-sponsor-card" data-aos = "fade-right">
+            <img src={hubsol} className="i hubsolutions" alt="hub solutions" />
           </div>
           {/* <div class="section-sponsor-card" data-aos = "fade-right">
             <img src={people_logo} alt="people's logo" class="i some-large" />

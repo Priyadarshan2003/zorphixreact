@@ -1028,7 +1028,7 @@ function LoginForm() {
     e.preventDefault();
     let { fullName, college, degree, dept, contactNo, email, password } = data;
     email = email.split(" ").join("");
-    console.log(data);
+    // console.log(data);
     try {
       if (isValidMobileNumber(contactNo)) {
         const { data } = await axios.post("/register", {

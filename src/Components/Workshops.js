@@ -17,7 +17,7 @@ const Workshops = () => {
   const loguser = JSON.parse(localStorage.getItem('userData'));
   const userData = loguser ? JSON.parse(localStorage.getItem('userData')) : "no_user";
 
-  console.log(userData, "user");
+  // console.log(userData, "user");
 
   const [eventInfo, setEventInfo] = useState({
     heading: "",

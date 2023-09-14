@@ -15,8 +15,8 @@ const EntryPass = () => {
 
   return (
     <div id="EntryPass" className="section-EntryPass" data-aos = "fade-down">
-      <div class="u-center-text">
-        <h2 class="heading-secondary white letter-spacing">Your Entry Pass</h2>
+      <div className="u-center-text">
+        <h2 className="heading-secondary white letter-spacing">Your Entry Pass</h2>
       </div>
       {!userData ? (
         <div style={{ color: "white" }} className="qrdiv">

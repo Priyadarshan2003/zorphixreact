@@ -12,15 +12,15 @@ const About = () => {
     })
 
     return (
-        <div id="about" class="section-about" data-aos = "fade-down">
+        <div id="about" className="section-about" data-aos = "fade-down">
 
-            <div class="u-center-text u-margin-bottom-big">
-                <h2 class="heading-secondary white letter-spacing">About Us</h2>
+            <div className="u-center-text u-margin-bottom-big">
+                <h2 className="heading-secondary white letter-spacing">About Us</h2>
             </div>
 
-            <div class="row">
-                <div class="col-1-of-2">
-                    <p class="paragraph">
+            <div className="row">
+                <div className="col-1-of-2">
+                    <p className="paragraph">
                         <b>Computer Science & Business Systems </b>
                         is the first stream in engineering designed to meet the future
                         demands of the rapidly changing tech industry in the era of
@@ -33,29 +33,29 @@ const About = () => {
                     </p>
                 
                 </div>
-                <div class="col-1-of-2">
-                    <div class="composition">
+                <div className="col-1-of-2">
+                    <div className="composition">
                         <img
-                            srcset={`${i1} 300w, ${i1} 1000w`}
+                            srcSet={`${i1} 300w, ${i1} 1000w`}
                             sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
                             alt="Pic1"
-                            class="composition__photo composition__photo--p1"
+                            className="composition__photo composition__photo--p1"
                             src={i1}
                         />
 
                         <img
-                            srcset={`${i2} 300w, ${i2} 1000w`}
+                            srcSet={`${i2} 300w, ${i2} 1000w`}
                             sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
                             alt="Photo2"
-                            class="composition__photo composition__photo--p2"
+                            className="composition__photo composition__photo--p2"
                             src={i2}
                         />
 
                         <img
-                            srcset={`${i3} 300w, ${i3} 1000w`}
+                            srcSet={`${i3} 300w, ${i3} 1000w`}
                             sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
                             alt="Pic33"
-                            class="composition__photo composition__photo--p3"
+                            className="composition__photo composition__photo--p3"
                             src={i3}
                         />
                     </div>
