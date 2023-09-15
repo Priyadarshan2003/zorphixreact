@@ -40,10 +40,10 @@ function Attendence() {
                 <h2>Attendence Marker</h2>
                 <form className="form">
                     <div >
-                        <input id="zorid" className="input" type="text" value={zorid} placeholder="Zorid" onChange={(e) => setZorid(e.target.value)} />
+                        <input id="zorid" className="input" type="text" value={zorid} placeholder="Zorid" onChange={(e) => setZorid(e.target.value)} required/>
                     </div>
                     <div >
-                        <input id="email" className="input" type="text" value={email} placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
+                        <input id="email" className="input" type="text" value={email} placeholder="Email" onChange={(e) => setEmail(e.target.value)} required/>
                     </div>
                 <button className="button"  onClick={handleSubmit}>{isLoading ? 'Marking...' : 'Mark attendance'}</button>
             </form>
