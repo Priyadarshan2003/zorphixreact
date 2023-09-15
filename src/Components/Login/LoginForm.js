@@ -1255,7 +1255,6 @@ function LoginForm() {
           </div>
 
           <div className="login-carousel">
-            <div className="overlay"></div>
             <div className="overflow-scroll">
               <div className="scrolling-images">
                 <img src={img1} className="image img-1 show" alt="" />
