@@ -1,11 +1,12 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { toast } from 'react-hot-toast';
-
+import "../component-css/attendance.css";
+import logo from "../img/zorphix-landing-logo.png"
 
 function Attendence() {
     const [email, setEmail] = useState("");
-    const [zorid, setZorid] = useState("");
+    const [zorid, setZorid] = useState("ZOR2023");
     const [isLoading, setIsLoading] = useState(false);
 
     
@@ -33,14 +34,15 @@ function Attendence() {
 
     return (
         <div className="parent">
+            <img src={logo} alt="zorphixlogo"></img>
             <div className="h1">
-                <h1>Zorphix Super Admin</h1>
+                <p>Zorphix Super Admin</p>
             </div>
             <div className="attendence">
-                <h2>Attendence Marker</h2>
+                <p>Attendance Marker</p>
                 <form className="form">
                     <div >
-                        <input id="zorid" className="input" type="text" value={zorid} placeholder="Zorid" onChange={(e) => setZorid(e.target.value)} required/>
+                        <input id="zorid" className="input" type="text" value={zorid} onChange={(e) => setZorid(e.target.value)} required/>
                     </div>
                     <div >
                         <input id="email" className="input" type="text" value={email} placeholder="Email" onChange={(e) => setEmail(e.target.value)} required/>
