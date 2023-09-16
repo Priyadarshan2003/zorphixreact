@@ -9,8 +9,7 @@
     font-size: 2rem;
     background-image: url("../img/f5WiAE.jpg");
     background-size:cover;
-    
-    
+    background-position: center center;
 }
 
 .parent > .form{
