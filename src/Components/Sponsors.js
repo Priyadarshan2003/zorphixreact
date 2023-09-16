@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import git from "../img/git.png";
-import hubsol from "../img/hubsolutionswhitecrop.jpeg";
+import hubsol from "../img/hubsoln.jpeg";
 import poorvi from "../img/poorvika.png";
 import people_logo from "../img/people_logo-removebg-preview.png";
 import cake_logo from "../img/cake_logo_white.png";

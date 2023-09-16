@@ -66,6 +66,8 @@ const TechEvents = () => {
     });
   };
 
+  const [isLoading, setIsLoading] = useState(false);
+
   const eventRegister = async (eventName) => {
     if (eventName == "registered") {
       Swal.fire({
@@ -80,6 +82,8 @@ const TechEvents = () => {
     }
     else {
       try {
+
+        setIsLoading(true);
         
         const email = userData.email;
         const { data } = await axios.post("/eventRegister", {
@@ -98,6 +102,17 @@ const TechEvents = () => {
         setBlurBackground(true);
       } catch (error) {
         console.log(error);
+        Swal.fire({
+          icon: "error",
+          title: "Registration Error",
+          text: "There was an error during regisration, please try again...",
+        }).then((result) => {
+          setBlurBackground(false);
+        });
+        setBlurBackground(true);
+      }
+      finally{
+        setIsLoading(false);
       }
     }
   };
@@ -107,6 +122,12 @@ const TechEvents = () => {
       className={`section-tours ${isBlurBackground ? "blur-background" : ""}`}
       id="events"
     >
+      <div>
+        {isLoading && (
+          <div className="loading-screen">
+            </div>
+        )}
+      </div>
       <div className="u-center-text u-margin-bottom-big">
         <h2 className="heading-secondary white letter-spacing">
           Events

@@ -998,12 +998,16 @@ function LoginForm() {
     setSelectedYear(selectedOption);
   };
 
+  const [isLoading, setIsLoading] = useState(false);
+
 
   const loginUser = async (e) => {
     e.preventDefault();
     let { email, password } = data;
     email = email.split(" ").join("");
     try {
+
+      setIsLoading(true);
       const { data } = await axios.post("/login", {
         email,
         password,
@@ -1021,6 +1025,11 @@ function LoginForm() {
       }
     } catch (error) {
       console.log(error);
+      toast.error("An error occurred, please try again...");
+    }
+
+    finally{
+      setIsLoading(false);
     }
   };
 
@@ -1030,6 +1039,7 @@ function LoginForm() {
     email = email.split(" ").join("");
     // console.log(data);
     try {
+      setIsLoading(true);
       if (isValidMobileNumber(contactNo)) {
         const { data } = await axios.post("/register", {
           fullName,
@@ -1043,12 +1053,15 @@ function LoginForm() {
         });
         if (data.error) {
           toast.error(data.error);
+          setIsLoading(false);
         } else {
+          setIsLoading(false);
           toast.success("Registered Successfully");
           setIsSignUpMode(!isSignUpMode);
           setActiveImage(1);
         }
       } else {
+        setIsLoading(false);
         Swal.fire({
           icon: "warning",
           title: "Invalid Mobile Number",
@@ -1059,6 +1072,11 @@ function LoginForm() {
       }
     } catch (error) {
       console.log(error);
+      toast.error("An error occurred, please try again...")
+    }
+
+    finally{
+      setIsLoading(false);
     }
   };
 
@@ -1070,6 +1088,12 @@ function LoginForm() {
   return (
     <main>
       <div className={`login-box ${isSignUpMode ? "sign-up-mode" : ""}`}>
+        <div>
+          {isLoading && (
+            <div className="loading-screen">
+            </div>
+          )}
+        </div>
         <div className="inner-box">
           <div className="forms-wrap">
             <form id="login" autoComplete="off" className="sign-in-form">
