@@ -11,7 +11,8 @@ function Attendence() {
 
     
 
-    const handleSubmit = async () => {
+    const handleSubmit = async (e) => {
+        e.preventDefault();
         setIsLoading(true);
         try {
             const added = await axios.post('/attendence', { zorid, email });
@@ -40,14 +41,14 @@ function Attendence() {
             </div>
             <div className="attendence">
                 <p>Attendance Marker</p>
-                <form className="form">
+                <form className="form" onSubmit={handleSubmit}>
                     <div >
                         <input id="zorid" className="input" type="text" value={zorid} onChange={(e) => setZorid(e.target.value)} required/>
                     </div>
                     <div >
                         <input id="email" className="input" type="text" value={email} placeholder="Email" onChange={(e) => setEmail(e.target.value)} required/>
                     </div>
-                <button className="button"  onClick={handleSubmit}>{isLoading ? 'Marking...' : 'Mark attendance'}</button>
+                <button className="button">{isLoading ? 'Marking...' : 'Mark attendance'}</button>
             </form>
         </div>
         </div>
