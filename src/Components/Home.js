@@ -162,8 +162,8 @@ const Home = () => {
             <Counter />
             <h1 className="heading-primary--sub date">September 20th 2023</h1>
 
-            <a href="#EntryPass" className="btn btn--white btn--animated bold">
-              Get Started
+            <a href="https://drive.google.com/file/d/1dMm0oCW53daJt7EmHRQF6yqpZOane29A/view?usp=sharing" className="btn btn--white btn--animated bold" target="_blank">
+              CIT Bus Routes ↗
             </a>
           </div>
         </div>
