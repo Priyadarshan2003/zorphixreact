@@ -2184,15 +2184,13 @@ html {
   margin-bottom: 20px;
   margin-top: 20px;
 }
-.poorvika,.hubsolutions{
-  border-radius: 15px;
-}
+
 @media screen and (max-width: 480px){
   .i{
     width:90%;
   }
 }
-.poorvika,.hubsolutions{
+.poorvika,.hubsolutions, .ovi{
   border-radius: 20px;
   margin-top: 50px;
 }
@@ -2206,7 +2204,7 @@ html {
   height: 310px;
 }
 
-.hubsolutions{
+.hubsolutions , .ovi{
   width: 70%;
 }
 
