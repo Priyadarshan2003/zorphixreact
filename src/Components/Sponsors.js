@@ -1,9 +1,7 @@
 import React, { useEffect } from "react";
-import git from "../img/git.png";
 import hubsol from "../img/hubsoln.jpeg";
 import poorvi from "../img/poorvika.png";
-import people_logo from "../img/people_logo-removebg-preview.png";
-import cake_logo from "../img/cake_logo_white.png";
+import ovi from "../img/ovi.jpg";
 import "../App.css";
 import Aos from "aos";
 import 'aos/dist/aos.css';
@@ -31,6 +29,10 @@ const Sponsors = () => {
 
           <div className="section-sponsor-card" data-aos = "fade-right">
             <img src={hubsol} className="i hubsolutions" alt="hub solutions" />
+          </div>
+          
+          <div className="section-sponsor-card" data-aos = "fade-right">
+            <img src={ovi} className="i ovi" alt="ovi design academy" />
           </div>
           {/* <div class="section-sponsor-card" data-aos = "fade-right">
             <img src={people_logo} alt="people's logo" class="i some-large" />
