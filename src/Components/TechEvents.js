@@ -10,7 +10,7 @@ import 'aos/dist/aos.css';
 const TechEvents = () => {
 
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 3500 });
   })
   const [isPopupVisible, setPopupVisible] = useState(false);
   const [isBlurBackground, setBlurBackground] = useState(false);
