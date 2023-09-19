@@ -9,7 +9,7 @@ import zorphixlanding from "../img/zorphix-landing-logo.png";
 import { motion, useScroll } from "framer-motion";
 import Loader from "../Components/Loader/Loader";
 import bgvideo from "../video/zorphixbgnew.mp4";
-import Counter from "../Components/Counter";
+// import Counter from "../Components/Counter";
 
 const Home = () => {
   const { scrollYProgress } = useScroll();
@@ -159,7 +159,7 @@ const Home = () => {
                 alt="zorphix-logo"
               />
             </div>
-            <Counter />
+            {/* <Counter /> */}
             <h1 className="heading-primary--sub date">September 20th 2023</h1>
 
             <a href="https://drive.google.com/file/d/1dMm0oCW53daJt7EmHRQF6yqpZOane29A/view?usp=sharing" className="btn btn--white btn--animated bold" target="_blank">
