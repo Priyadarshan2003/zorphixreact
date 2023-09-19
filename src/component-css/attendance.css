@@ -22,10 +22,13 @@
 }
 
 .parent input{
+    margin-left: -80%;
     text-align: center;
     border-radius: 20px;
     border: none;
     padding: 5px 0px;
+    max-width: 250%;
+    width: 250%;
 }
 
 .parent button{
@@ -45,3 +48,4 @@
 .parent img{
     height: 100px;
 }
+
