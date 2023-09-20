@@ -167,7 +167,7 @@ const TechEvents = () => {
                         "+91 96770 55652",
                         "+91 93603 90526",
                         "forms.gle/RqExTs9gLNsFEPCHA",
-                        "To be announced"
+                        "Security Lab - First Floor"
                       )
                     }
                   >
@@ -242,7 +242,7 @@ const TechEvents = () => {
                         "+91 99520 51446",
                         "+91 91500 02718",
                         "forms.gle/G9GTWJTvh4SZGvqJA",
-                        "To be announced"
+                        "HCL Lab (First Floor) / AV Hall (Second Floor - Library ) "
                       )
                     }
                   >
@@ -315,7 +315,7 @@ const TechEvents = () => {
                         "+91 63809 41457",
                         "+91 73959 30205",
                         "forms.gle/P3QNm3woRoMd6bF66",
-                        "To be announced"
+                        "F1 - First Floor"
                       )
                     }
                   >
@@ -395,7 +395,7 @@ const TechEvents = () => {
                           "+91 93425 37734",
                           "+91 73390 44512",
                           "forms.gle/2r5S34Nfzvnivrzx6",
-                          "To be announced"
+                          "F3 - First Floor"
                         )
                       }
                     >
@@ -469,7 +469,7 @@ const TechEvents = () => {
                           "+91 63699 46328",
                           "+91 97105 14448",
                           "forms.gle/KQrFXKMjRHmNKVMC6",
-                          "To be announced"
+                          "Mobile App Lab - First Floor"
                         )
                       }
                     >
@@ -543,7 +543,7 @@ const TechEvents = () => {
                           "+91 90802 30690",
                           "+91 99402 61966",
                           "forms.gle/KQrFXKMjRHmNKVMC6",
-                          "To be announced"
+                          "F22 - First Floor"
                         )
                       }
                     >
@@ -621,7 +621,7 @@ const TechEvents = () => {
                           "+91 83412 73412",
                           "+91 73582 90831",
                           "forms.gle/2r5S34Nfzvnivrzx6",
-                          "To be announced"
+                          "F-23 First Floor"
                         )
                       }
                     >

@@ -85,7 +85,7 @@ const Workshops = () => {
                         "+91 76048 13964",
                         "+91 98400 92758",
                         "forms.gle/RqExTs9gLNsFEPCHA",
-                        "To be announced"
+                        "ILP - IOT Lab"
                       )
                     }
                   >
@@ -135,7 +135,7 @@ const Workshops = () => {
                         "+91 63797 54326",
                         "+91 80728 92365",
                         "forms.gle/G9GTWJTvh4SZGvqJA",
-                        "To be announced"
+                        "ILP - IOT Lab"
                       )
                     }
                   >
